@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using Components;
 using Managers;
@@ -6,8 +5,6 @@ using TMPro;
 using UnityEngine;
 using Utilities;
 using Zenject;
-
-using static Utilities.LocalizationHelper;
 
 namespace UI
 {

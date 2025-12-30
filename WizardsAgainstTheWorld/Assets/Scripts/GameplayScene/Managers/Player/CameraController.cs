@@ -23,6 +23,7 @@ public class CameraController : MonoBehaviour, ICameraController
     [SerializeField] private bool enableEdgePanning = true;
     
     private CinemachineVirtualCamera _camera;
+    private bool _hasFocus;
 
     private void Start()
     {
@@ -30,6 +31,11 @@ public class CameraController : MonoBehaviour, ICameraController
         _camera = Camera.main.GetComponent<CinemachineVirtualCamera>();
         _inputMapper.Zoom += OnZoom;
         _inputManager.ZoomOnInspectedUnit += ZoomOnInspectedUnit;
+    }
+    
+    private void OnApplicationFocus(bool hasFocus)
+    {
+        _hasFocus = hasFocus;
     }
     
     private void OnDestroy()
@@ -41,31 +47,41 @@ public class CameraController : MonoBehaviour, ICameraController
     
     private void Update()
     {
-        if (enableEdgePanning)
-            HandleEdgePanning();
+        if (!enableEdgePanning)
+            return;
+
+        if (!_hasFocus)
+            return;
+
+        HandleEdgePanning();
     }
+
 
     private void HandleEdgePanning()
     {
+        if (!IsMouseInsideGameWindow())
+            return;
+
         Vector3 move = Vector3.zero;
         Vector3 mousePos = Input.mousePosition;
 
-        if (mousePos.x <= edgeThreshold) 
+        if (mousePos.x <= edgeThreshold)
             move.x -= 1f;
-        else if (mousePos.x >= Screen.width - edgeThreshold) 
+        else if (mousePos.x >= Screen.width - edgeThreshold)
             move.x += 1f;
 
-        if (mousePos.y <= edgeThreshold) 
+        if (mousePos.y <= edgeThreshold)
             move.y -= 1f;
-        else if (mousePos.y >= Screen.height - edgeThreshold) 
+        else if (mousePos.y >= Screen.height - edgeThreshold)
             move.y += 1f;
 
-        if (move != Vector3.zero)
-        {
-            move.Normalize();
-            cameraParent.position += move * (cameraSpeed * Time.deltaTime * _camera.m_Lens.OrthographicSize);
-        }
+        if (move == Vector3.zero)
+            return;
+
+        move.Normalize();
+        cameraParent.position += move * cameraSpeed * Time.deltaTime * _camera.m_Lens.OrthographicSize;
     }
+
 
     private void ZoomOnInspectedUnit()
     {
@@ -91,4 +107,15 @@ public class CameraController : MonoBehaviour, ICameraController
     {
         cameraParent.transform.position = new Vector3(targetPosition.x, targetPosition.y, cameraParent.transform.position.z);
     }
+    
+    private bool IsMouseInsideGameWindow()
+    {
+        Vector3 mousePos = Input.mousePosition;
+
+        return mousePos.x >= 0 &&
+               mousePos.y >= 0 &&
+               mousePos.x <= Screen.width &&
+               mousePos.y <= Screen.height;
+    }
+
 }

@@ -14,8 +14,6 @@ namespace UI
 
     public class InventoryDisplayUI : MonoBehaviour, IInventoryDisplayUI
     {
-        [Inject] private ISelectionDisplayUI _selectionDisplayUI;
-
         [Inject] private IInputManager _inputManager;
         [Inject] private ISelectionManager _selectionManager;
         [Inject] private ISelectionInspectionManager _selectionInspectionManager;
@@ -29,7 +27,6 @@ namespace UI
         private void Start()
         {
             _inputManager.UI.ShowInventory += ToggleInventory;
-            _selectionDisplayUI.CreatureClicked += ShowInventory;
             _selectionInspectionManager.SelectionInspectChanged += UpdateSelectedCreature;
 
             instantiatedInventoryUI.Toggle(false);
@@ -38,7 +35,6 @@ namespace UI
         private void OnDestroy()
         {
             _inputManager.UI.ShowInventory -= ToggleInventory;
-            _selectionDisplayUI.CreatureClicked -= ShowInventory;
             _selectionInspectionManager.SelectionInspectChanged -= UpdateSelectedCreature;
         }
 

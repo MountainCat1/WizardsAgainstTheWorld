@@ -116,7 +116,6 @@ namespace Data
         {
             var crewItems = data.Creatures.SelectMany(x => x.Inventory.Items).ToList();
             var inventoryItems = data.Inventory.Items;
-            var shopItems = data.Region.Locations.Select(x => x.ShopData).Where(x => x is not null).SelectMany(x => x.inventory.Items);
 
             foreach (var item in crewItems)
             {
@@ -127,13 +126,6 @@ namespace Data
             {
                 item.Prefab = _itemManager.GetItemPrefab(item.Identifier);
             }
-
-            foreach (var item in shopItems)
-            {
-                item.Prefab = _itemManager.GetItemPrefab(item.Identifier);
-            }
-            
-            data.Region.RecalculateNeighbours();
         }
         
         public void DeleteData()

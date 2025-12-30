@@ -1,5 +1,4 @@
 using System;
-using LevelSelector.UI;
 using Zenject;
 
 namespace Items.ItemInteractions

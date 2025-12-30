@@ -6,7 +6,6 @@ namespace UI
     {
         public override void InstallBindings()
         {
-            Container.Bind<ISelectionDisplayUI>().To<SelectionDisplayUI>().FromComponentInHierarchy().AsSingle();
             Container.Bind<IInventoryDisplayUI>().To<InventoryDisplayUI>().FromComponentInHierarchy().AsSingle();
             
             Container.Bind<SelectionDisplayEntryUI>().FromComponentInHierarchy().AsSingle();

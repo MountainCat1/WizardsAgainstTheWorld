@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Constants;
@@ -19,12 +20,12 @@ namespace Managers
 {
     public class GameSetup
     {
-        public LocationData Location { get; set; }
         public GenerateMapSettings Settings { get; set; }
         public string Name { get; set; }
         public int Level { get; set; }
         public bool IsTutorial { get; set; } = false;
         [CanBeNull] public GameData GameData { get; set; }
+        public int MapSeed { get; set; }
     }
 
     public class GameResult
@@ -57,7 +58,6 @@ namespace Managers
         [Inject] private IJuiceManager _juiceManager;
         [Inject] private IAstarManager _astarManager;
         [Inject] private ITutorialManager _tutorialManager;
-        [Inject] private ISkillApplier _skillApplier;
         [Inject] private ISceneLoader _sceneLoader;
         [Inject] private ICrewUpgradeManager _crewUpgradeManager;
         [Inject] private ISoundManager _soundManager;
@@ -81,12 +81,16 @@ namespace Managers
         private MapData _map;
         private GameData _data;
 
-        private void Start()
+        private void Awake()
         {
             GameResult = new GameResult();
+        }
 
-            _data = GameSetup?.GameData ?? _dataManager.LoadData();
-
+        private void Start()
+        {
+            _data = GameSetup?.GameData ?? _dataManager.LoadData() ?? new GameData();
+            GameSetup ??= new GameSetup();
+            
             StartCoroutine(WaitToCreateGrid());
 
             _inputManager.GoBackToMenu += GoBackToLevelSelector;
@@ -111,66 +115,6 @@ namespace Managers
             else
             {
                 GameLogger.Log("Using settings set in the inspector...");
-            }
-
-            var tileSetOverride = GameSetup?
-                .Location
-                .Features.Select(x => x.overrideMapTileSetOverride)
-                .FirstOrDefault(x => x != MapTileSetOverrideType.None);
-
-            if (tileSetOverride != null)
-            {
-                GameLogger.Log($"Using tile set override: {tileSetOverride}");
-                _mapGenerator.Settings.mapTileSetOverrideType = tileSetOverride.Value;
-            }
-            else
-            {
-                GameLogger.Log("Using default tile set override.");
-                _mapGenerator.Settings.mapTileSetOverrideType = MapTileSetOverrideType.Default;
-            }
-
-            if (!string.IsNullOrEmpty(GameSetup?.Location?.OverrideMap))
-            {
-                GameLogger.Log("Overriding map with prefab...");
-                var mapPrefab = Resources.Load<GameObject>($"Maps/{GameSetup.Location.OverrideMap}");
-                var instantiatedMap = _diContainer.InstantiatePrefab(mapPrefab);
-                var mapDescriptor = instantiatedMap.GetComponent<MapOverrideDescriptor>();
-                var room = new RoomData();
-                {
-                    room.Positions = TilemapUtilities.GetAllTilePositions(mapDescriptor.FloorTileMap)
-                        .Select(Vector2Int.RoundToInt).ToList();
-                    room.IsEntrance = true;
-                }
-                _map = new MapData(new Vector2Int(0, 0), new int[0, 0], 1f, new List<RoomData>() { room });
-
-                _creatureManager.ScanForCreatures();
-
-                var shadowGenerator = FindObjectOfType<TilemapShadowGenerator>();
-
-                shadowGenerator.SetFloorTilemap(mapDescriptor.FloorTileMap);
-                shadowGenerator.SetWallTilemap(mapDescriptor.WallTileMap);
-            }
-            else
-            {
-                GameLogger.Log("Generating map...");
-                _mapGenerator.SafeGenerateMap();
-                _map = _mapGenerator.MapData;
-            }
-
-            var musicOverride = GameSetup?.Location?.Features
-                .FirstOrDefault(x => !string.IsNullOrEmpty(x.MusicOverride));
-
-            if (musicOverride != null)
-            {
-                GameLogger.Log($"Using music override: {musicOverride}");
-
-                var audioClip = Resources.Load<AudioClip>($"Music/{musicOverride.MusicOverride}");
-
-                _soundManager.SetSoundtrack(new List<AudioClip>() { audioClip });
-            }
-            else
-            {
-                GameLogger.Log("Using default music.");
             }
 
             yield return new WaitForSeconds(0.1f);
@@ -222,8 +166,8 @@ namespace Managers
 
         private void SpawnUnits(MapData mapData)
         {
-            var startingRoom = _map.GetAllRooms().First(x => x.IsEntrance);
-
+            var startingPosition = new Vector2(0, 0);
+            
             var data = _data;
 
             if (GameSetup.GameData != null)
@@ -235,110 +179,32 @@ namespace Managers
             var playerUnits = new List<Creature>();
 
             _dataManager.DoStuffToDataSoItWorks(data);
-
-            var exitObject = FindObjectOfType<EnterObject>();
-            if (exitObject == null)
+            
+            var spawnPosition = startingPosition;
+            
+            foreach (var creatureData in data.Creatures)
             {
-                GameLogger.LogError("EnterObject not found in the scene. Cannot spawn units.");
-                return;
-            }
+                var creature = _creatureManager.SpawnCreature(playerPrefab, spawnPosition);
 
-            var spawnPosition = startingRoom.Positions
-                .Select(x => (Vector2)x * _map.TileSize)
-                .Where(x => Vector2.Distance(x, exitObject.transform.position) > minDistanceFromExit)
-                .Where(x => Vector2.Distance(x, exitObject.transform.position) < maxDistanceFromExit)
-                .ToArray();
+                creature.Initialize(creatureData);
 
-            if (data is not null)
-            {
-                foreach (var creatureData in data.Creatures)
+                if (!creatureData.Selected)
+                    creature.gameObject.SetActive(false);
+
+                foreach (var item in creature.Inventory.Items)
                 {
-                    var creature = _creatureManager.SpawnCreature(playerPrefab, spawnPosition.RandomElement());
-
-                    creature.Initialize(creatureData);
-
-                    if (!creatureData.Selected)
-                        creature.gameObject.SetActive(false);
-
-                    foreach (var item in creature.Inventory.Items)
-                    {
-                        item.Use(
-                            new ItemUseContext()
-                            {
-                                Creature = creature
-                            }
-                        );
-                    }
-
-                    _skillApplier.ApplySkillToCreature(creature, creatureData);
-
-                    playerUnits.Add(creature);
+                    item.Use(
+                        new ItemUseContext()
+                        {
+                            Creature = creature
+                        }
+                    );
                 }
+
+                playerUnits.Add(creature);
             }
-            else
-            {
-                playerUnits.Add(
-                    _creatureManager.SpawnCreature(
-                        playerPrefab,
-                        spawnPosition.RandomElement() * _map.TileSize
-                    )
-                );
-                playerUnits.Add(
-                    _creatureManager.SpawnCreature(
-                        playerPrefab,
-                        spawnPosition.RandomElement() * _map.TileSize
-                    )
-                );
-                playerUnits.Add(
-                    _creatureManager.SpawnCreature(
-                        playerPrefab,
-                        spawnPosition.RandomElement() * _map.TileSize
-                    )
-                );
-
-                foreach (var unit in playerUnits)
-                {
-                    unit.name = $"{Names.Human.RandomElement()} {Surnames.Human.RandomElement()}";
-
-                    foreach (var item in startingItems)
-                    {
-                        var itemInInventory = unit.Inventory.AddItemFromPrefab(item);
-                        itemInInventory.Use(
-                            new ItemUseContext()
-                            {
-                                Creature = unit
-                            }
-                        );
-                    }
-                }
-            }
-
-            // Only initialize enemy spawner on generated maps
-            if (string.IsNullOrEmpty(GameSetup.Location.OverrideMap)) // check if we use dont use a prefab map
-            {
-                _enemySpawner.Initialize(mapData: mapData, location: GameSetup.Location);
-            }
-
-            var isBossLocation = GameSetup.Location.Type == LocationType.BossNode;
-            var basicConditions = isBossLocation
-                ? bossVictoryConditions
-                : defaultVictoryConditions;
-
-            var allConditions = Resources.LoadAll<VictoryCondition>("VictoryConditions");
-            var featureConditions = GameSetup.Location.Features
-                .SelectMany(feature => feature.VictoryConditionsIds)
-                .Select(id => allConditions.FirstOrDefault(condition => condition.GetIdentifier() == id))
-                .Where(condition => condition != null)
-                .ToArray();
-
-            _victoryConditionManager.SetVictoryAndDefeatConditions(
-                victoryConditions: featureConditions,
-                endGameCondition: basicConditions
-            );
-
-            _victoryConditionManager.Check();
-
-            _cameraController.MoveTo(playerUnits.First().transform.position);
+            
+            _cameraController.MoveTo(spawnPosition);
 
             _victoryConditionManager.VictoryAchieved += () =>
             {

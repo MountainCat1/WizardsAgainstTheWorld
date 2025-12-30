@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using Items;
 using Managers;
-using ScriptableObjects;
 using UnityEngine;
 using Zenject;
 

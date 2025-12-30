@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using JetBrains.Annotations;
-using LevelSelector.Managers;
 using UnityEngine;
 
 [Serializable]
@@ -122,12 +120,6 @@ public class WeightedItem<T>
         this.item = item;
         this.weight = weight;
     }
-}
-
-
-[Serializable]
-public class WeightedLocationFeature : WeightedBag<LocationFeature>
-{
 }
 
 [Serializable]

@@ -3,7 +3,6 @@ using System.Linq;
 using System.Text;
 using Managers;
 using Newtonsoft.Json;
-using Pathfinding.Serialization;
 using TMPro;
 using UnityEngine;
 using Zenject;
@@ -26,11 +25,6 @@ namespace UI
             {
                 text.gameObject.SetActive(!text.gameObject.activeSelf);
             }
-            
-            if(Input.GetKeyDown(KeyCode.F7))
-            {
-                SaveLocationData();
-            }
 
             if (!text.gameObject.activeSelf)
             {
@@ -46,7 +40,7 @@ namespace UI
             StringBuilder sb = new StringBuilder();
             
             sb.AppendLine($"Map Seed: {_mapGenerator.Settings.seed}");
-            sb.AppendLine($"MapSettings Seed: {GameManager.GameSetup.Location.MapSettings.seed}");
+            sb.AppendLine($"MapSettings Seed: {GameManager.GameSetup.MapSeed}");
             // sb.AppendLine($"Region Seed: {_mapGenerator.Settings.regionSeed}");
             sb.AppendLine($"Difficulty: {GameSettings.Instance.Difficulty}");
             sb.AppendLine();
@@ -67,23 +61,6 @@ namespace UI
             {
                 var creatureCount = _creatureManager.GetCreaturesAliveActive().Count(c => c.Team == (Teams)team);
                 sb.AppendLine($"  {team}: {creatureCount}");
-            }
-        }
-
-        private void SaveLocationData()
-        {
-            var path = $"{Application.persistentDataPath}/location_data.json";
-            try
-            {
-                var locationData = GameManager.GameSetup.Location.MapSettings;
-                string json = JsonConvert.SerializeObject(locationData, Formatting.Indented, _serializerSettings);
-                
-                System.IO.File.WriteAllText(path, json);
-                GameLogger.Log($"Location data saved to: {path}");
-            }
-            catch (System.Exception e)
-            {
-                GameLogger.LogError($"Failed to save location data: {e.Message}");
             }
         }
     }

@@ -26,7 +26,7 @@ namespace UI
             _tutorialManager.TutorialChanged += UpdateTutorialText;
             UpdateTutorialText(_tutorialManager.CurrentStep);
             
-            if(GameManager.GameSetup.IsTutorial)
+            if(GameManager.GameSetup?.IsTutorial == true)
                 foreach (var obj in objectsToDisableOnTutorial)
                     obj.SetActive(false);
         }

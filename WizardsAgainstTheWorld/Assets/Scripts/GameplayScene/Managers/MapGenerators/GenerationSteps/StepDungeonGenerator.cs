@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Zenject;
 using Random = System.Random;
 
 namespace Services.MapGenerators.GenerationSteps
@@ -13,9 +12,6 @@ namespace Services.MapGenerators.GenerationSteps
         [SerializeField] private GenerateMapSettings settings = null!;
         [SerializeField] private TilemapShadowGenerator tilemapShadowGenerator;
         
-        [Inject] private IRoomDecorator _roomDecorator = null!;
-
-
         public event Action MapGenerated;
         public event Action MapGeneratedLate;
 
@@ -50,8 +46,6 @@ namespace Services.MapGenerators.GenerationSteps
             {
                 step.Generate(data, settings, random);
             }
-
-            _roomDecorator.DecorateRooms(data.Rooms, settings.tileSize);
 
             MapData = CreateMapData(data);
             MapGenerated?.Invoke();
@@ -88,8 +82,6 @@ namespace Services.MapGenerators.GenerationSteps
             {
                 generationStep.Clear();
             }
-            
-            _roomDecorator.RemoveProps();
         }
         
         private IEnumerator DelayedInvoke()

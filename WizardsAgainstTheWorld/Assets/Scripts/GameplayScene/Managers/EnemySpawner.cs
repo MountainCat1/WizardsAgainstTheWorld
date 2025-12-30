@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using CreatureControllers;
 using Data;
-using Interactables;
 using Managers.Helpers;
 using Services.MapGenerators;
 using UnityEngine;
@@ -15,7 +14,7 @@ namespace Managers
 {
     public interface IEnemySpawner
     {
-        void Initialize(MapData mapData, LocationData location);
+        void Initialize(MapData mapData);
         public float GatheredMana { get; }
         public float ManaGain { get; }
     }
@@ -38,7 +37,6 @@ namespace Managers
         [Inject] private ICreatureManager _creatureManager;
         [Inject] private IDataResolver _dataResolver;
 
-        private LocationData _locationData;
         private MapData _mapData;
 
         [field: ReadOnlyInInspector]
@@ -63,137 +61,19 @@ namespace Managers
             }
         }
 
-        public void Initialize(MapData mapData, LocationData location)
+        public void Initialize(MapData mapData)
         {
             var positionSelector = new SpawnPositionSelector(mapData);
 
-            _locationData = location;
-            this._mapData = mapData;
-
-            SpawnRoomBasedEnemies(positionSelector);
-
-            SpawnOneTimeEnemies(positionSelector);
-
-            SpawnInitialEnemies(positionSelector, _locationData.InitialEnemySpawnMana);
-
+            var creaturesToSpawn = new List<CreatureData>(); // TODO: need to implement this!
+            
             StartCoroutine(
-                EnemySpawningCoroutine(
-                    _locationData.Features
-                        .SelectMany(x => x.Enemies)
-                        .Select(x => x.CreatureData)
-                        .ToList(),
+                EnemySpawningCoroutine(creaturesToSpawn,
                     positionSelector: positionSelector
                 )
             );
             
             _spawnPositionSelector = positionSelector;
-        }
-
-        private void SpawnOneTimeEnemies(SpawnPositionSelector spawnPositionSelector)
-        {
-            var validRooms = _mapData.GetAllRooms()
-                .Where(x => x.Occupied == false && x.IsEntrance == false);
-
-            var validRoomsPositions = validRooms
-                .SelectMany(x => x.Positions)
-                .Where(pos => _mapData.GetTileType(pos) == TileType.Floor)
-                .ToList();
-
-            foreach (var enemy in _locationData.Features.SelectMany(x => x.OneTimeEnemies))
-            {
-                var centerPosition = spawnPositionSelector.TakeAnyOff(validRoomsPositions);
-                if (centerPosition == null)
-                {
-                    GameLogger.LogWarning("No valid position found for one-time enemy spawn");
-                    continue;
-                }
-                
-                var positionsInProximity = validRoomsPositions
-                    .Where(pos => Vector2.Distance(pos, centerPosition.Value) < oneTimeEnemyMaxSpread).ToList();
-
-                for (int i = 0; i < enemy.SpawnCount; i++)
-                {
-                    var position = spawnPositionSelector.TakeAnyOff(positionsInProximity);
-                    
-                    if (position == null)
-                    {
-                        GameLogger.LogWarning("No valid position found for one-time enemy spawn");
-                        break;
-                    }
-                    
-                    SpawnEnemiesAtPosition(
-                        enemy: enemy.CreatureData,
-                        position: position.Value,
-                        count: 1,
-                        memorizeTarget: false
-                    );
-                }
-            }
-        }
-
-        private void SpawnRoomBasedEnemies(SpawnPositionSelector spawnPositionSelector)
-        {
-            foreach (var room in _mapData.GetAllRooms().Where(r => r.Enemies?.Any() == true))
-            {
-                if (room.Occupied)
-                    continue;
-
-                room.Occupied = true;
-                foreach (var enemy in room.Enemies)
-                {
-                    var position = spawnPositionSelector.TakeRandomRoomPosition(room);
-                    if (position != null)
-                    {
-                        var offset = new Vector2(_mapData.TileSize / 2, _mapData.TileSize / 2);
-                        _creatureManager.SpawnCreature(enemy, position.Value + offset);
-                    }
-                }
-            }
-        }
-
-
-        public void SpawnInitialEnemies(SpawnPositionSelector spawnPositionSelector, float initialMana)
-        {
-            var exitPosition = FindObjectOfType<ExitObject>().transform.position;
-
-            var safePoints = new List<Vector2>();
-            safePoints.Add(exitPosition);
-
-            if (_mapData.GetAllRooms().Any(x => x.IsBoss))
-            {
-                var bossRoomCenter = _mapData.GetAllRooms()
-                    .Single(x => x.IsBoss)
-                    .Positions.GetAverageCenter();
-
-                safePoints.Add(bossRoomCenter);
-            }
-
-            var initialEnemiesPositions = _creatureManager
-                .GetCreaturesAliveActive()
-                .Select(c => (Vector2)c.transform.position);
-
-            safePoints.AddRange(initialEnemiesPositions);
-
-            float remainingMana = initialMana;
-
-            while (true)
-            {
-                var enemy = GetRandomInitialEnemyFromLocation();
-                float manaCost = enemy.ManaCost;
-                if (manaCost > remainingMana)
-                    break;
-
-                remainingMana -= manaCost;
-                var position = spawnPositionSelector.TakeExcludeNearPoints(safePoints, minDistanceFromSafePoints);
-
-                if (position == null)
-                {
-                    GameLogger.LogWarning("No suitable position found for initial enemy spawn");
-                    break;
-                }
-
-                SpawnEnemiesAtPosition(enemy, position.Value, 1, memorizeTarget: false);
-            }
         }
 
         private IEnumerator EnemySpawningCoroutine(ICollection<CreatureData> enemies, SpawnPositionSelector positionSelector)
@@ -220,8 +100,12 @@ namespace Managers
             {
                 // Update mana gain based on time and difficulty
                 float timeElapsed = Time.time - startTime;
-                float manaPerSecond = _locationData.BaseEnemySpawnManaPerSecond +
-                                      _locationData.EnemySpawnManaGrowthRate * timeElapsed;
+                
+                // TODO: implement this with some intent
+                float baseEnemySpawnManaPerSecond = 5f; // Example base value
+                float enemySpawnManaGrowthRate = 0.5f; // Example growth rate
+                float manaPerSecond = baseEnemySpawnManaPerSecond +
+                                       enemySpawnManaGrowthRate * timeElapsed;
 
                 ManaGain = manaPerSecond;
                 GatheredMana += manaPerSecond * fixedDeltaTime;
@@ -263,14 +147,6 @@ namespace Managers
             }
         }
 
-
-        private CreatureData GetRandomInitialEnemyFromLocation()
-        {
-            return _locationData.Features
-                .SelectMany(x => x.Enemies)
-                .Select(x => x.CreatureData)
-                .RandomElement();
-        }
 
         private void SpawnEnemiesAtPosition(CreatureData enemy, Vector2Int position, int count,
             bool memorizeTarget = true)

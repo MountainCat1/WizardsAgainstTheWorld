@@ -4,7 +4,6 @@ using System.Linq;
 using Data;
 using Services.MapGenerators;
 using UnityEngine;
-using Utilities;
 
 // ReSharper disable InconsistentNaming
 
@@ -13,7 +12,6 @@ public class GameData
 {
     public List<CreatureData> Creatures = new();
     public List<CrewUpgradeData> Upgrades = new();
-    public RegionData Region = new();
     public string CurrentLocationId = string.Empty;
     public InventoryData Inventory = new();
     public InGameResources Resources = new();

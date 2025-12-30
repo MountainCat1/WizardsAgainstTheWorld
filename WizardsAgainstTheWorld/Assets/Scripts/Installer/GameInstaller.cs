@@ -1,5 +1,4 @@
 using Data;
-using LevelSelector.Managers;
 using Managers;
 using Managers.Visual;
 using Services.MapGenerators.GenerationSteps;
@@ -37,7 +36,6 @@ public class GameInstaller : MonoInstaller<GameInstaller>
         Container.Bind<ICreatureManager>().To<CreatureManager>().FromComponentsInHierarchy().AsSingle();
         Container.Bind<ICreatureEventProducer>().To<CreatureEventProducer>().FromNew().AsSingle().NonLazy();
         Container.Bind<ILootManager>().To<LootManager>().FromComponentsInHierarchy().AsSingle();
-        Container.Bind<IRoomDecorator>().To<RoomDecorator>().FromComponentsInHierarchy().AsSingle();
         Container.Bind<IMapGenerator>().To<StepDungeonGenerator>().FromComponentsInHierarchy().AsSingle();
         Container.Bind<IAstarManager>().To<AstarManager>().FromComponentsInHierarchy().AsSingle();
         Container.Bind<ICameraController>().To<CameraController>().FromComponentsInHierarchy().AsSingle();
@@ -49,8 +47,6 @@ public class GameInstaller : MonoInstaller<GameInstaller>
         Container.Bind<ISoundManager>().To<SoundManager>().FromComponentsInHierarchy().AsSingle();
         Container.Bind<ITutorialManager>().To<TutorialManager>().FromComponentsInHierarchy().AsSingle();
         Container.Bind<IStatusEffectManager>().To<StatusEffectManager>().FromComponentsInHierarchy().AsSingle();
-        Container.Bind<ICrewGenerator>().To<CrewGenerator>().FromComponentsInHierarchy().AsSingle();
-        Container.Bind<ISkillApplier>().To<SkillApplier>().FromComponentsInHierarchy().AsSingle();
         Container.Bind<IWeaponManager>().To<WeaponManager>().FromComponentsInHierarchy().AsSingle();
         Container.Bind<IInGamePauseManager>().To<InGamePauseManager>().FromComponentsInHierarchy().AsSingle();
 

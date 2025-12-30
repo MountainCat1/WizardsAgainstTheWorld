@@ -16,7 +16,6 @@ namespace UI
         [Inject] private IUIManager _uiManager;
 
         [SerializeField] private SceneReference tutorialScene;
-        [SerializeField] private TutorialStartup tutorialStartup;
 
         [SerializeField] private Button loadGameButton;
         
@@ -49,7 +48,7 @@ namespace UI
             if (!_dataManager.HasData())
             {
                 _dataManager.DeleteData();
-                _sceneLoader.LoadScene(Scenes.LevelSelector);
+                _sceneLoader.LoadScene(Scenes.GameplayScene);
                 return;
             }
 
@@ -59,7 +58,7 @@ namespace UI
                 onYes: () =>
                 {
                     _dataManager.DeleteData();
-                    _sceneLoader.LoadScene(Scenes.LevelSelector);
+                    _sceneLoader.LoadScene(Scenes.GameplayScene);
                 },
                 onNo: () => { }
             );
@@ -77,11 +76,6 @@ namespace UI
 #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
 #endif
-        }
-
-        public void LaunchTutorial()
-        {
-            tutorialStartup.LaunchTutorial();
         }
     }
 }

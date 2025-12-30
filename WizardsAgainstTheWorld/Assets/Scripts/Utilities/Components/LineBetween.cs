@@ -2,8 +2,6 @@ namespace Utilities.Components
 {
     using UnityEngine;
 
-    using UnityEngine;
-
     [RequireComponent(typeof(LineRenderer))]
     public class LineBetween : MonoBehaviour
     {

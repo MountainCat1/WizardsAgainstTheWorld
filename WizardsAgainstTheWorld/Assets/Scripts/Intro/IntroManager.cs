@@ -11,7 +11,7 @@ public class IntroManager : MonoBehaviour
     [SerializeField] private KeyCode nextSlideKey = KeyCode.Space;
 
     [SerializeField] private SceneReference secondScene;
-    [SerializeField] private TutorialStartup tutorialStartup;
+    private readonly TutorialStartup _tutorialStartup = new();
     
     [Inject] private ISceneLoader _sceneLoader;
     
@@ -62,11 +62,19 @@ public class IntroManager : MonoBehaviour
             
             if (GameSettings.Instance.LoadGameTutorial)
             {
-                tutorialStartup.LaunchTutorial();
+                _tutorialStartup.LaunchTutorial();
                 return;
             }
             
             _sceneLoader.LoadScene(secondScene.ScenePath);
         }
+    }
+}
+
+public class TutorialStartup
+{
+    public void LaunchTutorial()
+    {
+        // TODO: Implement tutorial launch logic here 
     }
 }
