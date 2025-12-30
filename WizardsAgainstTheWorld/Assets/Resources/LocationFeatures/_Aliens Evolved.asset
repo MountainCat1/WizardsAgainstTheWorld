@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a2334d315b84a53aaf515d491008a8c, type: 3}
+  m_Name: _Aliens Evolved
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: AliensEvolved
+  description: We detect evolved non-human activity
+  enemies:
+  - Creature: {fileID: 8620425100322646659, guid: 0ca65a409582d9446950d7d4bddbaabd, type: 3}
+  - Creature: {fileID: 8620425100322646659, guid: 271431130b7a8084eae4da5db154e2e5, type: 3}
+  - Creature: {fileID: 5121489632950506426, guid: 485dac8da51674a4cafd5cf3ea04a94b, type: 3}
+  oneTimeEnemies:
+  - Creature: {fileID: 8620425100322646659, guid: d503d49d1e1a689458024c8ac3056709, type: 3}
+    SpawnCount: 10
+  roomBlueprints: []
+  genericRoomBlueprints: []
+  mapOverride: {fileID: 0}
+  marker: 
+  blockExit: 0
+  victoryConditions: []
+  overrideMapTileSet: 0
+  fullLocationOverride: 0
+  musicOverride: {fileID: 0}

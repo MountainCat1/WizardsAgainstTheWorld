@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f327af661d9bc94abe3f843bc3401fe, type: 3}
+  m_Name: HOLK room
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: HOLK room
+  <Props>k__BackingField:
+  - prefab: {fileID: 7504725883501808771, guid: 8c3b345b39130f84ca35a70a15f6146c, type: 3}
+    position: 3
+    offset: {x: 0, y: 0}
+    count: 1
+    required: 1
+  - prefab: {fileID: 7375656772705244172, guid: 4d1da47dd6767eb4d80c7de2d4fb49ee, type: 3}
+    position: 3
+    offset: {x: 0, y: 0}
+    count: 3
+    required: 0
+  - prefab: {fileID: 6304498614303271137, guid: 59e52cc4d2c554e419ebe93ed18638d3, type: 3}
+    position: 3
+    offset: {x: 0, y: 0}
+    count: 3
+    required: 0
+  <StartingRoom>k__BackingField: 0
+  <BossRoom>k__BackingField: 1
+  <FarAwayRoom>k__BackingField: 1
+  <Enemies>k__BackingField:
+  - enemy: {fileID: 8620425100322646659, guid: 6eaf436924272e34d90e32490b41b19d, type: 3}
+    minAmount: 1
+    maxAmount: 1

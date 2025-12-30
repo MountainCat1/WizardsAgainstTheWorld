@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 160f6ec4d3f94ba480812f61887255d2, type: 3}
+  m_Name: 2_Quarantine Zone
+  m_EditorClassIdentifier: 
+  typeName: Quarantine Zone
+  minDifficulty: 3
+  maxDifficulty: 3
+  typeDescription: Forbidden sector. Untapped resources, but the 'Grey Blight' transformed
+    the population into aggressive, mutated husks. Extreme hazards abound.
+  originLocationFeatures:
+    items:
+    - item: {fileID: 11400000, guid: eb9151ffc5af0734db15126de721b1d0, type: 2}
+      weight: 1
+  endLocationFeatures:
+    items:
+    - item: {fileID: 11400000, guid: d45e149d649d5a94ab68cf15b35522b6, type: 2}
+      weight: 1
+  weightedLocationFeatures:
+    items:
+    - item: {fileID: 11400000, guid: 3df27d19bf5e60542923584fcfc4bfa2, type: 2}
+      weight: 0.3
+    - item: {fileID: 11400000, guid: f4132d9bfabab074a88da52ad808f0ea, type: 2}
+      weight: 1
+    - item: {fileID: 11400000, guid: 5735d20fc6c44f44983c69594bd1e8be, type: 2}
+      weight: 0.3
+  weightedSecondaryLocationFeatures:
+    items:
+    - item: {fileID: 11400000, guid: b83a3908a9e95474abf3120d09b9b896, type: 2}
+      weight: 1
+    - item: {fileID: 11400000, guid: 5d38bbf8b38b28d479dc544a35dcc03d, type: 2}
+      weight: 0.5
+    - item: {fileID: 11400000, guid: 5a710d4dce8ad7b4a8b17cece9c17f4f, type: 2}
+      weight: 0.6
+    - item: {fileID: 11400000, guid: a0909348ec61c05408cfd0d400597ff5, type: 2}
+      weight: 0.2
+    - item: {fileID: 11400000, guid: 76fe599996a4d0247be0df435178a3f1, type: 2}
+      weight: 0.1
+    - item: {fileID: 11400000, guid: da76a559c2ace7148a0abbcbf3dfe1bc, type: 2}
+      weight: 0.2
+    - item: {fileID: 11400000, guid: 21fc6b63ef86e154b9be482902c99187, type: 2}
+      weight: 0.1
+  maxSecondaryFeatures: 4
+  minSecondaryFeatures: 2
+  maxShops: 3
+  minShops: 1
+  minEventNodes: 1
+  maxEventNodes: 3
+  minLocations: 9
+  maxLocations: 12

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37804311037647599ec1e3ffa8d10107, type: 3}
+  m_Name: Crystal_Destroyed
+  m_EditorClassIdentifier: 
+  <Sentences>k__BackingField:
+  - <Type>k__BackingField: 1
+    <Text>k__BackingField: You read the scripture...
+  - <Type>k__BackingField: 1
+    <Text>k__BackingField: The magical scroll shines in the darkness...
+  - <Type>k__BackingField: 1
+    <Text>k__BackingField: You can feel it being infused with the power of light...
+  - <Type>k__BackingField: 1
+    <Text>k__BackingField: And then...
+  - <Type>k__BackingField: 1
+    <Text>k__BackingField: It shatters...
+  - <Type>k__BackingField: 1
+    <Text>k__BackingField: ...
+  <Signals>k__BackingField:
+  - <Signal>k__BackingField: 0
+    <SentenceIndex>k__BackingField: 4
+  - <Signal>k__BackingField: 1
+    <SentenceIndex>k__BackingField: 5

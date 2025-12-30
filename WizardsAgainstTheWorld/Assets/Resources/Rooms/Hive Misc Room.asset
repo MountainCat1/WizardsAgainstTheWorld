@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f327af661d9bc94abe3f843bc3401fe, type: 3}
+  m_Name: Hive Misc Room
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Hive Misc Room
+  <Props>k__BackingField:
+  - prefab: {fileID: 6785436564201932899, guid: f37b3311ed7461c42a7e0a6ab5afee4c, type: 3}
+    position: 0
+    offset: {x: 0, y: 0}
+    count: 8
+    required: 0
+  <StartingRoom>k__BackingField: 0
+  <BossRoom>k__BackingField: 0
+  <FarAwayRoom>k__BackingField: 0
+  <Enemies>k__BackingField:
+  - enemy: {fileID: 8620425100322646659, guid: d503d49d1e1a689458024c8ac3056709, type: 3}
+    minAmount: 0
+    maxAmount: 3
+  - enemy: {fileID: 5121489632950506426, guid: 485dac8da51674a4cafd5cf3ea04a94b, type: 3}
+    minAmount: 3
+    maxAmount: 5

@@ -1,0 +1,39 @@
+Key,Value
+# Out of Fuel Event
+OutOfFuel.Title,"Plus d'essence"
+OutOfFuel.Description,"Votre vaissau est à cours d'essence et ne peu plus avancer."
+OutOfFuel.Option1,"Le vide..."
+
+# Desperate Purchase of Fuel Events
+DesperateBuyFuelForMoney.Title,"Échoué dans l'espace"
+DesperateBuyFuelForMoney.Description,"Sans la capacité d'alimenter les moteurs du vaissau nous sommes coincés.Tandis que vous attendais un vaissau suspect approche, ils vous offrent de vendre de l'essence. Ils offrent de l'essence a grand prix, mais vous êtes déséspérés."
+DesperateBuyFuelForMoney.Option1,"Payez 50 credits pour de l'essence"
+
+DesperateBuyFuelForJuice.Title,"Échoué dans l'espace"
+DesperateBuyFuelForJuice.Description,"Sans la capacité d'alimenter les moteurs du vaissau nous sommes coincés.Tandis que vous attendais un vaissau suspect approche, ils vous offrent de vendre de l'essence. Ils offrent de l'essence a grand prix, mais vous êtes déséspérés."
+DesperateBuyFuelForJuice.Option1,"Échanger 50 jus pour de l'essence"
+
+DesperateBuyFuelMoneyOrJuice.Title,"Échoué dans l'espace"
+DesperateBuyFuelMoneyOrJuice.Description,"Sans la capacité d'alimenter les moteurs du vaissau nous sommes coincés.Tandis que vous attendais un vaissau suspect approche, ils vous offrent de vendre de l'essence. Ils offrent de l'essence a grand prix, mais vous êtes déséspérés."
+DesperateBuyFuelMoneyOrJuice.Option1,"Payez 50 credits pour de l'essence"
+DesperateBuyFuelMoneyOrJuice.Option2,"Échanger 50 jus pour de l'essence"
+
+# Federation Takeover Event
+FederationTakeover.Title,"Prise de contrôle de la Fédération"
+FederationTakeover.Description,"La Fédération s'est emparer de votre vaisseau.Votre voyage se termine ici."
+FederationTakeover.Option1,"Se rendre"
+
+# All Dead Event
+AllDead.Title,"Toute l'équipe perdu"
+AllDead.Description,"Toute votre équipage est mort. Il n'y a personne pour continuer."
+AllDead.Option1,"Accepter votre destin"
+
+# Trader Encounter
+TraderEncounter.Title,"Marchant Suspect"
+TraderEncounter.Description,"Nous avons rencontrer un machant qui est d'accord pour nous vendres des biens. Ils ont l'air de vouloir échanger avec nous, et se fichent de notre reltation avec la Fédération."
+TraderEncounter.Option1,"Regardons se qu'ils ont à offrir..."
+
+# Boss Encounter
+BossEncounter.Title,"Danger qui bloque le chemin"
+BossEncounter.Description,"Nous rencontrons des signatures d'une créature puissante dans cette station. Nous devons rester prudent."
+BossEncounter.Option1,"Nous sommes prêts..."

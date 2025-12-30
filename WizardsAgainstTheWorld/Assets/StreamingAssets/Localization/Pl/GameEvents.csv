@@ -1,0 +1,14 @@
+Key,Value
+
+# Effect Labels
+Effects.AddJuice,"Zdobywasz <color=green>{0}u</color> soku"
+Effects.LoseJuice,"Tracisz <color=red>{0}u</color> soku"
+Effects.AddMoney,"Zdobywasz <color=green>{0}₵</color>"
+Effects.LoseMoney,"Tracisz <color=red>{0}₵</color>"
+Effects.AddFuel,"Zdobywasz <color=green>{0}u</color> paliwa"
+Effects.LoseFuel,"Tracisz <color=red>{0}u</color> paliwa"
+Effects.Lose,"Tracisz"
+Effects.AddExperienceToAllCrew,"Zdobywasz <color=green>{0}</color> doświadczenia dla całej załogi"
+Effects.LoseExperienceFromAllCrew,"Tracisz <color=red>{0}</color> doświadczenia dla całej załogi"
+
+# Tooltips

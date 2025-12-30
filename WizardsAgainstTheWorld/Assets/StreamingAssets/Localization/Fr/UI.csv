@@ -1,0 +1,243 @@
+Key,Value
+
+Stat.Speed,"Vitesse"
+Stat.Damage,"Dégats"
+Stat.AttackSpeed,"Vitesse d'Attaque"
+Stat.AccuracyFlat,"Précision"
+Stat.ArmorFlat,"Reduction des Dégats"
+Stat.ArmorPercentage,"Armure"
+Stat.MovementSpeed,"Vitesse des Mouvements"
+Stat.Unknown,"Stat Inconnue"
+
+StatChange.ArmorFlat,"Reduction des Dégats: {0}"
+StatChange.ArmorPercentage,"Armure: {0}"
+StatChange.MovementSpeed,"Vitesse des Mouvements: {0}"
+StatChange.Speed,"Vitesse: {0}"
+StatChange.Damage,"Dégats: {0}"
+StatChange.AttackSpeed,"Vitesse d'Attaque: {0}"
+StatChange.AccuracyFlat,"Précision: {0}"
+StatChange.Unknown,"Stat Inconnue: {0}"
+
+Effects.RegenerationEffect,"Régénération: {0} par seconde"
+Effects.ProjectileStatusEffect,"Effet de Projectile: {0}"
+
+StatusEffects.Burning.Name,"Brulure"
+
+Skills.Accuracy.Name,"Précision"
+Skills.Agility.Name,"Agilité"
+Skills.Constitution.Name,"Constitution"
+Skills.HeavyConstitution.Name,"Constitution Lourde"
+Skills.Light.Name,"Léger"
+Skills.TriggerHappy.Name,"Gâchette Facile"
+
+
+# Tooltip messages
+LocationInteractions.AlreadyVisitedTooltip,"Le lieu a déja été visité."
+LocationInteractions.NoCrewSelectedTooltip,"Aucun membre de l'équipage séléctioné."
+LocationInteractions.NotEnoughFuel,"Pas assèz d'essence pour voyager."
+LocationInteractions.BlockedTooltip,"Les ennemis bloquent le chemin."
+LocationInteractions.NoFuelTooltip,"Pas assèz d'essence pour voyager."
+LocationInteractions.DisengagementCostTooltip,"Pas assez d'essence pour désengager."
+
+Resources.Fuel.Tooltip,"<b>Essence</b> est utilisé pour voyager entre les lieux. Cela peut-être acheter dans les magasins."
+Resources.Juice.Tooltip,"<b>Jus</b> est utilisé pour garder votre équipage en vie lorsque vous explorez les stations. Cela peut-être acheter dans les magasins."
+Resources.Money.Tooltip,"<b>Credits</b> est utilisé pour acheter des objets dans les magasins. Cela peux s'obtenir en trouvant des ressources dans la station ou par vendre des objets dans les magasins."
+
+# Button labels
+LocationInteractions.Embark,"Embarquer"
+LocationInteractions.Dock,"Accoster"
+LocationInteractions.Disengage,"Désengagement Tactique (3 Essence)"
+LocationInteractions.Inventory,"Inventaire"
+LocationInteractions.Upgrade,"Améliorations"
+LocationInteractions.Trade,"Échange"
+LocationInteractions.Jump,"<b>Saut</b>"
+# Shop UI
+LocationInteractions.Shop.BuyFuel,"Acheter Essence"
+LocationInteractions.Shop.FuelPrice,"{0}$/1u"
+LocationInteractions.Shop.BuyJuice,"Acheter Jus"
+LocationInteractions.Shop.JuicePrice,"{0}$/10u"
+
+Trader.Breadator.Name,"Breadator"
+Trader.Breadator.Description,"Chef de la révolution des robots de 3042, Breadator est un marchant sans-pitié qui offre des modules hautes-technologies pour les vaissaux et leurs équipages. La rumeur est que après s'être conecté a un morceau de pain un simple robot de maintenance, a pris conscience et une soif de pouvoir. Ses motivations son conduits par la haine envers ceux qui mangent ses conjoins."
+Trader.MadamEva.Name,"Madame Eva"
+Trader.MadamEva.Description,"Une fois supposé d'être d'une descente noble, Madame Eva échanger la soie et l'agrent pour des l'ombres et le subterfuge. Maintenant est un fourniseur haute-gamme pour tous se qui n'est pas pointer et tirer — Kits de soin, plate-formes de piratage, équipement de discrétion, et de la technologie que la majorité des gens ne vont même pas reconaître. Si cela prends de la finesse, de la finesse est se qu'elle vends."
+Trader.Meinhass.Name,"Meinhass"
+Trader.Meinhass.Description,"Un marchant mysterieux qui trafique exclusivement dans les objets manufacturé pour la déstruction. Son stock est tout autant dangereux que ses motivations: De répendre la destruction, aussi simple que ça. Des murmures dans les coins plus obscure de la galaxy affirement que son infamie a commancer par un act brutal — Exploser sa propre mère afin de se faire un nom pour lui même."
+Trader.Treatie.Name,"Treatie"
+Trader.Treatie.Description,"Un marchant d'arme sans-pitié avec une seul passion: livré la mort à haute vélocité. Si cela tire des balles, cartouches, ou du plomb — Specialment la sorte qui perce les armures — Treatie est votre homme. La pité n'est pas dans son inventaire."
+
+# Crew List UI
+CrewList.NoWeaponSelected,"AUCUNE ARME"
+CrewList.Level,"Niveau: {0}"
+
+# Location Details UI
+
+LocationDetails.NoSelection,"Aucun lieu sélectionné"
+LocationDetails.SelectToView,"Sélectionner un lieu pour voir les détails"
+
+LocationFeatures.Empty,"Espace Vide"
+LocationFeatures.EventNode,"<color=purple>Nous détéctions un signal de détresse dans ce lieu.</color>"
+LocationFeatures.Movement,"Mouvement détecté : {0}"
+LocationFeatures.ShopPresent,"<color=yellow>Il y a un vaissau marchant qui orbitent cette station.</color>"
+LocationFeatures.EndNode,"<color=green>Cette endroit semblent être connecter avec une autre région grace à un conecteur d'espace.</color>"
+
+LocationFeatures.Armory,"Le plan de la station révèle la présence d'une armurie."
+LocationFeatures.BanditHideout,"<color=red>Repaire de Bandits se situe ici</color>"
+LocationFeatures.Bloodspawn,"<color=red>Engence de Sang DÉTECTÉE</color>"
+LocationFeatures.CryogenicLab,"<color=#00ffff>Une signature thermique émane de se secteur, cela indique la possiblilté d'un labo cryogénique.</color>"
+LocationFeatures.HOLKLabolatory,"<color=red>Laboratoire secret appartenant à H.O.L.K. corporation à été détecté.</color>"
+LocationFeatures.Killerbot,"<color=red>ROBOTUEUR DÉTECTÉ</color>"
+LocationFeatures.Medbay,"Cette section est désigner comme la baie medicale de la station."
+LocationFeatures.Megatron,"<color=red>MEGATRON DÉTECTÉ</color>"
+LocationFeatures.Office,"Une section de cette station est désigner comme un bureau."
+LocationFeatures.SpecOps,"Nous avons intercepter des communications d'une fréquance radio encrypter."
+LocationFeatures.Storage,"Une portion de cette station désigner pour le stockage."
+LocationFeatures.Swarmqueen,"<color=red>Reine d'essaim DÉTECTÉE</color>"
+LocationFeatures.Hive,"<color=red>La Ruche DÉTECTÉ</color>"
+LocationFeatures.TurretDefenseSystem,"Cette station étais équiper avec des un système de défence à tourelles."
+LocationFeatures.HabitatStation,"Ceci était une station habitable."
+LocationFeatures.AliensEvolved,"Nous détectons une activité évoluée non-humaine"
+LocationFeatures.Aliens,"Nous détectons une activité non-humaine"
+LocationFeatures.FMS,"Ceci est le lieu de la station principale de la Federation."
+LocationFeatures.FederationSoldiers1,"<color=red>Les bottes de la Federation sont déjà sur le sol, ils dépouillent l'endroit pour quoi que ce soit de valable.</color>"
+LocationFeatures.FederationSoldiers2,"<color=red>Les bottes de la Federation sont déjà sur le sol, ils dépouillent l'endroit pour quoi que ce soit de valable.</color>"
+LocationFeatures.FederationSoldiers3,"<color=red>Les bottes de la Federation sont déjà sur le sol, ils dépouillent l'endroit pour quoi que ce soit de valable.</color>"
+LocationFeatures.Zombies,"Nous pouvons entendre des grognements étranges dans les comunications de cette station..."
+LocationFeatures.ZombiesFast,"Nous pouvons entendre des grognements aggressifs étranges dans les comunications de cette station..."
+LocationFeatures.CultistsShrine,"*TODO* Chants can be heard from the station's intercom."
+
+# UI Labels
+Labels.Skills,"Compétences"
+Labels.ShipInventory,"Inventaire du Vaissau"
+Labels.Upgrader,"* Améliorateur *"
+Labels.Shop,"$ Magasin $"
+Labels.BuyFuel,"Acheter Essence {0}$"
+Labels.BuyJuice,"Acheter Jus {0}$"
+Labels.ChooseNextRegion,"Séléctione la prochaine région"
+Labels.FederationBlockadeLabel,"Barrage de la Federation Détecté"
+Labels.CrewUpgrades,"Améliorations"
+# Main Menu
+MainMenu.Buttons.NewGame,"Nouvelle Partie"
+MainMenu.Buttons.LoadGame,"Charger une partie"
+MainMenu.Buttons.Tutorial,"Tutoriel"
+MainMenu.Buttons.Help,"Aide"
+MainMenu.Buttons.Settings,"Options"
+MainMenu.Buttons.Quit,"Quiter"
+MainMenu.Buttons.QuitToMenu,"Quiter au Menu"
+MainMenu.Buttons.Credits,"*TODO* Credits"
+
+MainMenu.Dialogue.NewGameConfirm,"*TODO* Are you sure you want to start a new game?
+Current progress will be lost."
+
+## Credits
+MainMenu.Credits.Title,"*TODO* Credits & Thanks"
+MainMenu.Credits.Content,"*TODO* <size=130%><b>Design, Development & Execution</b></size>
+<size=110%>Tomasz Banaś</size>
+
+<size=130%><b>Support, Testing, Feedback, Russian and Toki Pona localization</b></size>
+<size=110%>Bread92</size>
+
+<size=130%><b>Support, Testing, Feedback</b></size>
+<size=110%>Scoops</size>
+
+<size=130%><b>Support, Testing</b></size>
+<size=110%>Treatie</size>
+
+<size=130%><b>French Localization</b></size>
+<size=110%>Lightkiller</size>
+
+<size=80%><b>Royality Free Music</b></size>
+<size=60%>Made by Kevin Macleod</size>
+<size=50%>For detailed credits check crdts.txt in game directory</size>"
+
+## Help View
+MainMenu.Help.Title,"Aide"
+MainMenu.Help.Sections.Intro.Title,"Intro"
+MainMenu.Help.Sections.Intro.Content,"Salvagers  est un jeu dont le but est d'exploré les stations abandonnées, et les pillées pour des gains.
+
+ Toutes les stations abandonnées sont ainsi pour une raison, donc soyez prudent.
+
+Ne prenez pas trop de risques, prennez tous se que vous avais besoin puis partez."
+MainMenu.Help.Sections.Rules.Title,"Règles"
+MainMenu.Help.Sections.Rules.Content,"Vous pouvais explorez chaque stations qu'une SEULE fois.
+
+La phase d'exploration se termine lorsque tous l'équipage s'échapes ou meures.
+
+En haut de l'écran vous pouvais voir le <b>Jus</b> restant, gardez un oeil dessus, sinon vos personages vont mourir de radiations."
+MainMenu.Help.Sections.Controls.Title,"Commandes"
+MainMenu.Help.Sections.Controls.Content,"F4 – Retourner au menu (DEBUG)
+Z/Q/S/D – Déplacer la caméra
+Click droit – déplacement/interactions
+Click gauche – Click/trainé pour sélectioné
+Mollette de souris – Zoomer/Dézoomer 
+TAB – Activer/Désactiver le temps ralenti (Augmente la consomation de jus)
+I / F – Activer/Désactiver inventaire
+A – Tourné parmis les troupes séléctionées
+R - Sélectioner tous les coéquipier
+1–9 – Sélectioner un coéquipier spécifique
+Spacebar – Stoper les movements
+E – Concentrer la caméra sur le coéquipier séléctioné
+A – Tourné parmis les compétances du coéquipier séléctioné
+<i>N'oubliez pas d'équiper votre équipe avec des armes avant d'attérir dans la station!</i>"
+
+## Settings view
+MainMenu.Settings.Title,"Options"
+MainMenu.Settings.Sections.General.Title,"Général"
+MainMenu.Settings.Sections.General.Difficulty,"Difficulté"
+MainMenu.Settings.Sections.General.Language,"Language"
+MainMenu.Settings.Sections.General.FallbackToDefaultLanguage,"Retourner à la langue par défaut"
+MainMenu.Settings.Sections.General.UsePixelArtFont,"*TODO* Pixel Art Font"
+MainMenu.Settings.Sections.General.DisplayTutorial,"Afficher les Tutoriels"
+MainMenu.Settings.Sections.General.ShowHitChances,"*TODO* Show Hit Chances"
+MainMenu.Settings.Sections.General.FriendlyFire,"*TODO* Friendly Fire"
+MainMenu.Settings.Sections.Graphics.Title,"Graphiques"
+MainMenu.Settings.Sections.Graphics.PixelPerfect,"PixelPerfect"
+MainMenu.Settings.Sections.Graphics.CameraShake,"Tremblement de la Caméra"
+MainMenu.Settings.Sections.Graphics.CoolThing,"Truc Sympa"
+MainMenu.Settings.Sections.Audio.Title,"Audio"
+MainMenu.Settings.Sections.Audio.MasterVolume,"Général"
+MainMenu.Settings.Sections.Audio.MusicVolume,"Musique"
+MainMenu.Settings.Sections.Audio.SFXVolume,"SFX"
+MainMenu.Settings.Sections.Audio.UIVolume,"UI"
+MainMenu.Settings.Sections.Audio.SpatialAudio,"*TODO* Spatial Audio"
+
+# Loading Screen
+Loading.Progress,"{0}%"
+
+# Level Selector
+
+## Resources Display
+LevelSelector.ResourcesDisplay.Fuel,"Essence: {0}u"
+LevelSelector.ResourcesDisplay.Juice,"Jus: {0}u"
+LevelSelector.ResourcesDisplay.Money,"{0}$"
+
+## Post Game Summary
+PostGameSummary.AutoSell,"{0}: {1}$"
+PostGameSummary.TotalProfit,"Profits total de l'éxpédition: {0}$"
+
+## Upgrader
+Upgrader.Reforge,"Reforger"
+Upgrader.ReforgeTooltip,"Reforger un objet pour changer ses statistiques."
+Upgrader.ReforgeCost,"{0}$"
+Upgrader.ReforgeSuccess,"Reforge Réussite!"
+Upgrader.ReforgeFailure,"Reforge Échoué!"
+
+Upgrader.Upgrade,"Améloration"
+Upgrader.UpgradeTooltip,"Amélorer Objet Séléctioné
+25% - 2 stats Amélioré
+50% - 2 stats Amélioré, 1 Rétrogradé
+25% - 1 stat Amélioré, 1 Rétrogradé"
+Upgrader.UpgradeCost,"{0}$"
+Upgrader.UpgradeSuccess,"Amélioration Réussite!"
+Upgrader.UpgradeFailure,"Amélioration Échoué!"
+
+Upgrader.Scrap,"Démentler"
+Upgrader.ScrapTooltip,"Démentler Arme Séléctioné"
+Upgrader.ScrapValue,"{0}$"
+
+# Ship Inventory
+ShipInventory.NoItemSelected,"Aucun Objet Séléctioné."
+
+# Misc
+MoneySymbol,"$"
+

@@ -1,0 +1,26 @@
+Key,Value
+
+# Ingame UI
+Pause,"Pause"
+JuiceWarning,"*TODO* <b>Alert</b>
+Juice reserves critically low.
+Radiation exposure imminent - crew survival at risk."
+Pause.Controls.Title,"nena tawa"
+Pause.Controls.Content,"W/A/S/D – tawa lukin
+nena teje pi ilo tawa – tawa/nena
+nena soto pi ilo tawa – lawa jan la, o (awen) nena
+sike pi ilo tawa – lili/suli lukin
+TAB – tenpo pi tenpo suli (moku pi telo kili li suli)
+I / F – poki
+R - lawa pi jan ale
+1–9 – lawa pi jan nanpa
+Spacebar – pini tawa
+E – tawa lukin li tawa jan lawa
+Q – wawa jan la, tawa sike"
+
+EnemyCounterUpgrade.CounterText,"Enemies: {0}"
+
+EndMessage,"jan ale li weka.[PAUSE=1]
+tawa weka..."
+
+

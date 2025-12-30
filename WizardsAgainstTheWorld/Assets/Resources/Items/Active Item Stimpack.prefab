@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1814961290839869144
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6247960768326806131}
+  - component: {fileID: -956263774904454016}
+  - component: {fileID: -6889751466668530388}
+  m_Layer: 0
+  m_Name: Active Item Stimpack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6247960768326806131
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814961290839869144}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-956263774904454016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814961290839869144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9582a981efda4ccea87d3a39afc4e87b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Icon>k__BackingField: {fileID: 1334491367496521029, guid: 8f817dad87e29304d8e1861257d4baf0, type: 3}
+  <Name>k__BackingField: Stimpack
+  <Weight>k__BackingField: 1
+  <Description>k__BackingField: Shot of chemicals providing the injected with increased
+    speed
+  <BaseCost>k__BackingField: 8
+  statusEffectPrefab: {fileID: -6170834088754858377, guid: 0a4c301221b5c5a4f82e65982d4b9b0d, type: 3}
+--- !u!114 &-6889751466668530388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814961290839869144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db91bd51d4940ccac0fe4b59f7cb850, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useSound: {fileID: 8300000, guid: 393dcc4377969394184e3efb16710894, type: 3}
+  randomPitch: 0.1

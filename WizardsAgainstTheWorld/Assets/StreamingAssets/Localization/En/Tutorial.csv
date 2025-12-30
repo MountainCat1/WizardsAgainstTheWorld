@@ -1,0 +1,33 @@
+Key,Value
+
+# Location Selector Tutorial
+Steps.Resources,This panel shows your current resources.\n\n<size=50%>Press Enter/Space to continue...</size>
+Steps.Crew,This panel displays the crew members currently available to you.\n\n<size=50%>Press Enter/Space to continue...</size>
+Steps.Station,This area shows the station you're currently docked at.\n\n<size=50%>Press Enter/Space to continue...</size>
+Steps.Map.1,Here you can view all known locations in the region.\n\n<size=50%>Press Enter/Space to continue...</size>
+Steps.Map.2,Click on any location to learn more about it.\n\n<size=50%>Press Enter/Space to continue...</size>
+Steps.Map.3,"Locations can be of the following types: stations, <color=yellow>shops</color>, <color=purple>events</color>, and <color=red>bosses</color>.\n\n<size=50%>Press Enter/Space to continue...</size>"
+Steps.LocationInteractions,This panel lets you interact with the location currently selected on the map.\n\n<size=50%>Press Enter/Space to continue...</size>
+Steps.LocationInteractions.Embark,Click <b>Embark</b> to travel to the selected location. This costs 1 unit of fuel.\n\n<size=50%>Press Enter/Space to continue...</size>
+Steps.LocationInteractions.Dock,Click <b>Dock</b> to board the station. You'll explore its rooms, face threats, and scavenge for resources.\n\n<size=50%>Press Enter/Space to continue...</size>
+Steps.LocationInteractions.Inventory,Open your <b>Inventory</b> to manage your crew's equipment and skills.\n\n<size=50%>Press Enter/Space to continue...</size>
+Steps.LocationInteractions.Upgrader,Access the <b>Upgrader</b> to improve your weapons using scrap or credits.\n\n<size=50%>Press Enter/Space to continue...</size>
+Steps.LocationInteractions.Docking,"While above unexplored stations, you can <b>Dock</b> to board them with your <b>selected</b> crew.\n\n<size=50%>Press Enter/Space to continue...</size>"
+Steps.Finish,"That's it!
+Beware of what hides in the abandoned stations—infected, aliens, rogue robots, and Federation agents are all out to get you.
+Stay sharp and good luck on your journey!\n\n<size=50%>Press Enter/Space to continue...</size>"
+
+# In Game Tutorial
+Welcome,"Welcome to the game!\nPress Space to continue..."
+SelectUnit,"Select your unit with the mouse.\nEither click or drag to select."
+MoveCommand,"Nice!\nNow order your soldier to move.\nWith your unit selected, click RMB on an accessible space."
+Explore,"Perfect!\nNow move your unit up and explore the station."
+SearchCabinet,"Look, what's that? It's a cabinet! There may be something inside...\nWith your unit selected, \nclick RMB on an object you want to interact with!\nIn this case, the cabinet you want to search."
+OpenInventory,"Great! You found a rifle! Now let's equip it.\nPress <b>I</b> on your keyboard to open the inventory."
+EquipRifle,"Now equip the rifle to your unit.\nSelect the gun from your inventory."
+KillZombieMove,"Great! Now it's time to use that bad boy.\nMove east and kill the zombie lurking there."
+KillZombie,"<color=red>KILL IT!</color>"
+ProceedDown,"Sheesh, that was scary...\nNow proceed down. We need to find a way out of here."
+CryoPod,"It's a <color=#00ffff>Cryogenic Pod</color>; interact with it to revive the soldier inside."
+NewFriend,"Seems like we have a new friend!\nNow we need to move left.\nBe careful, as there are more zombies lurking."
+Extract,"Now let's get out of here!\nExtract your soldiers via the elevator."

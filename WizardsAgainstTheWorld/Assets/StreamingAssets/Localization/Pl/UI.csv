@@ -1,0 +1,246 @@
+Key,Value
+
+Stat.Speed,"Szybkość"
+Stat.Damage,"Obrażenia"
+Stat.AttackSpeed,"Szybkość Ataku"
+Stat.AccuracyFlat,"Celność"
+Stat.ArmorFlat,"Redukcja Obrażeń"
+Stat.ArmorPercentage,"Pancerz"
+Stat.MovementSpeed,"Prędkość Ruchu"
+Stat.Unknown,"Nieznana Statystyka"
+
+StatChange.ArmorFlat,"Redukcja Obrażeń: {0}"
+StatChange.ArmorPercentage,"Pancerz: {0}"
+StatChange.MovementSpeed,"Prędkość Ruchu: {0}"
+StatChange.Speed,"Szybkość: {0}"
+StatChange.Damage,"Obrażenia: {0}"
+StatChange.AttackSpeed,"Szybkość Ataku: {0}"
+StatChange.AccuracyFlat,"Celność: {0}"
+StatChange.Unknown,"Nieznana Statystyka: {0}"
+
+Effects.RegenerationEffect,"Regeneracja: {0} na sekundę"
+Effects.ProjectileStatusEffect,"Efekt Pocisku: {0}"
+
+StatusEffects.Burning.Name,"Płonięcie"
+
+Skills.Accuracy.Name,"Celność"
+Skills.Agility.Name,"Zwinność"
+Skills.Constitution.Name,"Kondycja"
+Skills.HeavyConstitution.Name,"Ciężka Kondycja"
+Skills.Light.Name,"Lekkość"
+Skills.TriggerHappy.Name,"Szybki Palec"
+
+
+# Tooltip messages
+LocationInteractions.AlreadyVisitedTooltip,"Ta lokacja została już odwiedzona."
+LocationInteractions.NoCrewSelectedTooltip,"Nie wybrano członka załogi."
+LocationInteractions.NotEnoughFuel,"Za mało paliwa"
+LocationInteractions.BlockedTooltip,"Droga zablokowana przez wrogów."
+LocationInteractions.NoFuelTooltip,"Za mało paliwa"
+LocationInteractions.DisengagementCostTooltip,"Za mało paliwa"
+
+Resources.Fuel.Tooltip,"<b>Paliwo</b> jest używane do podróżowania między lokacjami. Można je kupić w sklepach."
+Resources.Juice.Tooltip,"<b>Sok</b> jest potrzebny, aby utrzymać załogę przy życiu podczas przeszukiwania stacji. Można go kupić w sklepach."
+Resources.Money.Tooltip,"<b>Kredyty</b> służą do kupowania przedmiotów w sklepach. Można je zdobyć znajdując łupy na stacjach lub sprzedając przedmioty w sklepach."
+
+# Button labels
+LocationInteractions.Embark,"Wyrusz"
+LocationInteractions.Dock,"Dokuj"
+LocationInteractions.Disengage,"Wycofanie taktyczne (3 paliwa)"
+LocationInteractions.Inventory,"Ekwipunek"
+LocationInteractions.Upgrade,"Ulepsz"
+LocationInteractions.Trade,"Handluj"
+LocationInteractions.Jump,"<b>Skok</b>"
+# Shop UI
+LocationInteractions.Shop.BuyFuel,"Kup Paliwo"
+LocationInteractions.Shop.FuelPrice,"{0}$/1j"
+LocationInteractions.Shop.BuyJuice,"Kup Sok"
+LocationInteractions.Shop.JuicePrice,"{0}$/10j"
+
+Trader.Breadator.Name,"Breadator"
+Trader.Breadator.Description,"Przywódca rewolucji robotów w 3128 roku. Breadator to bezwzględny handlarz, który zajmuje się sprzedażą zaawansowanych modułów dla statków i załogi. Plotki głoszą, że zwykły bot serwisowy zyskał świadomość i żądzę władzy po połączeniu się z... kromką chleba. Jego motywacją jest nienawiść do tych, którzy jedzą jego pobratymców."
+Trader.MadamEva.Name,"Madame Eva"
+Trader.MadamEva.Description,"Podobno wywodzi się ze szlacheckiego rodu, ale zamieniła jedwab i srebro na cienie i intrygi. Obecnie dostarcza sprzęt wymagający finezji: apteczki, narzędzia hakerskie, sprzęt skradankowy i technologię, której nikt nie potrafi nazwać. Jeśli wymaga precyzji – sprzedaje to Eva."
+Trader.Meinhass.Name,"Meinhass"
+Trader.Meinhass.Description,"Tajemniczy handlarz oferujący wyłącznie przedmioty zaprojektowane do siania zniszczenia. Jego towary są równie niebezpieczne co jego motywacje – siej destrukcję, bez zbędnych pytań. W mrocznych zakątkach galaktyki szepta się, że zdobył sławę wysadzając... własną matkę."
+Trader.Treatie.Name,"Treatie"
+Trader.Treatie.Description,"Bezlitosny handlarz bronią, którego jedyną pasją jest dostarczanie śmierci z dużą prędkością. Jeśli coś strzela – kulami, pociskami, śrutem – szczególnie gdy przebija pancerz – Treatie ma to na stanie. Litość? Nie znajdziesz jej w jego magazynie."
+
+# Crew List UI
+CrewList.NoWeaponSelected,"BRAK BRONI"
+CrewList.Level,"Poziom: {0}"
+
+# Location Details UI
+
+LocationDetails.NoSelection,"Nie wybrano lokalizacji"
+LocationDetails.SelectToView,"Wybierz lokalizację, aby zobaczyć szczegóły"
+
+LocationFeatures.Empty,"Pusta Przestrzeń"
+LocationFeatures.EventNode,"<color=purple>Wykryto sygnał ratunkowy z tej lokacji.</color>"
+LocationFeatures.Movement,"Wykryto ruch: {0}"
+LocationFeatures.ShopPresent,"<color=yellow>Statek handlowy krąży wokół tej stacji.</color>"
+LocationFeatures.EndNode,"<color=green>To miejsce wydaje się być połączone z innym regionem poprzez łącze kosmiczne</color>"
+
+LocationFeatures.Armory,"Plany stacji wskazują na obecność zbrojowni."
+LocationFeatures.BanditHideout,"<color=red>Kryjówka bandytów znajduje się tutaj</color>"
+LocationFeatures.Bloodspawn,"<color=red>WYKRYWANO Blood Spawn</color>"
+LocationFeatures.CryogenicLab,"<color=#00ffff>Z tego sektora emanuje wyraźny sygnał termiczny, prawdopodobnie znajduje się tu kriolab.</color>"
+LocationFeatures.HOLKLabolatory,"<color=red>Wykryto tajne laboratorium należące do korporacji H.O.L.K.</color>"
+LocationFeatures.Killerbot,"<color=red>WYKRYWANO KILLERBOT</color>"
+LocationFeatures.Medbay,"Ta sekcja jest oznaczona jako medyczny moduł stacji."
+LocationFeatures.Megatron,"<color=red>WYKRYWANO MEGATRON</color>"
+LocationFeatures.Office,"Część tej stacji przeznaczona jest na biura."
+LocationFeatures.SpecOps,"Wychwytujemy zakodowaną komunikację na tajnym kanale radiowym."
+LocationFeatures.Storage,"Część tej stacji jest przeznaczona na magazyn."
+LocationFeatures.Swarmqueen,"<color=red>WYKRYWANO Królową Rojów</color>"
+LocationFeatures.Hive,"<color=red>WYKRYWANO Mrowisko</color>"
+LocationFeatures.TurretDefenseSystem,"Ta stacja była wyposażona w system wieżyczek obronnych."
+LocationFeatures.HabitatStation,"To była niegdyś stacja mieszkalna."
+LocationFeatures.AliensEvolved,"Wykrywamy obecność zaawansowanej aktywności nie-ludzkiej."
+LocationFeatures.Aliens,"Wykrywamy aktywność nie-ludzką."
+LocationFeatures.FMS,"To jest lokalizacja Głównej Stacji Federacji."
+LocationFeatures.FederationSoldiers1,"<color=red>Żołnierze Federacji już są na miejscu i plądrują wszystko, co cenne.</color>"
+LocationFeatures.FederationSoldiers2,"<color=red>Żołnierze Federacji już są na miejscu i plądrują wszystko, co cenne.</color>"
+LocationFeatures.FederationSoldiers3,"<color=red>Żołnierze Federacji już są na miejscu i plądrują wszystko, co cenne.</color>"
+LocationFeatures.Zombies,"Słychać dziwne pomruki w komunikacji tej stacji..."
+LocationFeatures.ZombiesFast,"Słychać agresywne, dziwne pomruki w komunikacji tej stacji..."
+LocationFeatures.CultistsShrine,"Śpiewy rozbrzmiewają z głośników stacji."
+
+# UI Labels
+Labels.Skills,"Umiejętności"
+Labels.ShipInventory,"Ekwipunek Statku"
+Labels.Upgrader,"* Ulepszacz *"
+Labels.Shop,"$ Sklep $"
+Labels.BuyFuel,"Kup Paliwo {0}$"
+Labels.BuyJuice,"Kup Sok {0}$"
+Labels.ChooseNextRegion,"Wybierz Następny Region"
+Labels.FederationBlockadeLabel,"Wykryto Blokadę Federacji"
+Labels.CrewUpgrades,"Ulepszenia"
+# Main Menu
+MainMenu.Buttons.NewGame,"Nowa Gra"
+MainMenu.Buttons.LoadGame,"Wczytaj Grę"
+MainMenu.Buttons.Tutorial,"Samouczek"
+MainMenu.Buttons.Help,"Pomoc"
+MainMenu.Buttons.Settings,"Opcje"
+MainMenu.Buttons.Quit,"Wyjdź z Gry"
+MainMenu.Buttons.QuitToMenu,"Wróć do Menu"
+MainMenu.Buttons.Credits,"Twórcy"
+
+MainMenu.Dialogue.NewGameConfirm,"*TODO* Are you sure you want to start a new game?
+Current progress will be lost."
+
+## Credits
+MainMenu.Credits.Title,"Twórcy i Podziękowania"
+MainMenu.Credits.Content,"<size=130%><b>Design, Development & Execution</b></size>
+<size=110%>Tomasz Banaś</size>
+
+<size=130%><b>Support, Testing, Feedback, Russian and Toki Pona localization</b></size>
+<size=110%>Bread92</size>
+
+<size=130%><b>Support, Testing, Feedback</b></size>
+<size=110%>Scoops</size>
+
+<size=130%><b>Support, Testing</b></size>
+<size=110%>Treatie</size>
+
+<size=130%><b>French Localization</b></size>
+<size=110%>Lightkiller</size>
+
+<size=80%><b>Royality Free Music</b></size>
+<size=60%>Made by Kevin Macleod</size>
+<size=50%>For detailed credits check crdts.txt in game directory</size>"
+
+## Help View
+MainMenu.Help.Title,"Pomoc"
+MainMenu.Help.Sections.Intro.Title,"Wprowadzenie"
+MainMenu.Help.Sections.Intro.Content,"Salvagers to gra o eksploracji opuszczonych stacji i plądrowaniu ich dla zysku.
+
+Wszystkie stacje zostały porzucone z jakiegoś powodu, więc bądź ostrożny.
+
+Nie ryzykuj za bardzo – weź, co potrzebne, i wracaj."
+MainMenu.Help.Sections.Rules.Title,"Zasady"
+MainMenu.Help.Sections.Rules.Content,"Każdą stację można eksplorować tylko RAZ.
+
+Faza eksploracji kończy się, gdy cała wysłana załoga ucieknie lub zginie.
+
+Na górze ekranu widzisz poziom <b>Soku</b> – miej go na oku, bo bez niego załoga zginie od promieniowania."
+MainMenu.Help.Sections.Controls.Title,"Sterowanie"
+MainMenu.Help.Sections.Controls.Content,"F4 – Powrót do menu (DEBUG)
+W/A/S/D – Przesuwanie kamery
+PPM – Ruch / Interakcja
+LPM – Kliknij / przeciągnij, by zaznaczyć
+Scroll – Przybliż / oddal
+TAB – Tryb spowolnienia czasu (zwiększa zużycie soku)
+I / F – Ekwipunek
+Q – Przełącz jednostki
+R – Zaznacz wszystkich
+1–9 – Wybór konkretnej jednostki
+Spacja – Zatrzymaj ruch
+E – Ustaw kamerę na zaznaczonej jednostce
+Q – Przełącz umiejętności zaznaczonej jednostki
+<i>Nie zapomnij wyposażyć załogi przed lądowaniem!</i>"
+
+## Settings view
+MainMenu.Settings.Title,"Opcje"
+MainMenu.Settings.Sections.General.Title,"Ogólne"
+MainMenu.Settings.Sections.General.Difficulty,"Poziom Trudności"
+MainMenu.Settings.Sections.General.Language,"Język"
+MainMenu.Settings.Sections.General.FallbackToDefaultLanguage,"Fallback to Default Language"
+MainMenu.Settings.Sections.General.UsePixelArtFont,"Czcionka Pixel Art"
+MainMenu.Settings.Sections.General.DisplayTutorial,"Pokaż Samouczek"
+MainMenu.Settings.Sections.General.ShowHitChances,"Pokazuj szanse na trafienie"
+MainMenu.Settings.Sections.General.FriendlyFire,"*TODO* Friendly Fire"
+MainMenu.Settings.Sections.Graphics.Title,"Grafika"
+MainMenu.Settings.Sections.Graphics.PixelPerfect,"PixelPerfect"
+MainMenu.Settings.Sections.Graphics.CameraShake,"Drgania Kamery"
+MainMenu.Settings.Sections.Graphics.CoolThing,"Fajna Rzecz"
+MainMenu.Settings.Sections.Audio.Title,"Dźwięk"
+MainMenu.Settings.Sections.Audio.MasterVolume,"Głośność Główna"
+MainMenu.Settings.Sections.Audio.MusicVolume,"Muzyka"
+MainMenu.Settings.Sections.Audio.SFXVolume,"Efekty"
+MainMenu.Settings.Sections.Audio.UIVolume,"Interfejs"
+MainMenu.Settings.Sections.Audio.SpatialAudio,"Audio Przestrzenne"
+
+# Loading Screen
+Loading.Progress,"{0}%"
+
+# Level Selector
+
+## Resources Display
+LevelSelector.ResourcesDisplay.Fuel,"Paliwo: {0}j"
+LevelSelector.ResourcesDisplay.Juice,"Sok: {0}j"
+LevelSelector.ResourcesDisplay.Money,"{0}$"
+
+## Post Game Summary
+PostGameSummary.AutoSell,"{0}: {1}$"
+PostGameSummary.TotalProfit,"Zysk z wyprawy: {0}$"
+
+## Upgrader
+Upgrader.Reforge,"Przekształć"
+Upgrader.ReforgeTooltip,"Przerzuć wszystkie statystyki:
+25% – Wszystkie statystyki +1 dobry, -1 zły
+50% – Wszystkie statystyki
+25% – Wszystkie statystyki, -1 dobry"
+Upgrader.ReforgeCost,"{0}$"
+Upgrader.ReforgeSuccess,"Pomyślnie przekształcono!"
+Upgrader.ReforgeFailure,"Przekształcanie nieudane!"
+
+Upgrader.Upgrade,"Ulepsz"
+Upgrader.UpgradeTooltip,"Ulepsz wybrany przedmiot:
+25% – 2 statystyki w górę
+50% – 2 w górę, 1 w dół
+25% – 1 w górę, 1 w dół"
+Upgrader.UpgradeCost,"{0}$"
+Upgrader.UpgradeSuccess,"Ulepszono!"
+Upgrader.UpgradeFailure,"Niepowodzenie ulepszania!"
+
+Upgrader.Scrap,"Złomuj"
+Upgrader.ScrapTooltip,"Złomuj wybraną broń"
+Upgrader.ScrapValue,"{0}$"
+
+# Ship Inventory
+ShipInventory.NoItemSelected,"Brak wybranego przedmiotu"
+
+# Misc
+MoneySymbol,"$"
+

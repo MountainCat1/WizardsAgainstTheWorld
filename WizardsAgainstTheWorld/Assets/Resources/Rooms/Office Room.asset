@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f327af661d9bc94abe3f843bc3401fe, type: 3}
+  m_Name: Office Room
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Office Room
+  <Props>k__BackingField:
+  - prefab: {fileID: 179185714864766309, guid: 4d019c571a47b394db12ff4dca073454, type: 3}
+    position: 1
+    offset: {x: 0, y: 0}
+    count: 8
+    required: 0
+  - prefab: {fileID: 8667083905584706207, guid: 884fb4d797cda9e4eaa2d997c6f03942, type: 3}
+    position: 3
+    offset: {x: 0, y: 0}
+    count: 1
+    required: 0
+  <StartingRoom>k__BackingField: 0
+  <BossRoom>k__BackingField: 0
+  <FarAwayRoom>k__BackingField: 0
+  <Enemies>k__BackingField: []

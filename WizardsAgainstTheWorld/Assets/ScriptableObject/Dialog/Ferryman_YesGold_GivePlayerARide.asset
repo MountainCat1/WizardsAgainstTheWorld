@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37804311037647599ec1e3ffa8d10107, type: 3}
+  m_Name: Ferryman_YesGold_GivePlayerARide
+  m_EditorClassIdentifier: 
+  <Sentences>k__BackingField:
+  - <Text>k__BackingField: You've got coin. I've got a boat mate!
+  - <Text>k__BackingField: Serving with my sailing skills is always a pleasure
+  - <Text>k__BackingField: Wish ya luck with all your adventures!
+  - <Text>k__BackingField: Mate~

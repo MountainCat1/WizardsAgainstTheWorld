@@ -1,0 +1,14 @@
+Key,Value
+
+# Effect Labels
+Effects.AddJuice,"o kama jo e telo kili <color=green>{0}u</color>"
+Effects.LoseJuice,"o weka e telo kili <color=red>{0}u</color>"
+Effects.AddMoney,"o kama jo e mani <color=green>{0}$</color>"
+Effects.LoseMoney,"o weka e mani <color=red>{0}$</color>"
+Effects.AddFuel,"o kama jo e telo seli <color=green>{0}u</color>"
+Effects.LoseFuel,"o weka e telo seli <color=red>{0}u</color>"
+Effects.Lose,"sina pakala"
+Effects.AddExperienceToAllCrew,"jan ale li kama jo e <color=green>{0}</color> XP"
+Effects.LoseExperienceFromAllCrew,"jan ale li kama jo ala e <color=red>{0}</color> XP"
+
+# Tooltips

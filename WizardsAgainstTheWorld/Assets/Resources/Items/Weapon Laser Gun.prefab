@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5204223998722972538
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8454602419397812104}
+  - component: {fileID: 2760247517185347344}
+  - component: {fileID: 3400377373322661667}
+  m_Layer: 0
+  m_Name: Weapon Laser Gun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8454602419397812104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5204223998722972538}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2760247517185347344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5204223998722972538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca397cf322654a1ab3b77d020f528931, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Icon>k__BackingField: {fileID: 1241856797113074320, guid: 8f817dad87e29304d8e1861257d4baf0, type: 3}
+  <Name>k__BackingField: LaserGun
+  <Weight>k__BackingField: 1
+  <Description>k__BackingField: 
+  <BaseCost>k__BackingField: 450
+  <BaseAttackSpeed>k__BackingField: 0.5
+  <BaseRange>k__BackingField: 4.5
+  <BaseDamage>k__BackingField: 1
+  <BaseAccuracyPercent>k__BackingField: 100
+  <PushFactor>k__BackingField: 0
+  <ShakeFactor>k__BackingField: 0.2
+  <HitSound>k__BackingField: {fileID: 8300000, guid: 038a66a344c308446b06ec0324bc02d2, type: 3}
+  <AttackSound>k__BackingField: {fileID: 8300000, guid: b3cd14b600d15d84f97aeb7ec257a3fe, type: 3}
+  <VisualType>k__BackingField: 3
+  <ReloadComponent>k__BackingField: {fileID: 0}
+  <ProjectilePrefab>k__BackingField: {fileID: 708708669041866334, guid: 443b05f29b4eadb439a0127bd3bdd618, type: 3}
+  <ProjectileSpeed>k__BackingField: 60
+  <ShotOverTime>k__BackingField: 0.5
+  <DestroyProjectilesOnHit>k__BackingField: 0
+  <ProjectileCount>k__BackingField: 5
+--- !u!114 &3400377373322661667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5204223998722972538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df2179a0199c486795b18019986133ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <CurrentAmmo>k__BackingField: 10
+  <ReloadTime>k__BackingField: 5
+  <MaxAmmo>k__BackingField: 100
+  reloadFinishSound: {fileID: 8300000, guid: b1786d4387b521d4d86b82d891b60be2, type: 3}
+  reloadStartSound: {fileID: 8300000, guid: e461dfbbe1af90d4684d2f0d5b01e0c8, type: 3}
+  outOfAmmoSound: {fileID: 8300000, guid: 58599e1bcfa4cc04a82b2053deb00211, type: 3}

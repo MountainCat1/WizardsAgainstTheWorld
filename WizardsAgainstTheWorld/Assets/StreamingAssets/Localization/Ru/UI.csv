@@ -1,0 +1,245 @@
+Key,Value
+
+Stat.Speed,"Скорость"
+Stat.Damage,"Урон"
+Stat.AttackSpeed,"Скорость атаки"
+Stat.AccuracyFlat,"Точность"
+Stat.ArmorFlat,"Снижение урона"
+Stat.ArmorPercentage,"Броня"
+Stat.MovementSpeed,"Скорость передвижения"
+Stat.Unknown,"Неизвестный параметр"
+
+StatChange.ArmorFlat,"Снижение урона: {0}"
+StatChange.ArmorPercentage,"Броня: {0}"
+StatChange.MovementSpeed,"Скорость передвижения: {0}"
+StatChange.Speed,"Скорость: {0}"
+StatChange.Damage,"Урон: {0}"
+StatChange.AttackSpeed,"Скорость атаки: {0}"
+StatChange.AccuracyFlat,"Точность: {0}"
+StatChange.Unknown,"Неизвестный параметр: {0}"
+
+Effects.RegenerationEffect,"Регенерация: {0} в секунду"
+Effects.ProjectileStatusEffect,"Эффект снаряда: {0}"
+
+StatusEffects.Burning.Name,"Горение"
+
+Skills.Accuracy.Name,"Точность"
+Skills.Agility.Name,"Ловкость"
+Skills.Constitution.Name,"Телосложение"
+Skills.HeavyConstitution.Name,"Крепкое телосложение"
+Skills.Light.Name,"Лёгкость"
+Skills.TriggerHappy.Name,"Руки чешутся"
+
+
+# Tooltip messages
+LocationInteractions.AlreadyVisitedTooltip,"Локация уже посещена."
+LocationInteractions.NoCrewSelectedTooltip,"Не выбран ни один член экипажа."
+LocationInteractions.NotEnoughFuel,"Недостаточно топлива для путешествия."
+LocationInteractions.BlockedTooltip,"Путь заблокирован врагами."
+LocationInteractions.NoFuelTooltip,"Недостаточно топлива для путешествия."
+LocationInteractions.DisengagementCostTooltip,"Недостаточно топлива для отступления."
+
+Resources.Fuel.Tooltip,"<b>Топливо</b> позволяет путешествовать между станциями."
+Resources.Juice.Tooltip,"<b>Сок</b> нужен, чтобы ваша команда не умерла от радиации во время вылазок на станции."
+Resources.Money.Tooltip,"<b>Кредиты</b> - местная валюта. Можно найти на станциях или получить продав вещи."
+
+# Button labels
+LocationInteractions.Embark,"В путь"
+LocationInteractions.Dock,"Пристыковаться"
+LocationInteractions.Disengage,"Тактическое отступление (3u топлива)"
+LocationInteractions.Inventory,"Инвентарь"
+LocationInteractions.Upgrade,"Улучшение"
+LocationInteractions.Trade,"Магазин"
+LocationInteractions.Jump,"<b>Прыжок</b>"
+# Shop UI
+LocationInteractions.Shop.BuyFuel,"Купить 1u топлива"
+LocationInteractions.Shop.FuelPrice,"{0}$"
+LocationInteractions.Shop.BuyJuice,"Купить 10 Сока"
+LocationInteractions.Shop.JuicePrice,"{0}$"
+
+Trader.Breadator.Name,"Хлебоголовый"
+Trader.Breadator.Description,"Лидер революции роботов 3128 года, Хлебоголовый — чёрствый торговец высокотехнологичными модулями для кораблей и экипажа. По слухам, он был обычным обслуживающим роботом, который подсоединился к куску хлеба и обрёл разум. Его действия движимы ненавистью к тем, кто ест его сородичей. Разговаривая с ним, помните: хлеб - всему голова."
+Trader.MadamEva.Name,"Мадам Ева"
+Trader.MadamEva.Description,"Ходили слухи, что она из знатного рода. Но мадам Ева променяла шёлк и серебро на тени и интриги. Теперь она элитный поставщик всего, кроме огнестрельного оружия — аптечки, устройства взлома, скрытное снаряжение и технологии, которые большинство даже не опознаёт. Если нужна точность, как у часовщика — это к ней."
+Trader.Meinhass.Name,"Майнхасс"
+Trader.Meinhass.Description,"Таинственный торговец, специализирующийся исключительно на средствах разрушения. Его товары так же опасны, как и его цели: сеять хаос — и точка. В тёмных уголках галактики шепчутся, что его путь начался со взрыва собственной матери. Ради славы."
+Trader.Treatie.Name,"Трити"
+Trader.Treatie.Description,"Тихий торговец оружием с одной страстью: доставлять смерть на высокой скорости. Если оно стреляет пулями, снарядами или дробью — особенно бронебойной — Трити ваш человек. Милосердие не входит в его ассортимент."
+
+# Crew List UI
+CrewList.NoWeaponSelected,"НЕТ ОРУЖИЯ"
+CrewList.Level,"Уровень: {0}"
+
+# Location Details UI
+
+LocationDetails.NoSelection,"Локация не выбрана"
+LocationDetails.SelectToView,"Выберите локацию, чтобы посмотреть детали"
+
+LocationFeatures.Empty,"Пустое место"
+LocationFeatures.EventNode,"<color=purple>Сигнал бедствия обнаружен в этой локации.</color>"
+LocationFeatures.Movement,"Фиксируемое движение: {0}"
+LocationFeatures.ShopPresent,"<color=yellow>Мы получаем сигнал приветствия от торгового корабля.</color>"
+LocationFeatures.EndNode,"<color=green>Присутсвует квантовый канал к другому региону."
+
+LocationFeatures.Armory,"Чертежи станции показывают наличие оружейной."
+LocationFeatures.BanditHideout,"<color=red>Обнаружено логово Бандитов.</color>"
+LocationFeatures.Bloodspawn,"<color=red>ОБНАРУЖЕНО Порождение Крови</color>"
+LocationFeatures.CryogenicLab,"<color=#00ffff>Из этого сектора исходит отчётливый термальный сигнал Крио-лаборатории.</color>"
+LocationFeatures.HOLKLabolatory,"<color=red>Обнаружена секретная лаборатория, принадлежащая корпорации H.O.L.K.</color>"
+LocationFeatures.Killerbot,"<color=red>ОБНАРУЖЕН КИЛЛЕРБОТ</color>"
+LocationFeatures.Medbay,"Обнаружен медицинский сектор."
+LocationFeatures.Megatron,"<color=red>ОБНАРУЖЕН МЕГАТРОН</color>"
+LocationFeatures.Office,"Часть станции покрыта офисами."
+LocationFeatures.SpecOps,"Мы принимаем слабый сигнал на закодированном радио канале."
+LocationFeatures.Storage,"Часть станции является хранилищем."
+LocationFeatures.Swarmqueen,"<color=red>ОБНАРУЖЕНА Королева Роя</color>"
+LocationFeatures.Hive,"<color=red>ОБНАРУЖЕН Улей</color>"
+LocationFeatures.TurretDefenseSystem,"На этой станции установлена защитная система из туррелей."
+LocationFeatures.HabitatStation,"Раньше это была станция для отдыха."
+LocationFeatures.AliensEvolved,"Зафиксировано движение эволюционировавших пришельцев."
+LocationFeatures.Aliens,"Зафиксировано движение пришельцев."
+LocationFeatures.FMS,"Здесь располагается Основная Станция Федерации"
+LocationFeatures.FederationSoldiers1,"<color=red>Нога Федерации уже ступила сюда и хватает всё что есть.</color>"
+LocationFeatures.FederationSoldiers2,"<color=red>Нога Федерации уже ступила сюда и хватает всё что есть.</color>"
+LocationFeatures.FederationSoldiers3,"<color=red>Нога Федерации уже ступила сюда и хватает всё что есть.</color>"
+LocationFeatures.Zombies,"Коммуникационные каналы этой станции полны рычания и кряхтения..."
+LocationFeatures.ZombiesFast,"Коммуникационные каналы этой станции полны крайне агрессивного рычания и кряхтения..."
+LocationFeatures.CultistsShrine,"*TODO* Chants can be heard from the station's intercom."
+
+# UI Labels
+Labels.Skills,"Навыки"
+Labels.ShipInventory,"Инвентарь корабля"
+Labels.Upgrader,"* Апгрейдер *"
+Labels.Shop,"$ Магазин $"
+Labels.BuyFuel,"Купить Топливо {0}$"
+Labels.BuyJuice,"Купить Сок {0}$"
+Labels.ChooseNextRegion,"Выберите следующий регион"
+Labels.FederationBlockadeLabel,"Обнаружена блокада Федерации"
+Labels.CrewUpgrades,"Улучшения"
+# Main Menu
+MainMenu.Buttons.NewGame,"Новая игра"
+MainMenu.Buttons.LoadGame,"Загрузить игру"
+MainMenu.Buttons.Tutorial,"Обучение"
+MainMenu.Buttons.Help,"Справка"
+MainMenu.Buttons.Settings,"Настройки"
+MainMenu.Buttons.Quit,"Выход"
+MainMenu.Buttons.QuitToMenu,"Выход в Меню"
+MainMenu.Buttons.Credits,"*TODO* Credits"
+
+MainMenu.Dialogue.NewGameConfirm,"*TODO* Are you sure you want to start a new game?
+Current progress will be lost."
+
+## Credits
+MainMenu.Credits.Title,"*TODO* Credits & Thanks"
+MainMenu.Credits.Content,"*TODO* <size=130%><b>Design, Development & Execution</b></size>
+<size=110%>Tomasz Banaś</size>
+
+<size=130%><b>Support, Testing, Feedback, Russian and Toki Pona localization</b></size>
+<size=110%>Bread92</size>
+
+<size=130%><b>Support, Testing, Feedback</b></size>
+<size=110%>Scoops</size>
+
+<size=130%><b>Support, Testing</b></size>
+<size=110%>Treatie</size>
+
+<size=130%><b>French Localization</b></size>
+<size=110%>Lightkiller</size>
+
+<size=80%><b>Royality Free Music</b></size>
+<size=60%>Made by Kevin Macleod</size>
+<size=50%>For detailed credits check crdts.txt in game directory</size>"
+
+## Help View
+MainMenu.Help.Title,"Справка"
+MainMenu.Help.Sections.Intro.Title,"Введение"
+MainMenu.Help.Sections.Intro.Content,"Salvagers — это игра об исследовании заброшенных станций и их разграблении ради прибыли.
+
+Все станции заброшены не просто так, так что будьте осторожны.
+
+Не рискуйте лишним, берите сколько нужно — и бегите."
+MainMenu.Help.Sections.Rules.Title,"Правила"
+MainMenu.Help.Sections.Rules.Content,"Каждую станцию можно исследовать только ОДИН раз.
+
+Фаза исследования заканчивается, когда весь отправленный экипаж вернётся обратно, либо погибнет.
+
+В верхней части экрана вы можете видеть количество <b>Сока</b>. Следите за этим показателем, иначе ваши люди погибнут от радиации."
+MainMenu.Help.Sections.Controls.Title,"Управление"
+MainMenu.Help.Sections.Controls.Content,"F4 – Вернуться в меню (DEBUG)
+W/A/S/D – Перемещение камеры
+Правая кнопка мыши – Перемещение/взаимодействие
+Левая кнопка мыши – Выбор юнита (кликнуть/выделить)
+Колесо мыши – Приблизить/отдалить
+TAB – Замедление времени (увеличивает расход Сока)
+I / F – Открыть инвентарь
+Q – Переключение между юнитами
+R – Выделить всех членов экипажа
+1–9 – Выбрать конкретного бойца
+Пробел – Остановить движение
+E – Переместить камеру на выбранного юнита
+Q – Переключение навыков выбранного юнита
+<i>Не забудьте вооружить экипаж перед высадкой на станцию!</i>"
+
+## Settings view
+MainMenu.Settings.Title,"Настройки"
+MainMenu.Settings.Sections.General.Title,"Общее"
+MainMenu.Settings.Sections.General.Difficulty,"Сложность"
+MainMenu.Settings.Sections.General.Language,"Язык"
+MainMenu.Settings.Sections.General.FallbackToDefaultLanguage,"Сменить на язык по умолчанию"
+MainMenu.Settings.Sections.General.UsePixelArtFont,"*TODO* Pixel Art Font"
+MainMenu.Settings.Sections.General.DisplayTutorial,"Показать обучение"
+MainMenu.Settings.Sections.General.ShowHitChances,"*TODO* Show Hit Chances"
+MainMenu.Settings.Sections.General.FriendlyFire,"*TODO* Friendly Fire"
+MainMenu.Settings.Sections.Graphics.Title,"Графика"
+MainMenu.Settings.Sections.Graphics.PixelPerfect,"PixelPerfect"
+MainMenu.Settings.Sections.Graphics.CameraShake,"Тряска камеры"
+MainMenu.Settings.Sections.Graphics.CoolThing,"Крутая штука"
+MainMenu.Settings.Sections.Audio.Title,"Звук"
+MainMenu.Settings.Sections.Audio.MasterVolume,"Общий"
+MainMenu.Settings.Sections.Audio.MusicVolume,"Музыка"
+MainMenu.Settings.Sections.Audio.SFXVolume,"Эффекты"
+MainMenu.Settings.Sections.Audio.UIVolume,"Интерфейс"
+MainMenu.Settings.Sections.Audio.SpatialAudio,"Пространственное Аудио"
+
+# Loading Screen
+Loading.Progress,"{0}%"
+
+# Level Selector
+
+## Resources Display
+LevelSelector.ResourcesDisplay.Fuel,"Топливо: {0}u"
+LevelSelector.ResourcesDisplay.Juice,"Сок: {0}u"
+LevelSelector.ResourcesDisplay.Money,"{0}$"
+
+## Post Game Summary
+PostGameSummary.AutoSell,"{0}: {1}$"
+PostGameSummary.TotalProfit,"Итого: {0}$"
+
+## Upgrader
+Upgrader.Reforge,"Перековка"
+Upgrader.ReforgeTooltip,"Перековать предмет, чтобы изменить его параметры."
+Upgrader.ReforgeCost,"{0}$"
+Upgrader.ReforgeSuccess,"Перековано успешно!"
+Upgrader.ReforgeFailure,"Перековать неудалось!"
+
+Upgrader.Upgrade,"Улучшить"
+Upgrader.UpgradeTooltip,"Улучшить выбранный предмет
+25% — 2 характеристики улучшены
+50% — 2 характеристики улучшены, 1 ухудшена
+25% — 1 характеристика улучшена, 1 ухудшена"
+Upgrader.UpgradeCost,"{0}$"
+Upgrader.UpgradeSuccess,"*TODO* Upgrade Successful!"
+Upgrader.UpgradeFailure,"*TODO* Upgrade Failed!"
+
+Upgrader.Scrap,"Разобрать"
+Upgrader.ScrapTooltip,"Разобрать выбранное оружие"
+Upgrader.ScrapValue,"{0}$"
+
+# Ship Inventory
+ShipInventory.NoItemSelected,"Предмет не выбран."
+
+# Misc
+MoneySymbol,"$"
+
+NOT-FOUND-NOT-FOUND-NOT-FOUND-NOT-FOUND-Upgrade.UpgradeSuccess,Улучшение успешно!
+NOT-FOUND-NOT-FOUND-NOT-FOUND-NOT-FOUND-Upgrade.UpgradeFailure,Улучшение неудалось!

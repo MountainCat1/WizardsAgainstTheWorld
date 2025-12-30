@@ -1,0 +1,26 @@
+Key,Value
+
+FloatingText.Miss,"Мимо"
+FloatingText.Damage,"{0}"
+FloatingText.Heal,"{0}"
+FloatingText.FriendlyFire,"{0}"
+FloatingText.LevelUp,"+Уровень!"
+FloatingText.XpGain,"{0} Опыта"
+
+Interaction.RandomContainer.Empty,"Пусто"
+Interaction.RandomContainer.Loot,"{1}x {0}"
+Interaction.RandomContainer.LootSingle,"{0}"
+Interaction.Dismantable.Interact,"Разбираем..."
+Interaction.Elevator.Interact,"Входим..."
+Interaction.Elevator.Cancel.VictoryConditions,"*TODO* Victory Conditions Not Achieved!"
+Interaction.Container.Interact,"Ищем..."
+Interaction.Cryopod.Interact,"Открываем..."
+Interaction.Terminal.Interact,"Взламываем..."
+Interaction.ItemPickup.Interact,"Поднимаем..."
+Interaction.Reload,"Перезарядка..."
+
+VictoryCondition.LeaveTheStation,"Покиньте станцию ({0} чел. осталось)"
+VictoryCondition.KillFederationSoldiers,"<color=red>Убейте {0}/{1} солдатов федерации.</color>"
+VictoryCondition.KillMrBonson,"<color=red>Убейте Мр. Бонсона</color>"
+VictoryCondition.HackTerminalsVictoryCondition,"Взломайте {0}/{1} терминалов."
+VictoryCondition.HaveItemsCondition,"Имейте при себе {0}/{1} предметов типа: {2}"

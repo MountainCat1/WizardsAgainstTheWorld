@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 160f6ec4d3f94ba480812f61887255d2, type: 3}
+  m_Name: 5_Federation Zone
+  m_EditorClassIdentifier: 
+  typeName: Federaton Zone
+  minDifficulty: 6
+  maxDifficulty: 9999
+  typeDescription: This sector, officially under Federation control, is a vast graveyard
+    of derelict stations. While the initial purpose was exploration, the focus has
+    shifted to systematic salvage and resource recovery. Federation teams meticulously
+    strip valuable technology and materials from the decaying structures, navigating
+    both structural hazards and the lingering ghosts of the past.
+  originLocationFeatures:
+    items:
+    - item: {fileID: 11400000, guid: eb9151ffc5af0734db15126de721b1d0, type: 2}
+      weight: 1
+  endLocationFeatures:
+    items:
+    - item: {fileID: 11400000, guid: 9fbde98348bdbfb45923283b48fa4c0a, type: 2}
+      weight: 1
+  weightedLocationFeatures:
+    items:
+    - item: {fileID: 11400000, guid: f4132d9bfabab074a88da52ad808f0ea, type: 2}
+      weight: 1
+    - item: {fileID: 11400000, guid: 762860049afe5dd45bb32a7a8cc47a73, type: 2}
+      weight: 3
+  weightedSecondaryLocationFeatures:
+    items:
+    - item: {fileID: 11400000, guid: b83a3908a9e95474abf3120d09b9b896, type: 2}
+      weight: 1
+    - item: {fileID: 11400000, guid: 5d38bbf8b38b28d479dc544a35dcc03d, type: 2}
+      weight: 0.8
+    - item: {fileID: 11400000, guid: 5a710d4dce8ad7b4a8b17cece9c17f4f, type: 2}
+      weight: 0.6
+    - item: {fileID: 11400000, guid: a0909348ec61c05408cfd0d400597ff5, type: 2}
+      weight: 0.5
+    - item: {fileID: 11400000, guid: 76fe599996a4d0247be0df435178a3f1, type: 2}
+      weight: 0.15
+    - item: {fileID: 11400000, guid: da76a559c2ace7148a0abbcbf3dfe1bc, type: 2}
+      weight: 0.5
+  maxSecondaryFeatures: 6
+  minSecondaryFeatures: 4
+  maxShops: 2
+  minShops: 2
+  minEventNodes: 1
+  maxEventNodes: 3
+  minLocations: 9
+  maxLocations: 12

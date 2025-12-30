@@ -1,0 +1,30 @@
+Key,Value
+# Crate In Space
+CrateInSpace.Title,Crate Floating in Space
+CrateInSpace.Description,You spot a crate drifting among the stars. It might contain something valuable.
+CrateInSpace.Option1,Open the crate
+CrateInSpace.Option2,We can use the tools from our upgrader for that!
+# Stranger Needs Fuel Event
+StrangerNeedsFuel.Title,Stranger in Need
+StrangerNeedsFuel.Description,A stranded traveler begs you for some fuel. He looks desperate and offers scrap in return.
+StrangerNeedsFuel.Option1,Ignore him
+StrangerNeedsFuel.Option2,We can spare some!
+# Training Facility Event
+TrainingFacility.Title,Training Facility
+TrainingFacility.Description,You find a functioning combat training facility. They seem to offer training for a price.
+TrainingFacility.Option1,Move on
+TrainingFacility.Option2,Let's hope we will get our money's worth
+# Space Gambler
+SpaceGambler.Title,Space Gambler
+SpaceGambler.Description,"You meet a space gambler named ""Alex"". He offers you a chance to win big in a game of chance. He seems confident and is willing to bet on anything."
+SpaceGambler.Option1,Ignore him
+SpaceGambler.Option2,"You can only lose 100% of your money, but you can win infinite amount!"
+SpaceGambler.Option3,"We can use our <b>hacking device</b> to turn the odds in our favor!"
+# Drifting Crate Event
+DriftingCrate.Title,Drifting Crate
+DriftingCrate.Description,"A crate is drifting at high speed through space. It looks like it might contain something valuable, but it could also be dangerous to approach."
+DriftingCrate.Option1,Leave it be
+DriftingCrate.Option2,Engines on overdrive!
+DriftingCrate.Option2.Tooltip.Lose,We are unable to catch the crate
+DriftingCrate.Option3,Engines on overdrive! Let's make use of our advanced fuel pumps!
+DriftingCrate.Option3.Tooltip.Lose,We are unable to catch the crate

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f327af661d9bc94abe3f843bc3401fe, type: 3}
+  m_Name: Misc Room
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Misc Room
+  <Props>k__BackingField:
+  - prefab: {fileID: 1173714972110200553, guid: dbe90bcc80ccfd74bad072ac58b7ae1b, type: 3}
+    position: 3
+    offset: {x: 0, y: 0}
+    count: 1
+  - prefab: {fileID: 179185714864766309, guid: 4d019c571a47b394db12ff4dca073454, type: 3}
+    position: 1
+    offset: {x: 0, y: 0}
+    count: 3
+  <StartingRoom>k__BackingField: 0
+  <BossRoom>k__BackingField: 0
+  <Enemies>k__BackingField: []

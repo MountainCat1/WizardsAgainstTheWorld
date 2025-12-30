@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f327af661d9bc94abe3f843bc3401fe, type: 3}
+  m_Name: Bandit Stash
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: BanditStash
+  <Props>k__BackingField:
+  - prefab: {fileID: 7172594059294702680, guid: 3c238f4677078204fba04ba1ae1fd762, type: 3}
+    position: 3
+    offset: {x: 0, y: 0}
+    count: 1
+    required: 1
+  - prefab: {fileID: 6304498614303271137, guid: 59e52cc4d2c554e419ebe93ed18638d3, type: 3}
+    position: 1
+    offset: {x: 0, y: 0}
+    count: 4
+    required: 0
+  - prefab: {fileID: 7172594059294702680, guid: bf1f186d29feeba4699aba7c929c718e, type: 3}
+    position: 1
+    offset: {x: 0, y: 0}
+    count: 4
+    required: 0
+  - prefab: {fileID: 7375656772705244172, guid: 4d1da47dd6767eb4d80c7de2d4fb49ee, type: 3}
+    position: 1
+    offset: {x: 0, y: 0}
+    count: 2
+    required: 0
+  - prefab: {fileID: 8667083905584706207, guid: 64923f5b43707624b9a71836ce417d75, type: 3}
+    position: 1
+    offset: {x: 0, y: 0}
+    count: 1
+    required: 0
+  <StartingRoom>k__BackingField: 0
+  <BossRoom>k__BackingField: 0
+  <FarAwayRoom>k__BackingField: 1
+  <Enemies>k__BackingField:
+  - enemy: {fileID: 5198124582479070381, guid: 9b74426046e5e254a8505bc0fc0c4752, type: 3}
+    minAmount: 2
+    maxAmount: 2
+  - enemy: {fileID: 5198124582479070381, guid: 4397c256a17ba7a4197bac00b8895e27, type: 3}
+    minAmount: 1
+    maxAmount: 1

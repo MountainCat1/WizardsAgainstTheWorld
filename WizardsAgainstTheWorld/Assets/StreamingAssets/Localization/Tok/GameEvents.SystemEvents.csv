@@ -1,0 +1,39 @@
+Key,Value
+# Out of Fuel Event
+OutOfFuel.Title,"telo seli li weka"
+OutOfFuel.Description,"tomo tawa sina li weka e telo seli. ona ken ala awen."
+OutOfFuel.Option1,"pini..."
+
+# Desperate Purchase of Fuel Events
+DesperateBuyFuelForMoney.Title,"sina wan"
+DesperateBuyFuelForMoney.Description,"telo seli li weka la, sina ken ala tawa. tenpo lili la, tomo tawa nasa li kama li esun e telo seli. telo pi mani mute a, taso sina wile e ona."
+DesperateBuyFuelForMoney.Option1,"o pana mani 50 tan telo"
+
+DesperateBuyFuelForJuice.Title,"sina wan"
+DesperateBuyFuelForJuice.Description,"telo seli li weka la, sina ken ala tawa. tenpo lili la, tomo tawa nasa li kama li esun e telo seli. telo li mani mute a, taso sina wile e ona."
+DesperateBuyFuelForJuice.Option1,"o esun e telo kili 50 tan telo seli"
+
+DesperateBuyFuelMoneyOrJuice.Title,"sina wan"
+DesperateBuyFuelMoneyOrJuice.Description,"telo seli li weka la, sina ken ala tawa. tenpo lili la, tomo tawa nasa li kama li esun e telo seli. telo li mani mute a, taso sina wile e ona."
+DesperateBuyFuelMoneyOrJuice.Option1,"pana mani 50 tan telo seli 2"
+DesperateBuyFuelMoneyOrJuice.Option2,"esun telo kili 50 tan telo seli 2"
+
+# Federation Takeover Event
+FederationTakeover.Title,"lawa Petela"
+FederationTakeover.Description,"jan Petela li jo e tomo tawa sina. tawa sina li pini lon ni."
+FederationTakeover.Option1,"o anpa"
+
+# All Dead Event
+AllDead.Title,"jan ale li moli"
+AllDead.Description,"jan ale li moli. jan ala li ken awen."
+AllDead.Option1,"lon"
+
+# Trader Encounter
+TraderEncounter.Title,"jan esun nasa"
+TraderEncounter.Description,"sina alasa e esun. ona esun e ijo pona ante. sina ike e jan Petela la, ona li awen esun tawa sina."
+TraderEncounter.Option1,"o lukin..."
+
+# Boss Encounter
+BossEncounter.Title,"monsuta li lon"
+BossEncounter.Description,"tomo ni li jo e ike wawa. sina o tawa pona."
+BossEncounter.Option1,"mi ken pali e ni..."

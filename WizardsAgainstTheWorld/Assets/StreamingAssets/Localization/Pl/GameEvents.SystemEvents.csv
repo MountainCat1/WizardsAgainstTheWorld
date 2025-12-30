@@ -1,0 +1,39 @@
+Key,Value
+# Out of Fuel Event
+OutOfFuel.Title,"Brak Paliwa"
+OutOfFuel.Description,"Twojemu statkowi skończyło się paliwo i nie może kontynuować podróży."
+OutOfFuel.Option1,"Pustka..."
+
+# Desperate Purchase of Fuel Events
+DesperateBuyFuelForMoney.Title,"Uwięzieni w Kosmosie"
+DesperateBuyFuelForMoney.Description,"Bez możliwości uruchomienia silników utknęliśmy. Gdy czekasz"
+DesperateBuyFuelForMoney.Option1,"Zapłać 50 kredytów za paliwo"
+
+DesperateBuyFuelForJuice.Title,"Uwięzieni w Kosmosie"
+DesperateBuyFuelForJuice.Description,"Bez możliwości uruchomienia silników utknęliśmy. Gdy czekasz"
+DesperateBuyFuelForJuice.Option1,"Wymień 50 soku na paliwo"
+
+DesperateBuyFuelMoneyOrJuice.Title,"Uwięzieni w Kosmosie"
+DesperateBuyFuelMoneyOrJuice.Description,"Bez możliwości uruchomienia silników utknęliśmy. Gdy czekasz"
+DesperateBuyFuelMoneyOrJuice.Option1,"Zapłać 50 kredytów za paliwo"
+DesperateBuyFuelMoneyOrJuice.Option2,"Wymień 50 soku na paliwo"
+
+# Federation Takeover Event
+FederationTakeover.Title,"Przejęcie przez Federację"
+FederationTakeover.Description,"Federacja przejęła twój statek. Twoja podróż kończy się tutaj."
+FederationTakeover.Option1,"Poddaj się"
+
+# All Dead Event
+AllDead.Title,"Cała Załoga Nie Żyje"
+AllDead.Description,"Wszyscy członkowie załogi nie żyją. Nikt nie został"
+AllDead.Option1,"Zaakceptuj swój los"
+
+# Trader Encounter
+TraderEncounter.Title,"Podejrzany Handlarz"
+TraderEncounter.Description,"Napotkaliśmy handlarza"
+TraderEncounter.Option1,"Zobaczmy"
+
+# Boss Encounter
+BossEncounter.Title,"Niebezpieczeństwo Przed Nami"
+BossEncounter.Description,"Odbieramy sygnały silnej istoty na tej stacji. Powinniśmy zachować ostrożność."
+BossEncounter.Option1,"Jesteśmy gotowi..."

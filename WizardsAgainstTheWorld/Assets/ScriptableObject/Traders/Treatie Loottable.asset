@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba0217508e9c4bcea82072745b7ff13b, type: 3}
+  m_Name: Treatie Loottable
+  m_EditorClassIdentifier: 
+  entries:
+  - item: {fileID: 6320578954216408902, guid: a7c47da4057de1843b5abca702ac1eff, type: 3}
+    weight: 5
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: 6320578954216408902, guid: bb563baabd1ccdf4da87975099668eec, type: 3}
+    weight: 2.5
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: 6320578954216408902, guid: 117ea0e42f677ba41a580f4b2287726f, type: 3}
+    weight: 4
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: 6320578954216408902, guid: 7fd7b723d3ad36644bdb6989185a1285, type: 3}
+    weight: 5
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: 6567434340604348349, guid: 235d22ae69303554081a679365e644db, type: 3}
+    weight: 5
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: 6320578954216408902, guid: 9eb86fe81e9f33c43bedbc7c32d0622d, type: 3}
+    weight: 3
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: 5886349820611188464, guid: 58d64c26e7772db43b0e5b45586e2529, type: 3}
+    weight: 1
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: 5886349820611188464, guid: 386a53f7434e81848a5ceb55d165e66f, type: 3}
+    weight: 2
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: -4666994684784650938, guid: e5d187cc06e37f3419decbee72c0e4cf, type: 3}
+    weight: 0.75
+    maxCount: 1
+    minCount: 1

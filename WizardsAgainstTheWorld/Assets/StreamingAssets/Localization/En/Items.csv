@@ -1,0 +1,100 @@
+Key,Value
+
+# Items
+FragGrenade.Name,Frag Grenade
+FragGrenade.Description,A timed explosive that deals high damage in a wide radius.
+HackingDevice.Name,Hacking Device
+HackingDevice.Description,Allows for hacking terminals
+Medkit.Name,Medkit
+Medkit.Description,Easy to use kit containing everything one would need to patch themselves.
+Stimpack.Name,Stimpack
+Stimpack.Description,Shot of chemicals providing the injected with increased speed
+HeavyArmor.Name,Heavy Armor
+HeavyArmor.Description,More durable piece of armor providing more protection
+LightArmor.Name,Light Armor
+LightArmor.Description,Basic armor for body protection
+AccuracyAugment.Name,Accuracy Augment
+AccuracyAugment.Description,Enhances weapon targeting systems for improved accuracy.
+Laser.Name,Laser Augment
+Laser.Description,Upgrades weapons to emit high-energy laser beams.
+AlienHeart.Name,Alien Heart Augment
+AlienHeart.Description,An alien organ that passively enhances regeneration and vitality.
+AlienLiver.Name,Alien Liver Augment
+AlienLiver.Description,A mysterious organ that increases poison resistance.
+HealingPlasterAugment.Name,Healing Plaster
+HealingPlasterAugment.Description,Applies a fast-acting healing agent to wounds.
+HOLKSerum.Name,H.O.L.K Serum Augment
+HOLKSerum.Description,A combat serum that drastically boosts strength at the risk of instability.
+HealingPlaster.Name,Healing Plaster Augment
+HealingPlaster.Description,Used to heal minor injuries quickly on the battlefield.
+IncendiaryAmmo.Name,Incendiary Ammo
+IncendiaryAmmo.Description,Ammunition that ignites enemies on impact.
+SpeedAugment.Name,Speed Augment
+SpeedAugment.Description,Stimulates muscles and reflexes to increase movement speed.
+MechanicalParts.Name,Mechanical Parts
+MechanicalParts.Description,Spare components used in crafting and repairs.
+MedicalSupplies.Name,Medical Supplies
+MedicalSupplies.Description,Essential materials for treating wounds and ailments.
+PowerCell.Name,Power Cell
+PowerCell.Description,A compact battery unit used to power advanced devices and weapons.
+Scrap.Name,Scrap
+Scrap.Description,Used as currency across space
+Shit.Name,Shit
+Shit.Description,Literal garbage. Might be useful for something… somehow.
+Claws.Name,Claws
+Claws.Description,Natural weapons from a beast, sharp and deadly.
+CombatKnife.Name,Combat Knife
+CombatKnife.Description,A reliable close-quarters weapon with high critical damage.
+EnergySword.Name,Energy Sword
+EnergySword.Description,A high-tech blade of plasma that cuts through most materials.
+Flamethrower.Name,Flamethrower
+Flamethrower.Description,A weapon that unleashes a cone of fire to burn enemies.
+GrenadeLauncher.Name,Mini Grenade Launcher
+GrenadeLauncher.Description,A compact launcher that fires explosive grenades at enemies.
+LaserGun.Name,Laser Gun
+LaserGun.Description,A ranged weapon that fires concentrated beams of light.
+MEGAGUN.Name,MEGAGUN
+MEGAGUN.Description,A massive experimental weapon with devastating power.
+Pickaxe.Name,Pickaxe
+Pickaxe.Description,Used for mining resources or smashing through weak obstacles.
+Pistols.Name,Pistols
+Pistols.Description,Lightweight sidearms effective at close to mid range.
+Rifle.Name,Rifle
+Rifle.Description,Versatile weapon with high accuracy and damage at range.
+Shotgun.Name,Shotgun
+Shotgun.Description,Fires a spread of pellets, excellent in close quarters.
+SMG.Name,SMG
+SMG.Description,Fires rapidly with lower accuracy, great for suppression.
+SniperRifle.Name,Sniper Rifle
+SniperRifle.Description,High-powered weapon designed for long-range precision kills.
+GodPistol.Name,God Pistol
+GodPistol.Description,Daddy?!!!
+GodAugment.Name,God Augment
+GodAugment.Description,Daddy?!!!
+LarvaSpawner.Name,Larva Spawner
+LarvaSpawner.Description,An organic device that spawns larva to assist in combat.
+
+Effects.AmmoStatusEffect,Ammo Status Effect
+Effects.Regeneration,Health Regeneration: {0}
+
+Value,Value: {0}$
+NoValue,No value available.
+NoDescription,No description available.
+
+# Interactions
+Interactions.CrewUpgrade.Name,Apply Upgrade
+Interactions.Medkit.Name,Heal {0}
+
+Interactions.Medkit,Interacting...
+
+# Crew Upgrades
+EnemyCounter.Name,Enemy Counter
+EnemyCounter.Description,Displays the number of enemies in the current area.
+FuelEfficientPumps.Name,Fuel Efficient Pumps
+FuelEfficientPumps.Description,Grants a 33% chance to not consume fuel when using the ship's engines.
+JuiceEfficientPumps.Name,Juice Efficient Pumps
+JuiceEfficientPumps.Description,Reduces juice consumption by 33% while salvaging stations.
+Upgrader.Name,Upgrader Module
+Upgrader.Description,Allows for scraping and upgrading of items outside of shop stations.
+AdvancedFlashlights.Name,Advanced Flashlights
+AdvancedFlashlights.Description,Increases vision range of the crew while salvaging stations.

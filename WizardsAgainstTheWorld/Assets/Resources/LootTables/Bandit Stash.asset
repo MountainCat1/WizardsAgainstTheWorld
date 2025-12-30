@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba0217508e9c4bcea82072745b7ff13b, type: 3}
+  m_Name: Bandit Stash
+  m_EditorClassIdentifier: 
+  entries:
+  - item: {fileID: 4471688530674946207, guid: 7c67cda2d66349947afef77a5ebd3ec4, type: 3}
+    weight: 1
+    maxCount: 1
+    minCount: 1

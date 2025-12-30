@@ -1,0 +1,39 @@
+Key,Value
+# Out of Fuel Event
+OutOfFuel.Title,"Out of Fuel"
+OutOfFuel.Description,"Your ship has run out of fuel and cannot continue."
+OutOfFuel.Option1,"Emptiness..."
+
+# Desperate Purchase of Fuel Events
+DesperateBuyFuelForMoney.Title,"Stranded in Space"
+DesperateBuyFuelForMoney.Description,"Without ability to power the engines of the ship we are stuck. As you wait a suspicious ship approaches, offering to sell you fuel. They offer fuel at a high price, but you are desperate."
+DesperateBuyFuelForMoney.Option1,"Pay 50 credits for fuel"
+
+DesperateBuyFuelForJuice.Title,"Stranded in Space"
+DesperateBuyFuelForJuice.Description,"Without ability to power the engines of the ship we are stuck. As you wait a suspicious ship approaches, offering to sell you fuel. They offer fuel at a high price, but you are desperate."
+DesperateBuyFuelForJuice.Option1,"Trade 50 juice for fuel"
+
+DesperateBuyFuelMoneyOrJuice.Title,"Stranded in Space"
+DesperateBuyFuelMoneyOrJuice.Description,"Without ability to power the engines of the ship we are stuck. As you wait a suspicious ship approaches, offering to sell you fuel. They offer fuel at a high price, but you are desperate."
+DesperateBuyFuelMoneyOrJuice.Option1,"Pay 50 credits for fuel"
+DesperateBuyFuelMoneyOrJuice.Option2,"Trade 50 juice for fuel"
+
+# Federation Takeover Event
+FederationTakeover.Title,"Federation Takeover"
+FederationTakeover.Description,"The Federation has seized your ship. Your journey ends here."
+FederationTakeover.Option1,"Surrender"
+
+# All Dead Event
+AllDead.Title,"All Crew Lost"
+AllDead.Description,"All your crew members are dead. There’s no one left to carry on."
+AllDead.Option1,"Accept your fate"
+
+# Trader Encounter
+TraderEncounter.Title,"Suspicious Trader"
+TraderEncounter.Description,"We have encountered a trader who is willing to sell us some goods. They seem to be willing to trade with us, and not mind our relationship with the Federation."
+TraderEncounter.Option1,"Let's see what they have to offer..."
+
+# Boss Encounter
+BossEncounter.Title,"Danger standing in our way"
+BossEncounter.Description,"We encounter readings of some powerful creature on this station. We should be careful."
+BossEncounter.Option1,"We are ready..."

@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9207fe0c-cfcd-42bc-b706-bdd19b765cb7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Maps/End Game Map.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Maps/End Game Map.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Maps/Tutorial Map.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Maps/Tutorial Map.prefab" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSON File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: [
+    {
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDONhziuc6hB3__&quot;,
+        &quot;number&quot;: 196
+      },
+      &quot;lastSeen&quot;: 1753725868000
+    }
+  ]
+}</component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="fixes fixes&#10;&#10;not really but work for #174&#10;&#10;add and use audio normalization tool" />
+        <option name="rewordedMessage" value="fixes&#10;&#10;&#10;fixes fixes&#10;&#10;not really but work for #174&#10;&#10;add and use audio normalization tool" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="01b4f6287acff0c8aa9ae3150f94edead15d8805" />
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MountainCat1/Salvager.git&quot;,
+    &quot;accountId&quot;: &quot;f33f2e06-b1b5-4fb9-b377-3d59ea886be8&quot;
+  },
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
+    },
+    &quot;owner&quot;: &quot;MountainCat1&quot;,
+    &quot;repository&quot;: &quot;Salvager&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Roaming/JetBrains/Rider2024.3/resharper-host/DecompilerCache/decompiler/b0b3ee161b9b40739da01ef24d5555a846ac00/82/b7cdd79b/List`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/ILViewer/0004165128be453398769144f78ad2921eae00/37/d8e33468/02000289.il" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/ILViewer/9f2bbd71d2384397b7a3497b813aad034a200/59/b36390d8/02000038pdb72.il" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0004165128be453398769144f78ad2921eae00/01/cc8e960b/RequireComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0004165128be453398769144f78ad2921eae00/75/f2acf37c/Mathf.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0004165128be453398769144f78ad2921eae00/eb/1570c5fb/Object.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0004165128be453398769144f78ad2921eae00/f8/97313253/SerializeField.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/15efa2e8d4eb43768dbcaf9f7219695210fc00/0e/7f7a6835/Enumerable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1699568f603347458485ab5407c6c179200000/27/1d524add/IMGUIContainer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4ae50e093b6e42d3b4ec42b8ca793dac46ae00/55/34f3ad54/Nullable`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4ae50e093b6e42d3b4ec42b8ca793dac46ae00/a3/94c0ea1b/String.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/55/ddc32d82/IEnumerable`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/58/d113d138/ICloneable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b0b3ee161b9b40739da01ef24d5555a846ac00/62/29b3bf02/List`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f5b293c74049457cabc28437c5a763925a00/0e/e1a30c2f/ITickable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d44b17e136d09081da1e8fd0e8c83fde60e11818b9f2442d7ed8cb733fae895e/System.Collections.Generic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Mountain Cat/Projects/Unity/.GameDev/Salvager/Salvager/Assets/Resources/Maps/End Game Map.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Mountain Cat/Projects/Unity/.GameDev/Salvager/Salvager/Assets/Resources/Maps/End Game Map.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/HighlightableUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Mountain Cat/Projects/Unity/.GameDev/Salvager/Salvager/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Tools/ffmpeg/Editor/FFmpegNormalizer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap.extras@b9e908ce61f4/Editor/Tiles/AutoTile/AutoTileTemplate.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1a71b488df3e/Runtime/UGUI/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1a71b488df3e/Runtime/UGUI/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1a71b488df3e/Runtime/UGUI/UI/Core/Slider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../.VRC/RexLabV3/Packages/de.thryrallo.vrc.avatar-performance-tools/Editor/AvatarEvaluator.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="SWEA" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="30SjSqcsWdeEmYwCEBFmRDoAAEG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor & Play.executor": "Debug",
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "XThreadsFramesViewSplitterKey": "0.49387756",
+    "git-widget-placeholder": "mega-pathfinding-update",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "TEXT"
+    ]
+  }
+}]]></component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Build\Salvager.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Mountain Cat\Projects\Unity\.GameDev\Salvager\Salvager\Build" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.1.15f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;C:\Users\Mountain Cat\Projects\Unity\.GameDev\Salvager\Salvager&quot; -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Mountain Cat\Projects\Unity\.GameDev\Salvager\Salvager" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.1.15f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;C:\Users\Mountain Cat\Projects\Unity\.GameDev\Salvager\Salvager&quot; -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Mountain Cat\Projects\Unity\.GameDev\Salvager\Salvager" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="2648">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="2648" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list>
+          <MonoRuntime />
+        </list>
+      </option>
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="useMixedMode" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="useMixedMode" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9207fe0c-cfcd-42bc-b706-bdd19b765cb7" name="Changes" comment="" />
+      <created>1753627871454</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1753627871454</updated>
+      <workItem from="1753627874155" duration="36000" />
+      <workItem from="1753627918502" duration="9673000" />
+      <workItem from="1753688273978" duration="2929000" />
+      <workItem from="1753691364859" duration="874000" />
+      <workItem from="1753716420885" duration="478000" />
+      <workItem from="1753790291654" duration="7440000" />
+      <workItem from="1753914872791" duration="2861000" />
+      <workItem from="1753946165687" duration="541000" />
+      <workItem from="1753949290430" duration="11727000" />
+      <workItem from="1753985882789" duration="3322000" />
+      <workItem from="1753995661877" duration="1847000" />
+      <workItem from="1754058212974" duration="8350000" />
+      <workItem from="1754129687610" duration="2782000" />
+      <workItem from="1754133078687" duration="315000" />
+      <workItem from="1754138989759" duration="15650000" />
+      <workItem from="1754181162725" duration="3378000" />
+      <workItem from="1754184681625" duration="7946000" />
+      <workItem from="1754288664587" duration="9354000" />
+      <workItem from="1754311260169" duration="12169000" />
+      <workItem from="1754478465878" duration="7082000" />
+      <workItem from="1754570905843" duration="3972000" />
+      <workItem from="1754598489595" duration="3424000" />
+      <workItem from="1754669944464" duration="2861000" />
+      <workItem from="1754673404239" duration="318000" />
+      <workItem from="1754695975695" duration="204000" />
+      <workItem from="1754696205051" duration="296000" />
+      <workItem from="1754696551950" duration="3296000" />
+      <workItem from="1754737691899" duration="5292000" />
+      <workItem from="1754831832873" duration="460000" />
+      <workItem from="1754833005386" duration="7837000" />
+      <workItem from="1754850877765" duration="1248000" />
+      <workItem from="1754861963705" duration="2191000" />
+      <workItem from="1755003928930" duration="3521000" />
+      <workItem from="1755043381985" duration="623000" />
+      <workItem from="1755172703049" duration="36000" />
+      <workItem from="1755267053620" duration="936000" />
+      <workItem from="1755692231033" duration="637000" />
+      <workItem from="1755712057310" duration="1347000" />
+      <workItem from="1755715200544" duration="5330000" />
+      <workItem from="1755791159616" duration="1103000" />
+      <workItem from="1755794399557" duration="1731000" />
+      <workItem from="1755809312564" duration="5737000" />
+      <workItem from="1755823565965" duration="352000" />
+      <workItem from="1756556689411" duration="680000" />
+      <workItem from="1756564736799" duration="1838000" />
+      <workItem from="1756642405443" duration="1693000" />
+      <workItem from="1756934288006" duration="1083000" />
+      <workItem from="1756979082033" duration="4100000" />
+      <workItem from="1756983357042" duration="9501000" />
+      <workItem from="1757160785504" duration="2349000" />
+      <workItem from="1757171630107" duration="2033000" />
+      <workItem from="1757587665105" duration="4075000" />
+      <workItem from="1757613915497" duration="306000" />
+      <workItem from="1757844605996" duration="4237000" />
+      <workItem from="1757939132822" duration="6796000" />
+      <workItem from="1757947204028" duration="26515000" />
+      <workItem from="1758028688469" duration="13045000" />
+      <workItem from="1758094114375" duration="4884000" />
+      <workItem from="1758104294377" duration="5859000" />
+      <workItem from="1758197783242" duration="2040000" />
+      <workItem from="1758717369119" duration="4072000" />
+      <workItem from="1759172815566" duration="2589000" />
+      <workItem from="1759228737637" duration="4377000" />
+      <workItem from="1759254627855" duration="2462000" />
+      <workItem from="1759339236676" duration="5008000" />
+      <workItem from="1759344687011" duration="504000" />
+      <workItem from="1760264465821" duration="1670000" />
+      <workItem from="1761079579511" duration="3963000" />
+      <workItem from="1761312595155" duration="3885000" />
+      <workItem from="1767117357613" duration="5887000" />
+    </task>
+    <task id="LOCAL-00053" summary="fix #221">
+      <option name="closed" value="true" />
+      <created>1754513402055</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1754513402055</updated>
+    </task>
+    <task id="LOCAL-00054" summary="make audio spatial and limited">
+      <option name="closed" value="true" />
+      <created>1754514917686</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1754514917686</updated>
+    </task>
+    <task id="LOCAL-00055" summary="hot fix, format of floating texts">
+      <option name="closed" value="true" />
+      <created>1754515632256</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1754515632256</updated>
+    </task>
+    <task id="LOCAL-00056" summary="work work">
+      <option name="closed" value="true" />
+      <created>1754737735935</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1754737735935</updated>
+    </task>
+    <task id="LOCAL-00057" summary="fix mandam eva sprite, #228">
+      <option name="closed" value="true" />
+      <created>1754737895396</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1754737895396</updated>
+    </task>
+    <task id="LOCAL-00058" summary="fix mandam eva sprite, #228">
+      <option name="closed" value="true" />
+      <created>1754737900310</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1754737900310</updated>
+    </task>
+    <task id="LOCAL-00059" summary="fix typos, add pooling to sounds, remove pitch randomness (maybe will help with audio glitches)">
+      <option name="closed" value="true" />
+      <created>1754740899294</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1754740899294</updated>
+    </task>
+    <task id="LOCAL-00060" summary="refactor SoundPlayer.cs">
+      <option name="closed" value="true" />
+      <created>1754740933660</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1754740933661</updated>
+    </task>
+    <task id="LOCAL-00061" summary="refactor SoundPlayer.cs">
+      <option name="closed" value="true" />
+      <created>1754741057389</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1754741057389</updated>
+    </task>
+    <task id="LOCAL-00062" summary="add hive boss">
+      <option name="closed" value="true" />
+      <created>1754835528819</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1754835528819</updated>
+    </task>
+    <task id="LOCAL-00063" summary="fix achievement for bandits">
+      <option name="closed" value="true" />
+      <created>1754837781171</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1754837781171</updated>
+    </task>
+    <task id="LOCAL-00064" summary="missing prefabs">
+      <option name="closed" value="true" />
+      <created>1754837791893</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1754837791893</updated>
+    </task>
+    <task id="LOCAL-00065" summary="add distinc props for hive location, change grenade achievement">
+      <option name="closed" value="true" />
+      <created>1754839273674</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1754839273674</updated>
+    </task>
+    <task id="LOCAL-00066" summary="fixes in achievements">
+      <option name="closed" value="true" />
+      <created>1754839378242</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1754839378242</updated>
+    </task>
+    <task id="LOCAL-00067" summary="fix ;\">
+      <option name="closed" value="true" />
+      <created>1754852182300</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1754852182300</updated>
+    </task>
+    <task id="LOCAL-00068" summary="i am geniuelnly suicidal atm xddddddddd">
+      <option name="closed" value="true" />
+      <created>1755172726582</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1755172726582</updated>
+    </task>
+    <task id="LOCAL-00069" summary="add reloading">
+      <option name="closed" value="true" />
+      <created>1755719693209</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1755719693209</updated>
+    </task>
+    <task id="LOCAL-00070" summary="make ammo upgradeable">
+      <option name="closed" value="true" />
+      <created>1755785977262</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1755785977262</updated>
+    </task>
+    <task id="LOCAL-00071" summary="fixes, added russian and french translation">
+      <option name="closed" value="true" />
+      <created>1756642608499</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1756642608499</updated>
+    </task>
+    <task id="LOCAL-00072" summary="missing stuff">
+      <option name="closed" value="true" />
+      <created>1756642714214</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1756642714214</updated>
+    </task>
+    <task id="LOCAL-00073" summary="post launch fixes">
+      <option name="closed" value="true" />
+      <created>1757161222494</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1757161222494</updated>
+    </task>
+    <task id="LOCAL-00074" summary="added hit chance display">
+      <option name="closed" value="true" />
+      <created>1757162547486</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1757162547486</updated>
+    </task>
+    <task id="LOCAL-00075" summary="work work">
+      <option name="closed" value="true" />
+      <created>1757589967276</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1757589967277</updated>
+    </task>
+    <task id="LOCAL-00076" summary="add possibility to change font">
+      <option name="closed" value="true" />
+      <created>1757590207431</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1757590207431</updated>
+    </task>
+    <task id="LOCAL-00077" summary="add possibility to change font">
+      <option name="closed" value="true" />
+      <created>1757590212925</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1757590212925</updated>
+    </task>
+    <task id="LOCAL-00078" summary="fix fonts">
+      <option name="closed" value="true" />
+      <created>1757613964378</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1757613964378</updated>
+    </task>
+    <task id="LOCAL-00079" summary="fix spawning holk serum">
+      <option name="closed" value="true" />
+      <created>1757844642787</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1757844642789</updated>
+    </task>
+    <task id="LOCAL-00080" summary="buff for gun lockers">
+      <option name="closed" value="true" />
+      <created>1757844723125</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1757844723125</updated>
+    </task>
+    <task id="LOCAL-00081" summary="update 0.3">
+      <option name="closed" value="true" />
+      <created>1758028713195</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1758028713195</updated>
+    </task>
+    <task id="LOCAL-00082" summary="update 0.4">
+      <option name="closed" value="true" />
+      <created>1758037949718</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1758037949718</updated>
+    </task>
+    <task id="LOCAL-00083" summary="0.5 Update">
+      <option name="closed" value="true" />
+      <created>1758040136853</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1758040136853</updated>
+    </task>
+    <task id="LOCAL-00084" summary="update 0.5.1">
+      <option name="closed" value="true" />
+      <created>1758043327533</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1758043327533</updated>
+    </task>
+    <task id="LOCAL-00085" summary="update 0.7 and 0.8">
+      <option name="closed" value="true" />
+      <created>1758199408918</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1758199408919</updated>
+    </task>
+    <task id="LOCAL-00086" summary="hopefully fixed the interaction stopping to attack someone">
+      <option name="closed" value="true" />
+      <created>1758725940035</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1758725940035</updated>
+    </task>
+    <task id="LOCAL-00087" summary="fix space gambler event option calculations, add achievement for cheating space gambler">
+      <option name="closed" value="true" />
+      <created>1758728070191</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1758728070191</updated>
+    </task>
+    <task id="LOCAL-00088" summary="add credits">
+      <option name="closed" value="true" />
+      <created>1759174767006</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1759174767006</updated>
+    </task>
+    <task id="LOCAL-00089" summary="add cultists room">
+      <option name="closed" value="true" />
+      <created>1759231986023</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1759231986023</updated>
+    </task>
+    <task id="LOCAL-00090" summary="add en and pl localization">
+      <option name="closed" value="true" />
+      <created>1759231997805</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1759231997805</updated>
+    </task>
+    <task id="LOCAL-00091" summary="add missing assets for cultists">
+      <option name="closed" value="true" />
+      <created>1759232013359</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1759232013359</updated>
+    </task>
+    <task id="LOCAL-00092" summary="add toki pona language">
+      <option name="closed" value="true" />
+      <created>1759233504745</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1759233504745</updated>
+    </task>
+    <task id="LOCAL-00093" summary="add warning and explanation of danger when juice is low">
+      <option name="closed" value="true" />
+      <created>1759234226198</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1759234226198</updated>
+    </task>
+    <task id="LOCAL-00094" summary="add highlight to buttons in level selector">
+      <option name="closed" value="true" />
+      <created>1759343787696</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1759343787696</updated>
+    </task>
+    <task id="LOCAL-00095" summary="add friendly fire toggle">
+      <option name="closed" value="true" />
+      <created>1760265130669</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1760265130670</updated>
+    </task>
+    <task id="LOCAL-00096" summary="add yesno dialogue on starting game when save exists">
+      <option name="closed" value="true" />
+      <created>1761081230988</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1761081230988</updated>
+    </task>
+    <task id="LOCAL-00097" summary="add line formation control">
+      <option name="closed" value="true" />
+      <created>1761082118670</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1761082118670</updated>
+    </task>
+    <task id="LOCAL-00098" summary="add display for line orders">
+      <option name="closed" value="true" />
+      <created>1761316492180</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1761316492181</updated>
+    </task>
+    <task id="LOCAL-00099" summary="add preference settings for disabling juice">
+      <option name="closed" value="true" />
+      <created>1767119257492</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1767119257492</updated>
+    </task>
+    <task id="LOCAL-00100" summary="add difficulty selection on the start">
+      <option name="closed" value="true" />
+      <created>1767122522764</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1767122522764</updated>
+    </task>
+    <task id="LOCAL-00101" summary="add difficulty selection on the start">
+      <option name="closed" value="true" />
+      <created>1767123379594</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1767123379594</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+    <option name="unityProject" value="true" />
+    <option name="unityProjectFolder" value="true" />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="add possibility to change font" />
+    <MESSAGE value="fix fonts" />
+    <MESSAGE value="fix spawning holk serum" />
+    <MESSAGE value="buff for gun lockers" />
+    <MESSAGE value="committo" />
+    <MESSAGE value="update 0.3" />
+    <MESSAGE value="update 0.4" />
+    <MESSAGE value="0.5 Update" />
+    <MESSAGE value="update 0.5.1" />
+    <MESSAGE value="update 0.7 and 0.8" />
+    <MESSAGE value="hopefully fixed the interaction stopping to attack someone" />
+    <MESSAGE value="fix space gambler event option calculations, add achievement for cheating space gambler" />
+    <MESSAGE value="add credits" />
+    <MESSAGE value="add cultists room" />
+    <MESSAGE value="add en and pl localization" />
+    <MESSAGE value="add missing assets for cultists" />
+    <MESSAGE value="add toki pona language" />
+    <MESSAGE value="add warning and explanation of danger when juice is low" />
+    <MESSAGE value="add highlight to buttons in level selector" />
+    <MESSAGE value="add friendly fire toggle" />
+    <MESSAGE value="add yesno dialogue on starting game when save exists" />
+    <MESSAGE value="add line formation control" />
+    <MESSAGE value="add display for line orders" />
+    <MESSAGE value="add preference settings for disabling juice" />
+    <MESSAGE value="add difficulty selection on the start" />
+    <option name="LAST_COMMIT_MESSAGE" value="add difficulty selection on the start" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Items/Projectiles/Projectile.cs</url>
+          <line>139</line>
+          <properties documentPath="C:\Users\Mountain Cat\Projects\Unity\.GameDev\Salvager\Salvager\Assets\Scripts\Items\Projectiles\Projectile.cs" containingFunctionPresentation="Method 'OnProjectileCollision'">
+            <startOffsets>
+              <option value="4140" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4141" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Type#LocationFeatureData" memberName="GenericRoomBlueprints" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="XPathView.XPathProjectComponent">
+    <history />
+    <find-history />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

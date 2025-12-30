@@ -1,0 +1,72 @@
+Key,Value
+
+# Location Selector Tutorial
+Steps.Resources,"lipu ni li jo e telo seli sina e telo kili sina e mani sina.
+
+<size=50%>awen la, o pilin e nena Enter/Space...</size>"
+Steps.Crew,"lipu ni li jo e jan.
+
+<size=50%>awen la, o pilin e nena Enter/Space...</size>"
+Steps.Station,"lipu ni li jo e toki lon ma ni.
+
+<size=50%>awen la, o pilin e nena Enter/Space...</size>"
+Steps.Map.1,"lon la, sina ken lukin e ma ale.
+
+<size=50%>awen la, o pilin e nena Enter/Space...</size>"
+Steps.Map.2,"wile sona mute lon ma la, o pilin e ma.
+
+<size=50%>awen la, o pilin e nena Enter/Space...</size>"
+Steps.Map.3,"ma li ante: ma pi tomo tawa, en <color=yellow>ma esun</color>, en <color=purple>ma musi</color>, en <color=red>ma pi ike wawa</color>.
+
+<size=50%>awen la, o pilin e nena Enter/Space...</size>"
+Steps.LocationInteractions,"lipu ni li tan pilin pi ma ni.
+
+<size=50%>awen la, o pilin e nena Enter/Space...</size>"
+Steps.LocationInteractions.Embark,"sina pilin e ma wile la, o pilin e nena <b>o tawa</b>. ni li weka e telo seli wan.
+
+<size=50%>awen la, o pilin e nena Enter/Space...</size>"
+Steps.LocationInteractions.Dock,"open pi tomo tawa la, o pilin e nena <b>o wan</b>. tomo tawa la, o sona e tomo mute, o utala. o kama jo e ale pi ken sina.
+
+<size=50%>awen la, o pilin e nena Enter/Space...</size>"
+Steps.LocationInteractions.Inventory,"sina wile ante e poki jan e wawa jan la, o pilin e nena <b>poki</b>.
+
+<size=50%>awen la, o pilin e nena Enter/Space...</size>"
+Steps.LocationInteractions.Upgrader,"sina wile wawa e ilo la, o kepeken e <b>ilo wawa</b>.
+
+<size=50%>awen la, o pilin e nena Enter/Space...</size>"
+Steps.LocationInteractions.Docking,"sina ken wan e tomo tawa. o pilin e nena <b>o wan</b>. sina open e tomo kepeken jan ale <b>pilin</b>.
+
+<size=50%>awen la, o pilin e nena Enter/Space...</size>"
+Steps.Finish,"ni li pini!
+o tawa pona. moli jan en jan ike en ike wawa en jan Petela li wile moli e sina a.
+tawa sina la, o moku e kala pona!
+
+<size=50%>awen la, o pilin e nena Enter/Space...</size>"
+
+# In Game Tutorial
+Welcome,"o kama pona!
+awen la, o pilin e nena Space..."
+SelectUnit,"o pilin e jan kepeken ilo tawa.
+o (awen) pilin e nena soto (NS) pi ilo tawa lon jan ni."
+MoveCommand,"pona a!
+tenpo ni la, o tawa e jan.
+jan li pilin la, o pilin e nena teje (NT) pi ilo tawa lon ma pi lon ala."
+Explore,"pona mute a!
+tenpo ni la, o tawa sewi e jan sina, o sona e tomo ni."
+SearchCabinet,"o lukin! ni li seme? ni li poki! ken la, ijo li lon insa ona...
+o pilin e NT lon poki ni."
+OpenInventory,"pona! sina alasa e ilo utala! taso jan li jo ala e ni.
+open pi poki jan la, o pilin e nena <b>I</b>."
+EquipRifle,"o pana e ilo tawa jan.
+o pilin e ilo kepeken NS."
+KillZombieMove,"pona! tenpo li kama a. o kepeken e ilo.
+o tawa teje, o moli e moli tawa."
+KillZombie,"<color=red>O MOLI!</color>"
+ProceedDown,"pakala, monsuta a...
+o tawa anpa. o alasa e nasin tawa ma ante."
+CryoPod,"ni li <color=#00ffff>poki lete pi awen jan</color>! o pilin e ni, o lape ala e jan insa."
+NewFriend,"sina jo e jan pona sin!
+o tawa soto.
+tawa pona a, moli jan li lon."
+Extract,"o tawa weka!
+o pilin e poki pi tawa jan."

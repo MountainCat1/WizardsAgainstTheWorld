@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f327af661d9bc94abe3f843bc3401fe, type: 3}
+  m_Name: Swarm Queen Room
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Swarm Queen Room
+  <Props>k__BackingField: []
+  <StartingRoom>k__BackingField: 0
+  <BossRoom>k__BackingField: 1
+  <FarAwayRoom>k__BackingField: 1
+  <Enemies>k__BackingField:
+  - enemy: {fileID: 4407814980252904161, guid: 225cfc168814cba45a365e5df23f7f34, type: 3}
+    minAmount: 1
+    maxAmount: 1
+  - enemy: {fileID: 8620425100322646659, guid: d503d49d1e1a689458024c8ac3056709, type: 3}
+    minAmount: 1
+    maxAmount: 5

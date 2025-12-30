@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f327af661d9bc94abe3f843bc3401fe, type: 3}
+  m_Name: Reactor Room
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Reactor Room
+  <Props>k__BackingField:
+  - prefab: {fileID: 7504725883501808771, guid: 997e8b6b55613d74790bad3caa685e27, type: 3}
+    position: 1
+    offset: {x: 0, y: 0}
+    count: 1
+  - prefab: {fileID: 6810680414111103213, guid: f2c9c32a85632534eaf4cd6b698bfcbe, type: 3}
+    position: 1
+    offset: {x: 0, y: 0}
+    count: 2
+  - prefab: {fileID: 6304498614303271137, guid: 59e52cc4d2c554e419ebe93ed18638d3, type: 3}
+    position: 3
+    offset: {x: 0, y: 0}
+    count: 3
+  <StartingRoom>k__BackingField: 0
+  <BossRoom>k__BackingField: 0
+  <FarAwayRoom>k__BackingField: 1
+  <Enemies>k__BackingField: []

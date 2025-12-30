@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 160f6ec4d3f94ba480812f61887255d2, type: 3}
+  m_Name: 0_Starting Zone
+  m_EditorClassIdentifier: 
+  typeName: Quarantine Zone
+  minDifficulty: 0
+  maxDifficulty: 0
+  typeDescription: Forbidden sector. Untapped resources, but the 'Grey Blight' transformed
+    the population into aggressive, mutated husks. Extreme hazards abound.
+  originLocationFeatures:
+    items:
+    - item: {fileID: 11400000, guid: eb9151ffc5af0734db15126de721b1d0, type: 2}
+      weight: 1
+  endLocationFeatures:
+    items:
+    - item: {fileID: 11400000, guid: 58cb49e92d8426745b346c684ca08bd5, type: 2}
+      weight: 0
+  weightedLocationFeatures:
+    items:
+    - item: {fileID: 11400000, guid: 1c6103a0858fd3a40a54c009e23cc1ad, type: 2}
+      weight: 1
+    - item: {fileID: 11400000, guid: fb33178cde50dc9419efb554a3dd8d64, type: 2}
+      weight: 0.3
+  weightedSecondaryLocationFeatures:
+    items:
+    - item: {fileID: 11400000, guid: b83a3908a9e95474abf3120d09b9b896, type: 2}
+      weight: 2
+    - item: {fileID: 11400000, guid: 5d38bbf8b38b28d479dc544a35dcc03d, type: 2}
+      weight: 0.5
+    - item: {fileID: 11400000, guid: 5a710d4dce8ad7b4a8b17cece9c17f4f, type: 2}
+      weight: 0.6
+    - item: {fileID: 11400000, guid: a0909348ec61c05408cfd0d400597ff5, type: 2}
+      weight: 0.2
+    - item: {fileID: 11400000, guid: 76fe599996a4d0247be0df435178a3f1, type: 2}
+      weight: 0.1
+    - item: {fileID: 11400000, guid: da76a559c2ace7148a0abbcbf3dfe1bc, type: 2}
+      weight: 0.1
+  maxSecondaryFeatures: 3
+  minSecondaryFeatures: 1
+  maxShops: 2
+  minShops: 2
+  minEventNodes: 0
+  maxEventNodes: 1
+  minLocations: 8
+  maxLocations: 9

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37804311037647599ec1e3ffa8d10107, type: 3}
+  m_Name: Merchant_HasGold_GiveKey
+  m_EditorClassIdentifier: 
+  <Sentences>k__BackingField:
+  - <Type>k__BackingField: 0
+    <Text>k__BackingField: Hello traveler!
+  - <Type>k__BackingField: 0
+    <Text>k__BackingField: Can i interest you in this DELICIOUS!
+  - <Type>k__BackingField: 0
+    <Text>k__BackingField: Ow... You have some gold?
+  - <Type>k__BackingField: 0
+    <Text>k__BackingField: Alright! Here you go, bottle of vodka is yours!
+  <Signals>k__BackingField: []

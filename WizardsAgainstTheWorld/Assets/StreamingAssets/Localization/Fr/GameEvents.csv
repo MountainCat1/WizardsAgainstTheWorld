@@ -1,0 +1,14 @@
+Key,Value
+
+# Effect Labels
+Effects.AddJuice,"Gain <color=green>{0}u</color> jus"
+Effects.LoseJuice,"Perte <color=red>{0}u</color> jus"
+Effects.AddMoney,"Gain <color=green>{0}$</color>"
+Effects.LoseMoney,"Perte <color=red>{0}$</color>"
+Effects.AddFuel,"Gain <color=green>{0}u</color> essence"
+Effects.LoseFuel,"Perte <color=red>{0}u</color> essence"
+Effects.Lose,"Vous avez échoué"
+Effects.AddExperienceToAllCrew,"Gain <color=green>{0}</color> éxperience pour tous les coéquipiers"
+Effects.LoseExperienceFromAllCrew,"Perte <color=red>{0}</color> éxperience pour tous les coéquipiers"
+
+# Tooltips

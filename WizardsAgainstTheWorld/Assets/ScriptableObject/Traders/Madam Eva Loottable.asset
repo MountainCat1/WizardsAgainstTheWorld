@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba0217508e9c4bcea82072745b7ff13b, type: 3}
+  m_Name: Madam Eva Loottable
+  m_EditorClassIdentifier: 
+  entries:
+  - item: {fileID: -605945850564881167, guid: e76efa000aae6304cbdd832956234068, type: 3}
+    weight: 3.5
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: 3410966999079521757, guid: fe8b9753bfd2251458332952e7391a3f, type: 3}
+    weight: 2.5
+    maxCount: 3
+    minCount: 1
+  - item: {fileID: 6320578954216408902, guid: bb563baabd1ccdf4da87975099668eec, type: 3}
+    weight: 2
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: 5707232060786396027, guid: 5cd65b361ce4c16498ae6bbf5ae8adb4, type: 3}
+    weight: 2
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: 8149439460056631794, guid: 29e38d8aba3ad9949b43376eee6480fa, type: 3}
+    weight: 2.5
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: 6567434340604348349, guid: 0c7029489a551f0418454b013b443445, type: 3}
+    weight: 0.5
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: 6567434340604348349, guid: 235d22ae69303554081a679365e644db, type: 3}
+    weight: 1.5
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: -956263774904454016, guid: 428466d8294d29445badc87befaec652, type: 3}
+    weight: 4.5
+    maxCount: 5
+    minCount: 3
+  - item: {fileID: 1490104874332663270, guid: f5667cc5cc0be034991878b1593d9ae2, type: 3}
+    weight: 2
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: 6320578954216408902, guid: 9eb86fe81e9f33c43bedbc7c32d0622d, type: 3}
+    weight: 3
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: 1490104874332663270, guid: c6651bdaa3e77bb41bb67379c7adaa74, type: 3}
+    weight: 3
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: 8764117132794707397, guid: d1a489853a78c354e960ce57b40f8a77, type: 3}
+    weight: 1.5
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: 5886349820611188464, guid: 14f871d0ea1229d44a1d4298f1097c0a, type: 3}
+    weight: 1
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: -4666994684784650938, guid: e5d187cc06e37f3419decbee72c0e4cf, type: 3}
+    weight: 0.5
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: -4666994684784650938, guid: dfd3e9dbb902d3740acf160537460117, type: 3}
+    weight: 0.5
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: -4666994684784650938, guid: 7c06afcb4055b7f4cbef5477f8dd0afd, type: 3}
+    weight: 0.5
+    maxCount: 1
+    minCount: 1

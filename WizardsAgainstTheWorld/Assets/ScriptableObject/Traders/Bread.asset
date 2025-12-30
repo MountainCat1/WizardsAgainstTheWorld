@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e64e715df64b48c6b819088cce3f4dbf, type: 3}
+  m_Name: Bread
+  m_EditorClassIdentifier: 
+  traderName: Breadator
+  traderDescription: Bread breading bread
+  traderIcon: {fileID: 138119311024897176, guid: 0320a7538680e4d49bffb97bedac3eb1, type: 3}
+  maxItems: 6
+  minItems: 3
+  traderItems: {fileID: 11400000, guid: 1762a4b614c243647bac7c4f4b9abe63, type: 2}

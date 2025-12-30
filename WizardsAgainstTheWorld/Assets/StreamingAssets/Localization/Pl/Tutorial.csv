@@ -1,0 +1,48 @@
+Key,Value
+
+# Location Selector Tutorial
+Steps.Resources,"Ten fragment interfejsu pokazuje dostępne zasoby."
+Steps.Crew,"Ten fragment interfejsu pokazuje dostępnych członków załogi."
+Steps.Station,"Tutaj wyświetlana jest stacja, na której obecnie się znajdujesz."
+Steps.Map.1,"Tutaj możesz zobaczyć wszystkie znane lokacje w regionie."
+Steps.Map.2,"Kliknij dowolną lokację, aby dowiedzieć się więcej."
+Steps.Map.3,"Lokacje mogą mieć następujące typy: stacje, <color=yellow>sklepy</color>, <color=purple>wydarzenia</color> oraz <color=red>bossowie</color>."
+Steps.LocationInteractions,"Ten panel pozwala na interakcję z aktualnie wybraną lokacją na mapie."
+Steps.LocationInteractions.Embark,"Kliknij <b>Wyrusz</b>, aby udać się do wybranej lokacji. To kosztuje 1 jednostkę paliwa."
+Steps.LocationInteractions.Dock,"Kliknij <b>Dokuj</b>, aby wejść na stację. Przeszukasz jej pomieszczenia."
+Steps.LocationInteractions.Inventory,"Otwórz <b>Ekwipunek</b>, aby zarządzać wyposażeniem i umiejętnościami załogi."
+Steps.LocationInteractions.Upgrader,"Wejdź do <b>Ulepszacza</b>, aby ulepszać broń za pomocą złomu lub kredytów."
+Steps.LocationInteractions.Docking,"Będąc nad niezbadanymi stacjami, możesz <b>Dokować</b>, aby wejść z <b>wybraną</b> załogą."
+Steps.Finish,"To wszystko!
+Uważaj na to, co czai się w opuszczonych stacjach — zakażeni, obcy, zbuntowane roboty i agenci Federacji będą chcieli cię dopaść.
+Bądź czujny i powodzenia w podróży!"
+
+# In Game Tutorial
+Welcome,"Witamy w grze!
+Naciśnij Spację, aby kontynuować..."
+SelectUnit,"Zaznacz swoją jednostkę myszką.
+Możesz kliknąć lub zaznaczyć przeciągając."
+MoveCommand,"Dobrze!
+Teraz rozkaż żołnierzowi się przemieścić.
+Zaznacz jednostkę i kliknij PPM na dostępnej przestrzeni."
+Explore,"Świetnie!
+Teraz przesuń swoją jednostkę w górę i zbadaj stację."
+SearchCabinet,"Co to tam jest? To szafka — może być w niej coś cennego...
+Zaznacz jednostkę,
+kliknij PPM na obiekt, z którym chcesz wejść w interakcję!
+W tym przypadku kliknij szafkę, by ją przeszukać."
+OpenInventory,"Znakomicie! Znalazłeś karabin! Czas go wyposażyć
+Naciśnij <b>I</b> na klawiaturze, aby otworzyć ekwipunek."
+EquipRifle,"Teraz wyposaż karabin na swojej jednostce.
+Zaznacz karabin w ekwipunku."
+KillZombieMove,"Doskonale! Czas przetestować to cacko,
+przesuń się na wschód i zabij zombiaka czającego się w pobliżu."
+KillZombie,"<color=red>ZABIJ GO!</color>"
+ProceedDown,"Uff, to było straszne...
+Teraz zejdź w dół — musimy znaleźć wyjście."
+CryoPod,"To <color=#00ffff>Kapsuła Kriogeniczna</color>, wejdź z nią w interakcję, aby wskrzesić żołnierza w środku."
+NewFriend,"Wygląda na to, że mamy nowego towarzysza!
+Teraz rusz w lewo.
+Uważaj — są tu kolejne zombiaki."
+Extract,"Czas się stąd wydostać!
+Ewakuuj żołnierzy przez windę."

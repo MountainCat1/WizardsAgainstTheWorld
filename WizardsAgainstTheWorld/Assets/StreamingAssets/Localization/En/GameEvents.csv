@@ -1,0 +1,14 @@
+Key,Value
+
+# Effect Labels
+Effects.AddJuice,Gain <color=green>{0}u</color> juice
+Effects.LoseJuice,Lose <color=red>{0}u</color> juice
+Effects.AddMoney,Gain <color=green>{0}$</color>
+Effects.LoseMoney,Lose <color=red>{0}$</color>
+Effects.AddFuel,Gain <color=green>{0}u</color> fuel
+Effects.LoseFuel,Lose <color=red>{0}u</color> fuel
+Effects.Lose,You lose
+Effects.AddExperienceToAllCrew,Gain <color=green>{0}</color> experience for all crew members
+Effects.LoseExperienceFromAllCrew,Lose <color=red>{0}</color> experience from all crew members
+
+# Tooltips

@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 160f6ec4d3f94ba480812f61887255d2, type: 3}
+  m_Name: 3_Alien Infestation
+  m_EditorClassIdentifier: 
+  typeName: Alien Infestation
+  minDifficulty: 4
+  maxDifficulty: 4
+  typeDescription: This cluster of stations has fallen to a rapidly spreading alien
+    presence. Each station is a node in their growing network, connected by infested
+    transit tunnels. The scale of the threat is immense, and containment seems impossible.
+  originLocationFeatures:
+    items:
+    - item: {fileID: 11400000, guid: eb9151ffc5af0734db15126de721b1d0, type: 2}
+      weight: 1
+  endLocationFeatures:
+    items:
+    - item: {fileID: 11400000, guid: cde5182df55fb1440977314ad87a2d55, type: 2}
+      weight: 1
+  weightedLocationFeatures:
+    items:
+    - item: {fileID: 11400000, guid: c97f959e8064ef44982f9252b0b6aa5e, type: 2}
+      weight: 0.2
+    - item: {fileID: 11400000, guid: 44585f6bff37a2347a328b16d4b5363f, type: 2}
+      weight: 0.8
+    - item: {fileID: 11400000, guid: cd5b5817c4fbd66409ae22de926c6576, type: 2}
+      weight: 0.3
+  weightedSecondaryLocationFeatures:
+    items:
+    - item: {fileID: 11400000, guid: b83a3908a9e95474abf3120d09b9b896, type: 2}
+      weight: 0.5
+    - item: {fileID: 11400000, guid: 5d38bbf8b38b28d479dc544a35dcc03d, type: 2}
+      weight: 1.4
+    - item: {fileID: 11400000, guid: 5ab22e6b3067e744f848643399a57d86, type: 2}
+      weight: 0.4
+    - item: {fileID: 11400000, guid: a0909348ec61c05408cfd0d400597ff5, type: 2}
+      weight: 0.5
+    - item: {fileID: 11400000, guid: 76fe599996a4d0247be0df435178a3f1, type: 2}
+      weight: 0.25
+    - item: {fileID: 11400000, guid: da76a559c2ace7148a0abbcbf3dfe1bc, type: 2}
+      weight: 0.3
+    - item: {fileID: 11400000, guid: 21fc6b63ef86e154b9be482902c99187, type: 2}
+      weight: 0.2
+  maxSecondaryFeatures: 5
+  minSecondaryFeatures: 2
+  maxShops: 3
+  minShops: 2
+  minEventNodes: 1
+  maxEventNodes: 3
+  minLocations: 10
+  maxLocations: 12

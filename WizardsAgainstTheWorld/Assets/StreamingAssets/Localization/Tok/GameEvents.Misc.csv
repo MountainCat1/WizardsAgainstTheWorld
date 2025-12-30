@@ -1,0 +1,30 @@
+Key,Value
+# Crate In Space
+CrateInSpace.Title,"poki li tawa lon ma ala"
+CrateInSpace.Description,"sina lukin e poki. ona li tawa lon suno. ona ken jo e ijo mani."
+CrateInSpace.Option1,"o open e poki"
+CrateInSpace.Option2,"o kepeken e ilo pona a!"
+# Stranger Needs Fuel Event
+StrangerNeedsFuel.Title,"jan wile"
+StrangerNeedsFuel.Description,"jan tawa li toki e ni: o pana e telo seli. ni la"
+StrangerNeedsFuel.Option1,"o weka"
+StrangerNeedsFuel.Option2,"mi ken pana a!"
+# Training Facility Event
+TrainingFacility.Title,"tomo pi sona tawa"
+TrainingFacility.Description,"sina alasa e tomo pi sona tawa utala. mani la"
+TrainingFacility.Option1,"o weka"
+TrainingFacility.Option2,"mi wile kama sona"
+# Space Gambler
+SpaceGambler.Title,"jan pi musi mani"
+SpaceGambler.Description,"sina toki e jan pi musi mani ""Alesu"". ona toki e ni: o kama jo e mani mute mute! o musi e musi mi!"
+SpaceGambler.Option1,"o weka"
+SpaceGambler.Option2,"sina ken weka e mani sina 100%, taso sina ken kama jo e mani ale!"
+SpaceGambler.Option3,"musi li pona la, sina ken kepeken e <b>ilo ante</b>!"
+# Drifting Crate Event
+DriftingCrate.Title,"poki tawa"
+DriftingCrate.Description,"poki li tawa wawa lon ma ala. ona ken jo e ilo mani, taso tawa ona li ken ike."
+DriftingCrate.Option1,"o weka ona"
+DriftingCrate.Option2,"o wawa e ilo seli!"
+DriftingCrate.Option2.Tooltip.Lose,"sina ken ala jo e poki"
+DriftingCrate.Option3,"o wawa e ilo seli! o kepeken e ilo sina pi telo kili!"
+DriftingCrate.Option3.Tooltip.Lose,"sina ken ala jo e poki"

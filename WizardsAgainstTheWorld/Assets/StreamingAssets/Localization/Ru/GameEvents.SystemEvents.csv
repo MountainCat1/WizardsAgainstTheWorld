@@ -1,0 +1,39 @@
+Key,Value
+# Out of Fuel Event
+OutOfFuel.Title,"Кончилось топливо"
+OutOfFuel.Description,"У вас закончилось топливо и вы застряли посреди космоса."
+OutOfFuel.Option1,"Пустота..."
+
+# Desperate Purchase of Fuel Events
+DesperateBuyFuelForMoney.Title,"Застрявшие в космосе"
+DesperateBuyFuelForMoney.Description,"Вы застряли посреди звёзд без возможности запустить двигатели. Пока вы думали, что делать, приблизился какой-то подозрительный корабль. Они предлагают топливо по высокой цене, но выхода нет."
+DesperateBuyFuelForMoney.Option1,"Заплатить 50₵ за топливо"
+
+DesperateBuyFuelForJuice.Title,"Застрявшие в космосе"
+DesperateBuyFuelForJuice.Description,"Вы застряли посреди звёзд без возможности запустить двигатели. Пока вы думали, что делать, приблизился какой-то подозрительный корабль. Они предлагают топливо по высокой цене, но выхода нет."
+DesperateBuyFuelForJuice.Option1,"Отдать 50 Сока за топливо"
+
+DesperateBuyFuelMoneyOrJuice.Title,"Застрявшие в космосе"
+DesperateBuyFuelMoneyOrJuice.Description,"Вы застряли посреди звёзд без возможности запустить двигатели. Пока вы думали, что делать, приблизился какой-то подозрительный корабль. Они предлагают топливо по высокой цене, но выхода нет."
+DesperateBuyFuelMoneyOrJuice.Option1,"Заплатить 50₵ за топливо"
+DesperateBuyFuelMoneyOrJuice.Option2,"Отдать 50 Сока за топливо"
+
+# Federation Takeover Event
+FederationTakeover.Title,"Захват Федерацией"
+FederationTakeover.Description,"Федерация захватила ваш корабль. Ваше приключение кончается здесь."
+FederationTakeover.Option1,"Сдаться"
+
+# All Dead Event
+AllDead.Title,"Все погибли"
+AllDead.Description,"Все члены экипажа погибли. Больше летать некому."
+AllDead.Option1,"Принять судьбу"
+
+# Trader Encounter
+TraderEncounter.Title,"Подозрительный Торговец"
+TraderEncounter.Description,"Вам встретился торговец. Они не против иметь с вами дело, не смотря на ваши отношения с Федерацией."
+TraderEncounter.Option1,"Посмотрим, что у него есть..."
+
+# Boss Encounter
+BossEncounter.Title,"Опасность на нашем пути"
+BossEncounter.Description,"Мы получаем сигналы о присутствии какого-то могущественного существа. Нам следует быть настороже."
+BossEncounter.Option1,"Мы готовы..."

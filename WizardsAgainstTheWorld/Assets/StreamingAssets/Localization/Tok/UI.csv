@@ -1,0 +1,245 @@
+Key,Value
+
+Stat.Speed,"wawa noka"
+Stat.Damage,"wawa utala"
+Stat.AttackSpeed,"tenpo utala"
+Stat.AccuracyFlat,"wawa lukin"
+Stat.ArmorFlat,"awen utala"
+Stat.ArmorPercentage,"awen"
+Stat.MovementSpeed,"wawa noka"
+Stat.Unknown,"ala"
+
+StatChange.ArmorFlat,"awen utala: {0}"
+StatChange.ArmorPercentage,"awen: {0}"
+StatChange.MovementSpeed,"wawa noka: {0}"
+StatChange.Speed,"wawa noka: {0}"
+StatChange.Damage,"wawa utala: {0}"
+StatChange.AttackSpeed,"tenpo utala: {0}"
+StatChange.AccuracyFlat,"wawa lukin: {0}"
+StatChange.Unknown,"ala: {0}"
+
+Effects.RegenerationEffect,"pona: {0} lon kipisi tenpo lili wan"
+Effects.ProjectileStatusEffect,"kon pi kiwen tawa: {0}"
+
+StatusEffects.Burning.Name,"seli"
+
+Skills.Accuracy.Name,"wawa lukin"
+Skills.Agility.Name,"wawa tawa"
+Skills.Constitution.Name,"wawa sijelo"
+Skills.HeavyConstitution.Name,"wawa sijelo suli"
+Skills.Light.Name,"lili"
+Skills.TriggerHappy.Name,"wile moli"
+
+
+# Tooltip messages
+LocationInteractions.AlreadyVisitedTooltip,"ma ni li pini."
+LocationInteractions.NoCrewSelectedTooltip,"o pilin e jan."
+LocationInteractions.NotEnoughFuel,"telo seli li ala."
+LocationInteractions.BlockedTooltip,"jan ike lon nasin mi."
+LocationInteractions.NoFuelTooltip,"telo seli li ala."
+LocationInteractions.DisengagementCostTooltip,"telo seli li ala tan tawa weka."
+
+Resources.Fuel.Tooltip,"o kepeken e <b>telo seli</b> tan tawa. ona li lon esun."
+Resources.Juice.Tooltip,"<b>telo kili</b> li pona e jan lon tawa. ona li lon esun."
+Resources.Money.Tooltip,"o kepeken e <b>mani</b> tan esun. o kama jo e mani tan kiwen esun, tan ilo esun."
+
+# Button labels
+LocationInteractions.Embark,"o tawa"
+LocationInteractions.Dock,"o wan"
+LocationInteractions.Disengage,"o tawa weka (3 telo seli)"
+LocationInteractions.Inventory,"poki"
+LocationInteractions.Upgrade,"o wawa"
+LocationInteractions.Trade,"o esun"
+LocationInteractions.Jump,"<b>tawa suli</b>"
+# Shop UI
+LocationInteractions.Shop.BuyFuel,"o esun e telo seli"
+LocationInteractions.Shop.FuelPrice,"{0}$/1u"
+LocationInteractions.Shop.BuyJuice,"o esun e telo kili"
+LocationInteractions.Shop.JuicePrice,"{0}$/10u"
+
+Trader.Breadator.Name,"jan Pan"
+Trader.Breadator.Description,"ona li lawa pi utala ilo nanpa 3128. jan Pan li esun kiwen. ona esun e ilo wawa sin tan tomo tawa tan jan pi tomo tawa. jan toki e ni: tenpo pini la, ilo pi sama jan li wan tawa kipisi pan. ilo li kama jo e ko jan e wile lawa. o moku ala e pan lon poka sina a."
+Trader.MadamEva.Name,"meli Ewa"
+Trader.MadamEva.Description,"jan li toki e ni: tenpo pini la, meli Ewa li lawa wawa li esun e len e kiwen mani. tenpo ni la, ona li pana e ilo pona pi ala utala: poki pona, en ilo ante, en ilo len, en ilo pi sona wawa. jan sona ala e sona ni."
+Trader.Meinhass.Name,"soweli Manasu"
+Trader.Meinhass.Description,"jan esun nasa li esun e ilo utala pi wawa mute. ilo ona li monsuta. toki ona li monsuta. ona li wile e ni: lon la, pali pi pakala wawa a. jan li toki lili e ni: ona li open e esun kepeken pakala wawa. ona li moli e mama ona kepeken leko pakala wawa."
+Trader.Treatie.Name,"soweli Sisi"
+Trader.Treatie.Description,"jan esun pi ala pilin. pona li lon ala tawa ona. ona li wile e ni: moli pi tawa suli a. sina wile e ilo la, ilo ni li tawa suli e kiwen mute la, soweli Sisi li ken pona tawa sina."
+
+# Crew List UI
+CrewList.NoWeaponSelected,"ILO UTALA LI WEKA"
+CrewList.Level,"wawa: {0}"
+
+# Location Details UI
+
+LocationDetails.NoSelection,"o pilin e ma"
+LocationDetails.SelectToView,"o pilin e ma tan lukin sitelen mute"
+
+LocationFeatures.Empty,"ma ala."
+LocationFeatures.EventNode,"<color=purple>ma li pana e sitelen pi pona wile.</color>"
+LocationFeatures.Movement,"tawa ma: {0}."
+LocationFeatures.ShopPresent,"<color=yellow>tomo esun li lon.</color>"
+LocationFeatures.EndNode,"<color=green>ma ni li wan e ma ni e ma ante kepeken lupa wawa. sina ken tawa ma ante kepeken ona.</color>"
+
+LocationFeatures.Armory,"tomo pi ilo utala li lon."
+LocationFeatures.BanditHideout,"<color=red>jan ike li lon.</color>"
+LocationFeatures.Bloodspawn,"<color=red>ike wawa pi telo loje li lon.</color>"
+LocationFeatures.CryogenicLab,"<color=#00ffff>toki lete li kama tan ma ni. tomo lete pi awen jan li lon.</color>"
+LocationFeatures.HOLKLabolatory,"<color=red>tomo len pi kulupu H.O.L.K. li lon.</color>"
+LocationFeatures.Killerbot,"<color=red>MOLILO li lon.</color>"
+LocationFeatures.Medbay,"kipisi tomo ni li tomo misikeke."
+LocationFeatures.Megatron,"<color=red>WAWILO li lon.</color>"
+LocationFeatures.Office,"kipisi tomo ni li tomo lipu."
+LocationFeatures.SpecOps,"sina ken kute e toki tan ilo toki pi tawa tomo."
+LocationFeatures.Storage,"kipisi tomo ni li tomo kiwen mute."
+LocationFeatures.Swarmqueen,"<color=red>ike wawa pi pipi mute li lon.</color>"
+LocationFeatures.Hive,"<color=red>tomo pipi li lon.</color>"
+LocationFeatures.TurretDefenseSystem,"tomo tawa ni li jo e ilo awen pi pana kiwen."
+LocationFeatures.HabitatStation,"tenpo pini la, ni li tomo jan."
+LocationFeatures.AliensEvolved,"sina lukin e ike wawa."
+LocationFeatures.Aliens,"sina lukin e ike."
+LocationFeatures.FMS,"tomo ni li tomo lawa pi jan Petela."
+LocationFeatures.FederationSoldiers1,"<color=red>noka pi jan Petela li lon. ona li lanpan e ijo mani ale.</color>"
+LocationFeatures.FederationSoldiers2,"<color=red>noka pi jan Petela li lon. ona li lanpan e ijo mani ale.</color>"
+LocationFeatures.FederationSoldiers3,"<color=red>noka pi jan Petela li lon. ona li lanpan e ijo mani ale.</color>"
+LocationFeatures.Zombies,"sina kute e kalama uta pi moli tawa tan ilo kalama tomo."
+LocationFeatures.ZombiesFast,"sina kute e kalama uta wawa pi moli tawa tan ilo kalama tomo."
+LocationFeatures.CultistsShrine,"*TODO* Chants can be heard from the station's intercom."
+
+# UI Labels
+Labels.Skills,"sona"
+Labels.ShipInventory,"poki tomo"
+Labels.Upgrader,"* ilo pona *"
+Labels.Shop,"$ esun $"
+Labels.BuyFuel,"o esun e telo seli {0}$"
+Labels.BuyJuice,"o esun e telo kili {0}$"
+Labels.ChooseNextRegion,"o pilin e ma kama"
+Labels.FederationBlockadeLabel,"pini nasin pi jan Petela li lon"
+Labels.CrewUpgrades,"wawa tomo"
+# Main Menu
+MainMenu.Buttons.NewGame,"musi sin"
+MainMenu.Buttons.LoadGame,"musi awen"
+MainMenu.Buttons.Tutorial,"musi pi kama sona"
+MainMenu.Buttons.Help,"o pona"
+MainMenu.Buttons.Settings,"o ante"
+MainMenu.Buttons.Quit,"o weka tawa ilo"
+MainMenu.Buttons.QuitToMenu,"o weka tawa lipu lawa"
+MainMenu.Buttons.Credits,"lipu pi jan pali"
+
+MainMenu.Dialogue.NewGameConfirm,"*TODO* Are you sure you want to start a new game?
+Current progress will be lost."
+
+## Credits
+MainMenu.Credits.Title,"lipu pi jan pali"
+MainMenu.Credits.Content,"<size=130%><b>lukin musi, toki ilo musi</b></size>
+<size=110%>Tomasz Banaś (soweli Matuke)</size>
+
+<size=130%><b>pona, utala musi, toki pi pona musi, toki Losi, toki pona</b></size>
+<size=110%>Bread92 (jan Pan)</size>
+
+<size=130%><b>pona, utala musi, toki pi pona musi</b></size>
+<size=110%>Scoops (jan Alesu)</size>
+
+<size=130%><b>pona, utala musi</b></size>
+<size=110%>Treatie</size>
+
+<size=130%><b>toki Kanse</b></size>
+<size=110%>Lightkiller</size>
+
+<size=80%><b>kalama musi pi ala mani</b></size>
+<size=60%>kalama musi tan jan Kevin Macleod</size>
+<size=50%>sina wile sona mute la, o lukin e lipu crdts.txt lon poki musi</size>"
+
+## Help View
+MainMenu.Help.Title,"pona"
+MainMenu.Help.Sections.Intro.Title,"open"
+MainMenu.Help.Sections.Intro.Content,"musi Sawate li musi pi tomo sona. o kama jo e ijo mani ale!
+
+tomo li jo e jan ala. tan li lon. o tawa pona.
+
+o kama jo e nanpa ijo pi wile sina, o weka."
+MainMenu.Help.Sections.Rules.Title,"Rules"
+MainMenu.Help.Sections.Rules.Content,"sina ken tawa tomo WAN taso.
+
+jan ale li weka anu moli la, tawa tomo li pini.
+
+o lukin tawa lipu sewi sina. nanpa <b>telo kili</b> li suli. sina jo ala e telo, jan sina li moli."
+MainMenu.Help.Sections.Controls.Title,"Controls"
+MainMenu.Help.Sections.Controls.Content,"F4 – o tawa lipu lawa (DEBUG)
+W/A/S/D – tawa lukin
+nena teje pi ilo tawa – tawa/nena
+nena soto pi ilo tawa – lawa jan la, o (awen) nena
+sike pi ilo tawa – lili/suli lukin
+TAB – tenpo pi tenpo suli (moku pi telo kili li suli)
+I / F – poki
+R - lawa pi jan ale
+1–9 – lawa pi jan nanpa
+Spacebar – pini tawa
+E – tawa lukin li tawa jan lawa
+Q – wawa jan la, tawa sike
+<i>sina tawa tomo tawa la, o pana e ilo utala tawa jan!</i>"
+
+## Settings view
+MainMenu.Settings.Title,"ante"
+MainMenu.Settings.Sections.General.Title,"lawa"
+MainMenu.Settings.Sections.General.Difficulty,"utala"
+MainMenu.Settings.Sections.General.Language,"toki"
+MainMenu.Settings.Sections.General.FallbackToDefaultLanguage,"Fallback to Default Language"
+MainMenu.Settings.Sections.General.UsePixelArtFont,"o kepeken nasin sitelen Pixel"
+MainMenu.Settings.Sections.General.DisplayTutorial,"o pana e pana sona"
+MainMenu.Settings.Sections.General.ShowHitChances,"o pana e nanpa utala"
+MainMenu.Settings.Sections.General.FriendlyFire,"*TODO* Friendly Fire"
+MainMenu.Settings.Sections.Graphics.Title,"lukin"
+MainMenu.Settings.Sections.Graphics.PixelPerfect,"PixelPerfect"
+MainMenu.Settings.Sections.Graphics.CameraShake,"tawa lukin"
+MainMenu.Settings.Sections.Graphics.CoolThing,"ijo pi musi mute"
+MainMenu.Settings.Sections.Audio.Title,"kalama"
+MainMenu.Settings.Sections.Audio.MasterVolume,"ale"
+MainMenu.Settings.Sections.Audio.MusicVolume,"kalama musi"
+MainMenu.Settings.Sections.Audio.SFXVolume,"SFX"
+MainMenu.Settings.Sections.Audio.UIVolume,"UI"
+MainMenu.Settings.Sections.Audio.SpatialAudio,"kalama ma"
+
+# Loading Screen
+Loading.Progress,"{0}%"
+
+# Level Selector
+
+## Resources Display
+LevelSelector.ResourcesDisplay.Fuel,"seli: {0}u"
+LevelSelector.ResourcesDisplay.Juice,"kili: {0}u"
+LevelSelector.ResourcesDisplay.Money,"{0}$"
+
+## Post Game Summary
+PostGameSummary.AutoSell,"{0}: {1}$"
+PostGameSummary.TotalProfit,"mani ale: {0}$"
+
+## Upgrader
+Upgrader.Reforge,"o pali sin"
+Upgrader.ReforgeTooltip,"Reroll all upgrades and downgrades
+25% - All stats rerolled 1 positive stat added, 1 negative stat removed
+50% - All stats rerolled
+25% - All Stats rerolled, 1 positive stat removed"
+Upgrader.ReforgeCost,"{0}$"
+Upgrader.ReforgeSuccess,"pali li pona!"
+Upgrader.ReforgeFailure,"pali li pakala!"
+
+Upgrader.Upgrade,"o pona"
+Upgrader.UpgradeTooltip,"Upgrade Selected Item
+25% - 2 stats upgraded
+50% - 2 stats upgraded, 1 downgraded
+25% - 1 stat upgraded, 1 downgraded"
+Upgrader.UpgradeCost,"{0}$"
+Upgrader.UpgradeSuccess,"pona ijo li pona!"
+Upgrader.UpgradeFailure,"pona li pakala!"
+
+Upgrader.Scrap,"o kiwen"
+Upgrader.ScrapTooltip,"o kiwen e ijo pilin"
+Upgrader.ScrapValue,"{0}$"
+
+# Ship Inventory
+ShipInventory.NoItemSelected,"ijo ala li pilin"
+
+# Misc
+MoneySymbol,"$"
+

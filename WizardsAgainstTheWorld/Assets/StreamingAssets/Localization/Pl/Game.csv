@@ -1,0 +1,26 @@
+Key,Value
+
+FloatingText.Miss,"Pudło"
+FloatingText.Damage,"{0}"
+FloatingText.Heal,"+{0} HP"
+FloatingText.FriendlyFire,"Ogień sojuszniczy!"
+FloatingText.LevelUp,"Awans!"
+FloatingText.XpGain,"+{0} PD"
+
+Interaction.RandomContainer.Empty,"Puste"
+Interaction.RandomContainer.Loot,"{1}x {0}"
+Interaction.RandomContainer.LootSingle,"{0}"
+Interaction.Dismantable.Interact,"Demontowanie..."
+Interaction.Elevator.Interact,"Wchodzenie..."
+Interaction.Elevator.Cancel.VictoryConditions,"Warunki zwycięstwa nie zostały osiągnięte"
+Interaction.Container.Interact,"Przeszukiwanie..."
+Interaction.Cryopod.Interact,"Otwieranie..."
+Interaction.Terminal.Interact,"Hakowanie się..."
+Interaction.ItemPickup.Interact,"Podnoszenie..."
+Interaction.Reload,"Przeładowanie..."
+
+VictoryCondition.LeaveTheStation,"Opuść stację (pozostało {0} członków załogi)"
+VictoryCondition.KillFederationSoldiers,"<color=red>Zabij {0}/{1} żołnierzy federacji.</color>"
+VictoryCondition.KillMrBonson,"<color=red>Zabij Pana Bonsona</color>"
+VictoryCondition.HackTerminalsVictoryCondition,"Włam się do {0}/{1} terminali."
+VictoryCondition.HaveItemsCondition,"Zdobądź {0}/{1} przedmiotów typu {2}"

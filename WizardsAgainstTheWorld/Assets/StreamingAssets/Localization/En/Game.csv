@@ -1,0 +1,26 @@
+Key,Value
+
+FloatingText.Miss,Miss
+FloatingText.Damage,{0}
+FloatingText.Heal,{0}
+FloatingText.FriendlyFire,Friendly Fire!
+FloatingText.LevelUp,Level Up!
+FloatingText.XpGain,{0} XP
+
+Interaction.RandomContainer.Empty,Empty
+Interaction.RandomContainer.Loot,{1}x {0}
+Interaction.RandomContainer.LootSingle,{0}
+Interaction.Dismantable.Interact,Dismantling...
+Interaction.Elevator.Interact,Entering...
+Interaction.Elevator.Cancel.VictoryConditions,Victory Conditions Not Achieved!
+Interaction.Container.Interact,Searching...
+Interaction.Cryopod.Interact,Opening...
+Interaction.Terminal.Interact,Hacking...
+Interaction.ItemPickup.Interact,Picking up...
+Interaction.Reload,Reloading...
+
+VictoryCondition.LeaveTheStation,"Leave the station ({0} crew left)"
+VictoryCondition.KillFederationSoldiers,"<color=red>Kill {1} federation soldiers. ({0}/{1})</color>"
+VictoryCondition.KillMrBonson,"<color=red>Kill Mr Bonson</color>"
+VictoryCondition.HackTerminalsVictoryCondition,"Hack {0}/{1} terminals."
+VictoryCondition.HaveItemsCondition,"Have {0}/{1} of item {2}"

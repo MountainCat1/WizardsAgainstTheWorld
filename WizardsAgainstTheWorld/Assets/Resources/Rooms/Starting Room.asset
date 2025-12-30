@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f327af661d9bc94abe3f843bc3401fe, type: 3}
+  m_Name: Starting Room
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Terminal Room
+  <Props>k__BackingField:
+  - prefab: {fileID: 8667083905584706207, guid: 67d2f9ab351a98446b01f1371fd5138b, type: 3}
+    position: 1
+    offset: {x: 0, y: 0}
+    count: 1
+    required: 1
+  <StartingRoom>k__BackingField: 1
+  <BossRoom>k__BackingField: 0
+  <FarAwayRoom>k__BackingField: 0
+  <Enemies>k__BackingField: []

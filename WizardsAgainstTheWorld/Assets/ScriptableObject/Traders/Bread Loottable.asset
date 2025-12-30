@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba0217508e9c4bcea82072745b7ff13b, type: 3}
+  m_Name: Bread Loottable
+  m_EditorClassIdentifier: 
+  entries:
+  - item: {fileID: -4666994684784650938, guid: e5d187cc06e37f3419decbee72c0e4cf, type: 3}
+    weight: 1
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: -4666994684784650938, guid: ecb9d517b9037d249ac23b1c5ee1c8ce, type: 3}
+    weight: 1
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: -4666994684784650938, guid: 7c06afcb4055b7f4cbef5477f8dd0afd, type: 3}
+    weight: 1
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: -4666994684784650938, guid: dfd3e9dbb902d3740acf160537460117, type: 3}
+    weight: 1
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: 4471688530674946207, guid: 7c67cda2d66349947afef77a5ebd3ec4, type: 3}
+    weight: 1
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: -605945850564881167, guid: e76efa000aae6304cbdd832956234068, type: 3}
+    weight: 3
+    maxCount: 6
+    minCount: 2
+  - item: {fileID: -956263774904454016, guid: 428466d8294d29445badc87befaec652, type: 3}
+    weight: 3
+    maxCount: 4
+    minCount: 1
+  - item: {fileID: 8149439460056631794, guid: 29e38d8aba3ad9949b43376eee6480fa, type: 3}
+    weight: 1
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: 5886349820611188464, guid: 14f871d0ea1229d44a1d4298f1097c0a, type: 3}
+    weight: 1
+    maxCount: 1
+    minCount: 1
+  - item: {fileID: 6567434340604348349, guid: 0c7029489a551f0418454b013b443445, type: 3}
+    weight: 1
+    maxCount: 1
+    minCount: 1

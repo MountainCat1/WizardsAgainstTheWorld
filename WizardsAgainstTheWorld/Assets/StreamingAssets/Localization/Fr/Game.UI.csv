@@ -1,0 +1,27 @@
+Key,Value
+
+# Ingame UI
+Pause,"Pause"
+JuiceWarning,"*TODO* <b>Alert</b>
+Juice reserves critically low.
+Radiation exposure imminent - crew survival at risk."
+Pause.Controls.Title,"Commandes"
+Pause.Controls.Content,"Z/Q/S/D – Déplacer la caméra
+Click droit – déplacement/interactions
+Click gauche – Click/trainé pour sélectioné
+Mollette de souris – Zoomer/Dézoomer 
+TAB – Activer/Désactiver le temps ralenti (Augmente la consomation de jus)
+I / F – Activer/Désactiver inventaire
+A – Tourné parmis les troupes séléctionées
+R - Sélectioner tous les coéquipier
+1–9 – Sélectioner un coéquipier spécifique
+Spacebar – Stoper les movements
+E – Concentrer la caméra sur le coéquipier séléctioné
+A – Tourné parmis les compétances du coéquipier séléctioné"
+
+EnemyCounterUpgrade.CounterText,"Ennemis: {0}"
+
+EndMessage,"Plus d'équipage détécté [PAUSE=1]
+Décollage..."
+
+

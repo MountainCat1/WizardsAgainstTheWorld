@@ -1,0 +1,26 @@
+Key,Value
+
+# Ingame UI
+Pause,Pause
+JuiceWarning,"<b>Alert</b>\nJuice reserves critically low.\nRadiation exposure imminent - crew survival at risk."
+Pause.Controls.Title,"Controls"
+Pause.Controls.Content,"
+W/A/S/D – Move camera
+Right Mouse Button – Move/interact
+Left Mouse Button – Click/drag to select
+Mouse Scroll – Zoom in/out
+TAB – Toggle slow time mode (increases juice consumption)
+I / F – Toggle inventory
+R - Select all crew members
+1–9 – Select specific crew member
+Spacebar – Halt movement
+E – Focus camera on selected crew member
+Q – Cycle through selected crew member's skills
+"
+
+EnemyCounterUpgrade.CounterText,Enemies: {0}
+
+EndMessage,"No more crew detected[PAUSE=1]
+departing..."
+
+

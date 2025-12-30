@@ -1,0 +1,30 @@
+Key,Value
+# Crate In Space
+CrateInSpace.Title,"Caisse dans l'espace"
+CrateInSpace.Description,"Vous remarquez une caisse qui dérive parmis les étoiles. Cela pourai contenir quelque chose de précieux."
+CrateInSpace.Option1,"Ouvir la Caisse"
+CrateInSpace.Option2,"Nous pouvons utilisé les outils de notre amélorateur pour ça!"
+# Stranger Needs Fuel Event
+StrangerNeedsFuel.Title,"Étranger dans le besoin"
+StrangerNeedsFuel.Description,"Un voyageur piégé vous implore pour de l'essence.Il a l'air désespéré et vous offre de la ferraille en retour."
+StrangerNeedsFuel.Option1,"Ignore le"
+StrangerNeedsFuel.Option2,"On peut s'en passer d'un peu!"
+# Training Facility Event
+TrainingFacility.Title,"Station d'entrainement"
+TrainingFacility.Description,"Vous avez trouver station d'entrainement au combat fonctionnel.Ils ont l'air d'offrir de l'entrainement pour un prix."
+TrainingFacility.Option1,"Passer"
+TrainingFacility.Option2,"Esspérons que notre argent sera rentable"
+# Space Gambler
+SpaceGambler.Title,"Parieur de l'espace"
+SpaceGambler.Description,"Vous rencontrez un parieur de l'espace nommé ""Alex"".Il vous offre une chance de gagné gros dans un jeu d'hasard.Il a l'air confiant et est prêt a parié sur tous."
+SpaceGambler.Option1,"Ignore le"
+SpaceGambler.Option2,"Vous pouvais seulement perdre 100% de votre argent,mais vous pouvez ganger une quantité infinie!"
+SpaceGambler.Option3,"Nous pouvons utiliser notre <b>Outil de piratage</b> pour changer les probabliltés dans notre faveur!"
+# Drifting Crate Event
+DriftingCrate.Title,"Caisse qui dérive"
+DriftingCrate.Description,"Une caisse dérive a grande vitesse dans l'espace.On dirrais que cela pourai contenir quelque chose de précieux,mais cela peut être dangereux de s'en approcher."
+DriftingCrate.Option1,"Laisser la"
+DriftingCrate.Option2,"Moteur à fond!"
+DriftingCrate.Option2.Tooltip.Lose,"Nous sommes incappable de ratraper la caisse."
+DriftingCrate.Option3,"Moteur à fond! Utilison notre pompe à essence avancée!"
+DriftingCrate.Option3.Tooltip.Lose,"Nous sommes incappable de ratraper la caisse."

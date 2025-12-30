@@ -1,0 +1,26 @@
+Key,Value
+
+FloatingText.Miss,"pakala"
+FloatingText.Damage,"{0}"
+FloatingText.Heal,"{0}"
+FloatingText.FriendlyFire,"utala pi jan pona!"
+FloatingText.LevelUp,"wawa li sewi!"
+FloatingText.XpGain,"{0} XP"
+
+Interaction.RandomContainer.Empty,"ala"
+Interaction.RandomContainer.Loot,"{1}x {0}"
+Interaction.RandomContainer.LootSingle,"{0}"
+Interaction.Dismantable.Interact,"pakala..."
+Interaction.Elevator.Interact,"tawa insa..."
+Interaction.Elevator.Cancel.VictoryConditions,"sina pali ala e ale!"
+Interaction.Container.Interact,"alasa..."
+Interaction.Cryopod.Interact,"open..."
+Interaction.Terminal.Interact,"ante..."
+Interaction.ItemPickup.Interact,"lanpan..."
+Interaction.Reload,"pona ilo..."
+
+VictoryCondition.LeaveTheStation,"ma ni la o weka (jan {0} li lon)"
+VictoryCondition.KillFederationSoldiers,"<color=red>jan Petela {1} la, o moli. ({0}/{1})</color>"
+VictoryCondition.KillMrBonson,"<color=red>jan Poso la, o moli</color>"
+VictoryCondition.HackTerminalsVictoryCondition,"o ante e ilo nanpa ({0}/{1})."
+VictoryCondition.HaveItemsCondition,"o jo e ijo {2} ({0}/{1})"

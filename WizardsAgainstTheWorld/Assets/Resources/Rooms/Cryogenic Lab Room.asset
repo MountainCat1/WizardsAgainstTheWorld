@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f327af661d9bc94abe3f843bc3401fe, type: 3}
+  m_Name: Cryogenic Lab Room
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Cryogenic Lab
+  <Props>k__BackingField:
+  - prefab: {fileID: 8986697077323002770, guid: a0a17bc182387b84f8765ad96bb2baf3, type: 3}
+    position: 1
+    offset: {x: 0, y: 0}
+    count: 1
+  - prefab: {fileID: 179185714864766309, guid: 4d019c571a47b394db12ff4dca073454, type: 3}
+    position: 3
+    offset: {x: 0, y: 0}
+    count: 7
+  <StartingRoom>k__BackingField: 0
+  <BossRoom>k__BackingField: 0
+  <Enemies>k__BackingField: []

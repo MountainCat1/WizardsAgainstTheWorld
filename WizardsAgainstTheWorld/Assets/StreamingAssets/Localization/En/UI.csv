@@ -1,0 +1,266 @@
+Key,Value
+
+Stat.Speed,Speed
+Stat.Damage,Damage
+Stat.AttackSpeed,Attack Speed
+Stat.AccuracyFlat,Accuracy
+Stat.ArmorFlat,Damage Reduction
+Stat.ArmorPercentage,Armor
+Stat.MovementSpeed,Movement Speed
+Stat.Unknown,Unknown Stat
+
+StatChange.ArmorFlat,Damage Reduction: {0}
+StatChange.ArmorPercentage,Armor: {0}
+StatChange.MovementSpeed,Movement Speed: {0}
+StatChange.Speed,Speed: {0}
+StatChange.Damage,Damage: {0}
+StatChange.AttackSpeed,Attack Speed: {0}
+StatChange.AccuracyFlat,Accuracy: {0}
+StatChange.Unknown,Unknown Stat: {0}
+
+Effects.RegenerationEffect,Regeneration: {0} per second
+Effects.ProjectileStatusEffect,Projectile Effect: {0}
+
+StatusEffects.Burning.Name,Burning
+
+Skills.Accuracy.Name,Accuracy
+Skills.Agility.Name,Agility
+Skills.Constitution.Name,Constitution
+Skills.HeavyConstitution.Name,Heavy Constitution
+Skills.Light.Name,Light
+Skills.TriggerHappy.Name,Trigger Happy
+
+
+# Tooltip messages
+LocationInteractions.AlreadyVisitedTooltip,The location has already been visited.
+LocationInteractions.NoCrewSelectedTooltip,No crew member selected.
+LocationInteractions.NotEnoughFuel,Not enough fuel to travel.
+LocationInteractions.BlockedTooltip,Enemies are blocking the way.
+LocationInteractions.NoFuelTooltip,Not enough fuel to travel.
+LocationInteractions.DisengagementCostTooltip,Not enough fuel to disengage.
+
+Resources.Fuel.Tooltip,"<b>Fuel</b> is used to travel between locations. It can be purchased at shops."
+Resources.Juice.Tooltip,"<b>Juice</b> is used to keep your crew alive while salvaging stations. It can be purchased at shops."
+Resources.Money.Tooltip,"<b>Credits</b> are used to purchase items at shops. They can be obtained by looting stations or selling items at shops."
+
+# Button labels
+LocationInteractions.Embark,Embark
+LocationInteractions.Dock,Dock
+LocationInteractions.Disengage,Tactical disengagement (3 fuel)
+LocationInteractions.Inventory,Inventory
+LocationInteractions.Upgrade,Upgrade
+LocationInteractions.Trade,Trade
+LocationInteractions.Jump,<b>Jump</b>
+# Shop UI
+LocationInteractions.Shop.BuyFuel,Buy Fuel
+LocationInteractions.Shop.FuelPrice,{0}$/1u
+LocationInteractions.Shop.BuyJuice,Buy Juice
+LocationInteractions.Shop.JuicePrice,{0}$/10u
+
+Trader.Breadator.Name,Breadator
+Trader.Breadator.Description,"Leader of the robot revolution 3128, Breadator is a ruthless trader who deals in high-tech modules for ships and their crew. Rumor is that a simple maintenance bot gained sentience, as well as the taste for power, after connecting itself to a piece of bread. His motivations are driven by his hatred towards those who eat his kind."
+Trader.MadamEva.Name,Madam Eva
+Trader.MadamEva.Description,"Once rumored to be of noble birth, Madam Eva traded silk and silver for shadows and subterfuge. Now a high-end supplier of anything that isn't just point-and-shoot — medkits, hacking rigs, stealth gear, and tech most people don’t even recognize. If it takes finesse, finesse is what she sells."
+Trader.Meinhass.Name,Meinhass
+Trader.Meinhass.Description,"A mysterious trader dealing exclusively in items designed for devastation. His wares are as dangerous as his motives: to spread destruction, plain and simple. Whispers in the darker corners of the galaxy claim his infamy began with a brutal act — pipebombing his own mother to make a name for himself."
+Trader.Treatie.Name,Treatie
+Trader.Treatie.Description,"A ruthless arms dealer with a singular passion: delivering death at high velocity. If it fires bullets, shells, or slugs — especially the kind that tear through armor — Treatie’s your guy. Mercy isn’t in his inventory."
+
+# Crew List UI
+CrewList.NoWeaponSelected,NO WEAPON
+CrewList.Level,Level: {0}
+
+# Location Details UI
+
+LocationDetails.NoSelection,No location selected
+LocationDetails.SelectToView,Select a location to view details
+
+LocationFeatures.Empty,Empty space.
+LocationFeatures.EventNode,"<color=purple>We detect a distress signal coming from this location.</color>"
+LocationFeatures.Movement,Detected movement: {0}.
+LocationFeatures.ShopPresent,<color=yellow>There is a trade ship orbiting this station.</color>
+LocationFeatures.EndNode,<color=green>This place seems to be connected with another region via a space link. We should be able to traverse to the next region from here.</color>
+
+LocationFeatures.Armory,"The station's blueprints reveal the presence of an armory."
+LocationFeatures.BanditHideout,"<color=red>Bandit hideout located here.</color>"
+LocationFeatures.Bloodspawn,"<color=red>Blood Spawn detected.</color>"
+LocationFeatures.CryogenicLab,"<color=#00ffff>A distinct thermal signature emanates from this sector, indicating a possible cryo-lab.</color>"
+LocationFeatures.HOLKLabolatory,"<color=red>Secret laboratory belonging to H.O.L.K. corporation detected.</color>"
+LocationFeatures.Killerbot,"<color=red>KILLERBOT detected.</color>"
+LocationFeatures.Medbay,"This section is designated as the station's medical bay."
+LocationFeatures.Megatron,"<color=red>MEGATRON detected.</color>"
+LocationFeatures.Office,"A section of this station is designated as an office."
+LocationFeatures.SpecOps,"We are picking up some chatter on an encrypted radio channel."
+LocationFeatures.Storage,"A portion of this station is designated for storage."
+LocationFeatures.Swarmqueen,"<color=red>Swarm Queen detected.</color>"
+LocationFeatures.Hive,"<color=red>The Hive detected.</color>"
+LocationFeatures.TurretDefenseSystem,"This station is equipped with a turret defense system."
+LocationFeatures.HabitatStation,"This used to be a habitat station."
+LocationFeatures.AliensEvolved,"We detect evolved non-human activity."
+LocationFeatures.Aliens,"We detect non-human activity."
+LocationFeatures.FMS,"This is the location of the Federation Main Station."
+LocationFeatures.FederationSoldiers1,"<color=red>Federation boots are already on the ground, stripping the place of anything valuable.</color>"
+LocationFeatures.FederationSoldiers2,"<color=red>Federation boots are already on the ground, stripping the place of anything valuable.</color>"
+LocationFeatures.FederationSoldiers3,"<color=red>Federation boots are already on the ground, stripping the place of anything valuable.</color>"
+LocationFeatures.Zombies,"We can hear some weird growls from this station's comms."
+LocationFeatures.ZombiesFast,"We can hear some weird, aggressive growls from this station's comms."
+LocationFeatures.CultistsShrine,"Chants can be heard from the station's intercom."
+
+# UI Labels
+Labels.Skills,Skills
+Labels.ShipInventory,Ship's Inventory
+Labels.Upgrader,* Upgrader *
+Labels.Shop,"$ Shop $"
+Labels.BuyFuel,"Buy Fuel {0}$"
+Labels.BuyJuice,"Buy Juice {0}$"
+Labels.ChooseNextRegion,Choose Next Region
+Labels.FederationBlockadeLabel,Federation Blockade Detected
+Labels.CrewUpgrades,Upgrades
+# Main Menu
+MainMenu.Buttons.NewGame,New Game
+MainMenu.Buttons.LoadGame,Load Game
+MainMenu.Buttons.Tutorial,Tutorial
+MainMenu.Buttons.Help,Help
+MainMenu.Buttons.Settings,Options
+MainMenu.Buttons.Quit,Quit to Desktop
+MainMenu.Buttons.QuitToMenu,Quit to Menu
+MainMenu.Buttons.Credits,Credits
+MainMenu.Buttons.Difficulty,Difficulty
+
+MainMenu.Dialogue.NewGameConfirm,Are you sure you want to start a new game?\nCurrent progress will be lost.
+
+## Credits
+MainMenu.Credits.Title,Credits & Thanks
+MainMenu.Credits.Content,"
+<size=130%><b>Design, Development & Execution</b></size>
+<size=110%>Tomasz Banaś</size>
+
+<size=130%><b>Support, Testing, Feedback, Russian and Toki Pona localization</b></size>
+<size=110%>Bread92</size>
+
+<size=130%><b>Support, Testing, Feedback</b></size>
+<size=110%>Scoops</size>
+
+<size=130%><b>Support, Testing</b></size>
+<size=110%>Treatie</size>
+
+<size=130%><b>French Localization</b></size>
+<size=110%>Lightkiller</size>
+
+<size=80%><b>Royality Free Music</b></size>
+<size=60%>Made by Kevin Macleod</size>
+<size=50%>For detailed credits check crdts.txt in game directory</size>
+"
+
+## Help View
+MainMenu.Help.Title,Help
+MainMenu.Help.Sections.Intro.Title,Intro
+MainMenu.Help.Sections.Intro.Content,"Salvagers is a game about exploring abandoned stations, and looting them for profit.
+
+All abandoned stations have been abandoned for a reason, so be careful.
+
+Do not take too much risk, take as much as you need and go."
+MainMenu.Help.Sections.Rules.Title,Rules
+MainMenu.Help.Sections.Rules.Content,"You can explore each station only ONCE.
+
+Exploration phase ends when all your deployed crew escapes or dies.
+
+At the top of the screen you can see <b>Juice</b> left, keep an eye on that, otherwise your people will die of radiation."
+MainMenu.Help.Sections.Controls.Title,Controls
+MainMenu.Help.Sections.Controls.Content,"F4 – Return to menu (DEBUG)
+W/A/S/D – Move camera
+Right Mouse Button – Move/interact
+Left Mouse Button – Click/drag to select
+Mouse Scroll – Zoom in/out
+TAB – Toggle slow time mode (increases juice consumption)
+I / F – Toggle inventory
+R - Select all crew members
+1–9 – Select specific crew member
+Spacebar – Halt movement
+E – Focus camera on selected crew member
+Q – Cycle through selected crew member's skills
+<i>Don’t forget to equip your crew with weapons before landing on a station!</i>"
+
+## Settings view
+MainMenu.Settings.Title,Options
+MainMenu.Settings.Sections.General.Title,General
+MainMenu.Settings.Sections.General.Difficulty,Difficulty
+MainMenu.Settings.Sections.General.Language,Language
+MainMenu.Settings.Sections.General.FallbackToDefaultLanguage,Fallback to Default Language
+MainMenu.Settings.Sections.General.UsePixelArtFont,Pixel Art Font
+MainMenu.Settings.Sections.General.DisplayTutorial,Display Tutorial
+MainMenu.Settings.Sections.General.ShowHitChances,Show Hit Chances
+MainMenu.Settings.Sections.General.FriendlyFire,Friendly Fire
+MainMenu.Settings.Sections.General.UseJuiceMechanic,Use Juice Mechanic
+MainMenu.Settings.Sections.Graphics.Title,Graphics
+MainMenu.Settings.Sections.Visual.Title,Visual
+MainMenu.Settings.Sections.Graphics.PixelPerfect,PixelPerfect
+MainMenu.Settings.Sections.Graphics.CameraShake,Camera Shake
+MainMenu.Settings.Sections.Graphics.CoolThing,Cool Thing
+MainMenu.Settings.Sections.Audio.Title,Audio
+MainMenu.Settings.Sections.Audio.MasterVolume,Master
+MainMenu.Settings.Sections.Audio.MusicVolume,Music
+MainMenu.Settings.Sections.Audio.SFXVolume,SFX
+MainMenu.Settings.Sections.Audio.UIVolume,UI
+MainMenu.Settings.Sections.Audio.SpatialAudio,Spatial Audio
+
+# Difficulty Names
+MainMenu.Difficulty.Easy.Name,Easy
+MainMenu.Difficulty.Easy.Desc,"- Enemies have less health
+- Less enemies spawn
+- Friendly fire is disabled
+- The juice mechanic is disabled, allowing you to stay in each station however long you want"
+MainMenu.Difficulty.Normal.Name,Normal
+MainMenu.Difficulty.Normal.Desc,"- Enemies have normal health
+- Standard enemy spawns
+- Friendly fire is disabled
+- The juice mechanic is enabled, forcing you to manage your time in each station"
+MainMenu.Difficulty.Hard.Name,Hard
+MainMenu.Difficulty.Hard.Desc,"- Enemies have more health
+- Increased enemy spawns
+- As friendly fire is enabled, you will need to position your units with much care
+- The juice mechanic is enabled, forcing you to manage your time in each station"
+
+# Loading Screen
+Loading.Progress,{0}%
+
+# Level Selector
+
+## Resources Display
+LevelSelector.ResourcesDisplay.Fuel,Fuel: {0}u
+LevelSelector.ResourcesDisplay.Juice,Juice: {0}u
+LevelSelector.ResourcesDisplay.Money,{0}$
+
+## Post Game Summary
+PostGameSummary.AutoSell,{0}: {1}$
+PostGameSummary.TotalProfit,Total profit from the expedition: {0}$
+
+## Upgrader
+Upgrader.Reforge,Reforge
+Upgrader.ReforgeTooltip,"Reroll all upgrades and downgrades
+25% - All stats rerolled 1 positive stat added, 1 negative stat removed
+50% - All stats rerolled
+25% - All Stats rerolled, 1 positive stat removed"
+Upgrader.ReforgeCost,{0}$
+Upgrader.ReforgeSuccess,Reforge Successful!
+Upgrader.ReforgeFailure,Reforge Failed!
+
+Upgrader.Upgrade,Upgrade
+Upgrader.UpgradeTooltip,"Upgrade Selected Item
+25% - 2 stats upgraded
+50% - 2 stats upgraded, 1 downgraded
+25% - 1 stat upgraded, 1 downgraded"
+Upgrader.UpgradeCost,{0}$
+Upgrader.UpgradeSuccess,Upgrade Successful!
+Upgrader.UpgradeFailure,Upgrade Failed!
+                         
+Upgrader.Scrap,Scrap
+Upgrader.ScrapTooltip,Scrap selected weapon
+Upgrader.ScrapValue,{0}$
+
+# Ship Inventory
+ShipInventory.NoItemSelected,No item selected
+
+# Misc
+MoneySymbol,$
+

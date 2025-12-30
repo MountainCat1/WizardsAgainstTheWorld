@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba0217508e9c4bcea82072745b7ff13b, type: 3}
+  m_Name: Scrap_2
+  m_EditorClassIdentifier: 
+  entries:
+  - item: {fileID: 6945220326266969423, guid: dbe43bd481165264bbe8bbef6f56baf6, type: 3}
+    weight: 75
+    maxCount: 5
+    minCount: 3
+  - item: {fileID: 6945220326266969423, guid: 598f3d9107ea73c4997d037c042ee705, type: 3}
+    weight: 25
+    maxCount: 5
+    minCount: 2

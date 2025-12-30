@@ -1,0 +1,14 @@
+Key,Value
+
+# Effect Labels
+Effects.AddJuice,"Получить <color=green>{0}u</color> сока"
+Effects.LoseJuice,"Потерять <color=red>{0}u</color> сока"
+Effects.AddMoney,"Получить <color=green>{0}₵</color>"
+Effects.LoseMoney,"Потерять <color=red>{0}₵</color>"
+Effects.AddFuel,"Получить <color=green>{0}u</color> топлива"
+Effects.LoseFuel,"Потерять <color=red>{0}u</color> топлива"
+Effects.Lose,"Вы проиграли"
+Effects.AddExperienceToAllCrew,"Каждый юнит получит <color=green>{0}</color> опыта"
+Effects.LoseExperienceFromAllCrew,"Каждый юнит потеряет <color=red>{0}</color> опыта"
+
+# Tooltips

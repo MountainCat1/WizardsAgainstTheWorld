@@ -1,0 +1,30 @@
+Key,Value
+# Crate In Space
+CrateInSpace.Title,"Skrzynia dryfująca w przestrzeni"
+CrateInSpace.Description,"Zauważasz skrzynię dryfującą wśród gwiazd. Może zawierać coś cennego."
+CrateInSpace.Option1,"Otwórz skrzynię"
+CrateInSpace.Option2,"Możemy użyć narzędzi z naszego ulepszacza!"
+# Stranger Needs Fuel Event
+StrangerNeedsFuel.Title,"Nieznajomy w potrzebie"
+StrangerNeedsFuel.Description,"Rozbitek błaga cię o trochę paliwa. Wygląda na zdesperowanego i oferuje złom w zamian."
+StrangerNeedsFuel.Option1,"Zignoruj go"
+StrangerNeedsFuel.Option2,"Możemy się podzielić!"
+# Training Facility Event
+TrainingFacility.Title,"Ośrodek treningowy"
+TrainingFacility.Description,"Znalazłeś działający ośrodek treningu bojowego. Oferują szkolenie za odpowiednią opłatą."
+TrainingFacility.Option1,"Nasza załoga nie potrzebuje treningu"
+TrainingFacility.Option2,"Miejmy nadzieję, że to będzie warte swojej ceny"
+# Space Gambler
+SpaceGambler.Title,"Kosmiczny hazardzista"
+SpaceGambler.Description,"Spotykasz kosmicznego hazardzistę imieniem „Alex”. Proponuje ci grę, w której można wiele wygrać. Jest pewny siebie i gotów się zakładać o wszystko."
+SpaceGambler.Option1,"Zignoruj go"
+SpaceGambler.Option2,"Możesz stracić tylko 100%, ale możesz wygrać nieskończoność!"
+SpaceGambler.Option3,"Możemy użyć naszego <b>urządzenia hakerskiego</b>, żeby przechylić szalę na naszą korzyść!"
+# Drifting Crate Event
+DriftingCrate.Title,"Dryfująca skrzynia"
+DriftingCrate.Description,"Skrzynia dryfuje z dużą prędkością przez przestrzeń kosmiczną. Może zawierać coś cennego, ale zbliżenie się do niej może być niebezpieczne."
+DriftingCrate.Option1,"Zostaw ją"
+DriftingCrate.Option2,"Silniki na pełną moc!"
+DriftingCrate.Option2.Tooltip.Lose,"Nie udało się dogonić skrzyni"
+DriftingCrate.Option3,"Silniki na pełną moc! Wykorzystajmy nasze zaawansowane pompy paliwowe!"
+DriftingCrate.Option3.Tooltip.Lose,"Nie udało się dogonić skrzyni"

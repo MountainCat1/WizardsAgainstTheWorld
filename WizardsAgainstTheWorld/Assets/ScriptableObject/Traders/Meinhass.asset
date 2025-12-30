@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e64e715df64b48c6b819088cce3f4dbf, type: 3}
+  m_Name: Meinhass
+  m_EditorClassIdentifier: 
+  traderName: Meinhass
+  traderDescription: "A mysterious trader dealing exclusively in items designed for
+    devastation. His wares are as dangerous as his motives: to spread destruction,
+    plain and simple. Whispers in the darker corners of the galaxy claim his infamy
+    began with a brutal act \u2014 pipebombing his own mother to make a name for
+    himself."
+  traderIcon: {fileID: 1618355381772604112, guid: 0320a7538680e4d49bffb97bedac3eb1, type: 3}
+  maxItems: 6
+  minItems: 3
+  traderItems: {fileID: 11400000, guid: f673f1304a2b8b745a5bb7eb528059c5, type: 2}

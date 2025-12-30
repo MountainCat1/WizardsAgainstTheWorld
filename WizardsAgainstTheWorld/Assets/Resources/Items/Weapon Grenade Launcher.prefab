@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3069927734923799991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4106970185088082362}
+  - component: {fileID: 6320578954216408902}
+  - component: {fileID: 2495523500013173255}
+  m_Layer: 0
+  m_Name: Weapon Grenade Launcher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4106970185088082362
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3069927734923799991}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6320578954216408902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3069927734923799991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca397cf322654a1ab3b77d020f528931, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Icon>k__BackingField: {fileID: 6083308290294538637, guid: 8f817dad87e29304d8e1861257d4baf0, type: 3}
+  <Name>k__BackingField: GrenadeLauncher
+  <Weight>k__BackingField: 1
+  <Description>k__BackingField: 
+  <BaseCost>k__BackingField: 450
+  <BaseAttackSpeed>k__BackingField: 0.25
+  <BaseRange>k__BackingField: 6
+  <BaseDamage>k__BackingField: 2.5
+  <BaseAccuracyPercent>k__BackingField: 90
+  <PushFactor>k__BackingField: 29
+  <ShakeFactor>k__BackingField: 1
+  <HitSound>k__BackingField: {fileID: 8300000, guid: 038a66a344c308446b06ec0324bc02d2, type: 3}
+  <AttackSound>k__BackingField: {fileID: 8300000, guid: 91914d7f748c79b4bac13f9025dcce8c, type: 3}
+  <VisualType>k__BackingField: 2
+  <ReloadComponent>k__BackingField: {fileID: 0}
+  <ProjectilePrefab>k__BackingField: {fileID: 2101502943236693782, guid: 15747bfd765cb754b8611b00d03d5213, type: 3}
+  <ProjectileSpeed>k__BackingField: 50
+  <ShotOverTime>k__BackingField: 0
+  <DestroyProjectilesOnHit>k__BackingField: 1
+  <ProjectileCount>k__BackingField: 1
+--- !u!114 &2495523500013173255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3069927734923799991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df2179a0199c486795b18019986133ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <CurrentAmmo>k__BackingField: 10
+  <ReloadTime>k__BackingField: 3
+  <MaxAmmo>k__BackingField: 5
+  reloadFinishSound: {fileID: 8300000, guid: b1786d4387b521d4d86b82d891b60be2, type: 3}
+  reloadStartSound: {fileID: 8300000, guid: e461dfbbe1af90d4684d2f0d5b01e0c8, type: 3}
+  outOfAmmoSound: {fileID: 8300000, guid: 58599e1bcfa4cc04a82b2053deb00211, type: 3}

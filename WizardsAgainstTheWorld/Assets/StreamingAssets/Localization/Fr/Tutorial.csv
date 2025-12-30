@@ -1,0 +1,50 @@
+Key,Value
+
+# Location Selector Tutorial
+Steps.Resources,"Ce pannaux montre les ressources actuels."
+Steps.Crew,"Ce pannaux affiche votre l'équipage actuellements dissponible."
+Steps.Station,"Cette zone montre la station que vous êtes actuellement accoster."
+Steps.Map.1,"Ici vous pouvez voir toutes les lieux connues de la région."
+Steps.Map.2,"Cliker sur n'importe quel lieu pour aprendre plus dessus."
+Steps.Map.3,"Les lieux peuvent être de ses types suivant: stations, <color=yellow>magasin</color>, <color=purple>evenements</color>, et <color=red>boss</color>."
+Steps.LocationInteractions,"Ce pannaux vous laisse intéragire avec le lieu que vous avez séléctioné sur la carte."
+Steps.LocationInteractions.Embark,"Clicker <b>Embarquer</b> pour voyager vers le lieu séléctioné. Cela coûtera 1 unité d'essence."
+Steps.LocationInteractions.Dock,"Clicker <b>Accoster</b> pour monter à bord de la station. Vous allez explorer les salles"
+Steps.LocationInteractions.Inventory,"Ouvrez votre <b>Inventaire</b> pour gérer l'équipement et les compétances de votre équipe."
+Steps.LocationInteractions.Upgrader,"Accèdez l'<b>Améliorateur</b> pour améliorér vos armes en utilisant de la feraille ou des credits."
+Steps.LocationInteractions.Docking,"Pendant que vous étes au dessus des station non-éxplorer, vous pouvez <b>Accoster</b> pour les enter avec votre équipage <b>sélectionné</b>.
+
+<size=50%>Appuiez sur Enter/Espace pour continuer...</size>"
+Steps.Finish,"C'est tout!
+Soyez prudent de se qui se cahent dans les stations abandonées que cela soit des infectés, aliens, robots renégat, et les agents de la Fédération qui sont tous la pour t'avoir.
+Rester vigilant, et bonne chance dans votre voyage!"
+
+# In Game Tutorial
+Welcome,"Bienvenue dans le jeu!
+Appuis sur espace pour continuer..."
+SelectUnit,"Sélectionner votre unité avec la souris.
+Clicker ou traîner pour sélectionner."
+MoveCommand,"Bien!
+Maintenant donner l'ordre a votre soldat de bouger.
+Pendant que vous avez votre unité sélectionnée, clicker click droit sur un lieu accéssible."
+Explore,"Parfait!
+Maintenant bouger votre unité en haut et explorer la station."
+SearchCabinet,"Regarde, c'est quoi ça! c'est une armoire! Il peut y avoir quelque chose a l'interieur...
+Pendant que vous avez votre unité sélectionnée, 
+clicker click droit sur un objet que vous pouvais interagir!
+Dans se cas, l'armoire que vous voulais fouiller."
+OpenInventory,"Super! Vous avez trouver un Fusil! Maintenant équipons le.
+Appuiez <b>I</b> sur votre clavier pour ouvrir l'inventaire."
+EquipRifle,"Maintenant équiper le fusil à votre unité.
+Sélectionner un fusil dans votre inventaire."
+KillZombieMove,"Super! Maintenant il est l'heure de l'utiliser.
+Aller à l'est et tuer les zombies qui y traines."
+KillZombie,"<color=red>TUE LE!</color>"
+ProceedDown,"Wow, c'était effrayant...
+Maintenant aller en bas. Nous devons trouver un moyen de sortir d'ici."
+CryoPod,"C'est une <color=#00ffff>Capsule Cryogenique</color>; interagie avec pour réanimer le soldat a l'interieur."
+NewFriend,"On dirais que nous avons un nouveau ami!
+Maintenant nous devons aller à gauche.
+Fait attention il y a plus de zombies qui traines."
+Extract,"Maintenant sortons d'ici!
+Extraie vos soldats avec l'ascenseur."

@@ -1,0 +1,30 @@
+Key,Value
+# Crate In Space
+CrateInSpace.Title,"Ящик в космосе"
+CrateInSpace.Description,"Вы заметили ящик"
+CrateInSpace.Option1,"Открыть"
+CrateInSpace.Option2,"Апгрейдер может нам помочь!"
+# Stranger Needs Fuel Event
+StrangerNeedsFuel.Title,"Нуждающийся странник"
+StrangerNeedsFuel.Description,"Застрявший путник слёзно просит у вас немного топлива и предлагает взамен лом."
+StrangerNeedsFuel.Option1,"Проигнорировать"
+StrangerNeedsFuel.Option2,"Мы можем поделиться!"
+# Training Facility Event
+TrainingFacility.Title,"Центр боевой подготовки"
+TrainingFacility.Description,"Вы нашли действующий центр боевой подготовки. Они предлагают обучить вас всевозможным трюкам. Однако, конечно, не за бесплатно"
+TrainingFacility.Option1,"Проигнорировать"
+TrainingFacility.Option2,"Надеюсь это того стоит..."
+# Space Gambler
+SpaceGambler.Title,"Космические ставки"
+SpaceGambler.Description,"Вам встретился азартный тип по имени ""Алекс"". Он предлагает вам шанс сорвать крупный куш в его игре. По его горящим глазам видно - он готов рисковать чем угодно."
+SpaceGambler.Option1,"Проигнорировать"
+SpaceGambler.Option2,"Можно проиграть всего лишь 100% своих денег, а вот выиграть можно... бесконечно!"
+SpaceGambler.Option3,"Мы можем использовать <b>Устройство для взлома</b>, чтобы повысить наши шансы!"
+# Drifting Crate Event
+DriftingCrate.Title,"Пролетающая коробка"
+DriftingCrate.Description,"Через космос на большой скорости мчится ящик. Внутри может быть что-то ценное… Однако приближаться к нему опасно."
+DriftingCrate.Option1,"Пускай летит"
+DriftingCrate.Option2,"Овердрайв!"
+DriftingCrate.Option2.Tooltip.Lose,"Нам не удалось поймать ящик"
+DriftingCrate.Option3,"Овердрайв! Топливные насосы в помощь!"
+DriftingCrate.Option3.Tooltip.Lose,"Нам не удалось поймать ящик"

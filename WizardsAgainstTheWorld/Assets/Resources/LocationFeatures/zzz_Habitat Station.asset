@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a2334d315b84a53aaf515d491008a8c, type: 3}
+  m_Name: zzz_Habitat Station
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: HabitatStation
+  description: This used to be a habitat station
+  enemies: []
+  oneTimeEnemies: []
+  roomBlueprints:
+  - {fileID: 11400000, guid: b6477834a8f6b7447998e57011efda17, type: 2}
+  genericRoomBlueprints:
+  - {fileID: 11400000, guid: b642ae5ba71064c4fb9f9ba3c0bbd51e, type: 2}
+  - {fileID: 11400000, guid: c83d846a4eba5184e8e981df8610eca9, type: 2}
+  - {fileID: 11400000, guid: 31e2d056dae9e8448831f3c1ab9873d2, type: 2}
+  - {fileID: 11400000, guid: 34652168abe200e46b9c3b334b68fe63, type: 2}
+  mapOverride: {fileID: 0}
+  marker: 
+  blockExit: 0
+  victoryConditions: []
+  overrideMapTileSet: 0
+  fullLocationOverride: 0
+  musicOverride: {fileID: 0}
