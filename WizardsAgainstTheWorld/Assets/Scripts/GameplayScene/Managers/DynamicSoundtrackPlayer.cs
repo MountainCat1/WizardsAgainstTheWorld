@@ -26,6 +26,7 @@ namespace Managers
             {
                 var memorizedEnemies = _creatureManager.PlayerCreatures
                     .Select(x => x.Controller)
+                    .Where(x => x.GetType() == typeof(UnitController))
                     .Cast<UnitController>()
                     .SelectMany(x => x.GetMemorizedCreatures())
                     .Distinct()

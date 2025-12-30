@@ -1,11 +1,13 @@
 using Cinemachine;
 using Managers;
 using UnityEngine;
+using UnityEngine.Animations;
 using Zenject;
 
 public interface ICameraController
 {
     void MoveTo(Vector2 targetPosition);
+    void SetParent(Transform parent);
 }
 
 public class CameraController : MonoBehaviour, ICameraController
@@ -17,6 +19,7 @@ public class CameraController : MonoBehaviour, ICameraController
     [SerializeField] private Transform cameraParent;
     [SerializeField] private float cameraSpeed = 5f;
     [SerializeField] private float scrollSensitive = 1f;
+    [SerializeField] private GameObject defaultCameraTarget;
 
     [Header("Edge Panning")]
     [SerializeField] private float edgeThreshold = 30f; // pixels from edge
@@ -31,6 +34,11 @@ public class CameraController : MonoBehaviour, ICameraController
         _camera = Camera.main.GetComponent<CinemachineVirtualCamera>();
         _inputMapper.Zoom += OnZoom;
         _inputManager.ZoomOnInspectedUnit += ZoomOnInspectedUnit;
+        
+        if (defaultCameraTarget != null)
+        {
+            SetParent(defaultCameraTarget.transform);
+        }
     }
     
     private void OnApplicationFocus(bool hasFocus)
@@ -107,7 +115,16 @@ public class CameraController : MonoBehaviour, ICameraController
     {
         cameraParent.transform.position = new Vector3(targetPosition.x, targetPosition.y, cameraParent.transform.position.z);
     }
-    
+
+    public void SetParent(Transform parent)
+    {
+        cameraParent.GetComponent<ParentConstraint>().SetSource(0, new ConstraintSource
+        {
+            sourceTransform = parent,
+            weight = 1f
+        });
+    }
+
     private bool IsMouseInsideGameWindow()
     {
         Vector3 mousePos = Input.mousePosition;

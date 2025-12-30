@@ -103,6 +103,8 @@ public class InputManager : MonoBehaviour, IInputManager
 
         _inputActions.CameraControl.Movement.performed +=
             ctx => CameraMovement?.Invoke(ctx.ReadValue<Vector2>());
+        _inputActions.CameraControl.Movement.canceled +=
+            _ => CameraMovement?.Invoke(Vector2.zero);
 
         _inputActions.CharacterControl.Pointer1.performed += Pointer1OnPerformed;
         _inputActions.CharacterControl.Pointer1.canceled += Pointer1Canceled;
