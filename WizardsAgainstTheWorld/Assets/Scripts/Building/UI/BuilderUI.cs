@@ -46,17 +46,11 @@ namespace Building.UI
             else
             {
                 _buildingPreviewInstance.gameObject.SetActive(true);
-                var gridPosition = GridPosition.FromWorldPosition(_inputMapper.GetMouseWorldPosition() - Vector2.one);
-                
-                var gridCells = GridUtilities.GetCellsFromWorldPosition(
-                    _gridSystem,
-                    _inputMapper.GetMouseWorldPosition(),
-                    _selectedBuildingDefinition.Footprint
-                );
                 
                 var canBuild = _builderManager.CanPlaceBuilding(
                     _selectedBuildingDefinition.Footprint,
-                    gridCells
+                    _inputMapper.GetMouseWorldPosition(),
+                    out var gridCells
                 );
 
                 _buildingPreviewInstance.Initialize(
@@ -76,23 +70,21 @@ namespace Building.UI
                 return;
             }
 
-            var gridPosition = GridPosition.FromWorldPosition(position);
-            var gridCells = GridUtilities.GetCellsFromWorldPosition(
-                _gridSystem,
-                position,
-                _selectedBuildingDefinition.Footprint
-            );
-
             if (_builderManager.CanPlaceBuilding(
                     _selectedBuildingDefinition.Footprint,
-                    gridCells
+                    position, out _
                 ))
             {
                 var buildingView = _container.InstantiatePrefabForComponent<BuildingView>(
                     _selectedBuildingDefinition
                 );
 
-                _builderManager.PlaceBuilding(buildingView, gridCells);
+                _builderManager.PlaceBuilding(
+                    buildingView,
+                    _selectedBuildingDefinition.Footprint,
+                    position
+                );
+                
                 Debug.Log($"Built {_selectedBuildingDefinition.Name} at {position}");
             }
             else
