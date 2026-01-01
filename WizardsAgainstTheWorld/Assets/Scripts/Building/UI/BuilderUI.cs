@@ -47,9 +47,16 @@ namespace Building.UI
             {
                 _buildingPreviewInstance.gameObject.SetActive(true);
                 
+                var mouseWorldPos = _inputMapper.GetMouseWorldPosition();
+                var anchorGridPos = GridUtilities.GetAnchorFromWorldPosition(
+                    _gridSystem,
+                    mouseWorldPos,
+                    _selectedBuildingDefinition.Footprint
+                );
+                
                 var canBuild = _builderManager.CanPlaceBuilding(
                     _selectedBuildingDefinition.Footprint,
-                    _inputMapper.GetMouseWorldPosition(),
+                    anchorGridPos,
                     out var gridCells
                 );
 
@@ -69,10 +76,17 @@ namespace Building.UI
                 Debug.Log("No building selectedto build.");
                 return;
             }
+            
+            var mouseWorldPos = _inputMapper.GetMouseWorldPosition();
+            var anchorGridPos = GridUtilities.GetAnchorFromWorldPosition(
+                _gridSystem,
+                mouseWorldPos,
+                _selectedBuildingDefinition.Footprint
+            );
 
             if (_builderManager.CanPlaceBuilding(
                     _selectedBuildingDefinition.Footprint,
-                    position, out _
+                    anchorGridPos, out _
                 ))
             {
                 var buildingView = _container.InstantiatePrefabForComponent<BuildingView>(
@@ -82,7 +96,7 @@ namespace Building.UI
                 _builderManager.PlaceBuilding(
                     buildingView,
                     _selectedBuildingDefinition.Footprint,
-                    position
+                    anchorGridPos
                 );
                 
                 Debug.Log($"Built {_selectedBuildingDefinition.Name} at {position}");

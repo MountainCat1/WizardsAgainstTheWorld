@@ -11,14 +11,14 @@ namespace Building.Managers
 
         bool CanPlaceBuilding(
             BuildingFootprint footprint,
-            Vector2 worldPosition,
+            GridPosition anchorPosition,
             out IReadOnlyList<GridPosition> cells
         );
 
         void PlaceBuilding(
             BuildingView building,
             BuildingFootprint footprint,
-            Vector2 worldPosition
+            GridPosition anchorPosition
         );
     }
 
@@ -30,13 +30,12 @@ namespace Building.Managers
 
         public bool CanPlaceBuilding(
             BuildingFootprint footprint,
-            Vector2 worldPosition,
+            GridPosition anchorPosition,
             out IReadOnlyList<GridPosition> cells
         )
         {
-            cells = GridUtilities.GetCellsFromWorldPosition(
-                _grid,
-                worldPosition,
+            cells = GridUtilities.GetCellsFromAnchorPosition(
+                anchorPosition,
                 footprint
             );
 
@@ -47,12 +46,11 @@ namespace Building.Managers
         public void PlaceBuilding(
             BuildingView building,
             BuildingFootprint footprint,
-            Vector2 worldPosition
+            GridPosition anchorPosition
         )
         {
-            var cells = GridUtilities.GetCellsFromWorldPosition(
-                _grid,
-                worldPosition,
+            var cells = GridUtilities.GetCellsFromAnchorPosition(
+                anchorPosition,
                 footprint
             );
 
