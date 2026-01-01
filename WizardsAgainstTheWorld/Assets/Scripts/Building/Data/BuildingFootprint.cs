@@ -1,3 +1,5 @@
+using System;
+
 namespace Building.Data
 {
     public readonly struct BuildingFootprint
@@ -10,5 +12,7 @@ namespace Building.Data
             Width = width;
             Height = height;
         }
+
+        public float RadiusSize => MathF.Max(Width, Height) / 2f;
     }
 }

@@ -11,7 +11,6 @@ namespace Services.MapGenerators
     {
         public float TileSize { get; }
 
-
         private readonly Dictionary<Vector2Int, TileType> _mapData = new();
         private readonly Dictionary<TileType, ICollection<Vector2>> _tilePositions = new();
         private readonly Dictionary<int, RoomData> _rooms = new(); // Stores room data

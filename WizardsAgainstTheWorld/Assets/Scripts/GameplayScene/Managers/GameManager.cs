@@ -116,6 +116,8 @@ namespace Managers
             {
                 GameLogger.Log("Using settings set in the inspector...");
             }
+            
+            _mapGenerator.SafeGenerateMap();
 
             yield return new WaitForSeconds(0.1f);
             _astarManager.Scan();

@@ -8,7 +8,7 @@ namespace Building
     {
         public override void InstallBindings()
         {
-            Container.Bind<GridSystem>().FromInstance(new GridSystem(100, 100, 1, Vector3.zero)).AsSingle();
+            Container.Bind<GridSystem>().FromInstance(new GridSystem(75, 75, 1, Vector3.zero)).AsSingle();
             Container.Bind<IBuilderManager>().To<BuilderManager>().FromComponentsInHierarchy().AsSingle();
         }
     }

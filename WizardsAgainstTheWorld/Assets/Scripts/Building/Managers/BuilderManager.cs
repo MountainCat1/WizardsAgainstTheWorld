@@ -57,6 +57,7 @@ namespace Building.Managers
             SetCellsOccupied(cells);
             
             building.transform.position = _grid.GetCenterFromCells(cells);
+            building.GetComponent<CircleCollider2D>().radius = footprint.RadiusSize;
         }
 
 
