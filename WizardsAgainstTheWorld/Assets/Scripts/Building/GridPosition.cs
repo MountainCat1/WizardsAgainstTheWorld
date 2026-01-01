@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Building
@@ -16,7 +17,22 @@ namespace Building
 
         public static GridPosition FromWorldPosition(Vector2 position)
         {
-            return new GridPosition(Mathf.FloorToInt(position.x), Mathf.FloorToInt(position.y));
+            return new GridPosition(Mathf.RoundToInt(position.x), Mathf.RoundToInt(position.y));
+        }
+        
+        public Vector2 ToVector2()
+        {
+            return new Vector2(X, Y);
+        }
+        
+        public override string ToString()
+        {
+            return $"({X}, {Y})";
+        }
+        
+        public Vector3 ToVector3()
+        {
+            return new Vector3(X, 0, Y);
         }
     }
 
@@ -45,17 +61,36 @@ namespace Building
 
         public Vector3 GridToWorld(GridPosition pos)
             => origin + new Vector3(
-                (pos.X + 0.5f) * CellSize,
-                (pos.Y + 0.5f) * CellSize
+                (pos.X) * CellSize,
+                (pos.Y) * CellSize
             );
 
+        public Vector2 GetCenterFromCells(IEnumerable<GridPosition> positions)
+        {
+            var posCount = positions.Count();
+            
+            if (positions == null || posCount == 0)
+                throw new System.ArgumentException("Positions list cannot be null or empty.", nameof(positions));
+
+            float totalX = 0f;
+            float totalY = 0f;
+
+            foreach (var pos in positions)
+            {
+                totalX += pos.X;
+                totalY += pos.Y;
+            }
+
+            return new Vector2(totalX / posCount, totalY / posCount);
+        }
+    
         public GridPosition WorldToGrid(Vector3 world)
         {
             var local = world - origin;
 
             return new GridPosition(
-                Mathf.FloorToInt(local.x / CellSize),
-                Mathf.FloorToInt(local.z / CellSize)
+                Mathf.RoundToInt(local.x / CellSize),
+                Mathf.RoundToInt(local.y / CellSize)
             );
         }
 
@@ -81,7 +116,5 @@ namespace Building
 
             return result;
         }
-
     }
-
 }

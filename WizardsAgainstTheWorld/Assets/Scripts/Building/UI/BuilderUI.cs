@@ -1,3 +1,4 @@
+using System;
 using Building.Managers;
 using UnityEngine;
 using Zenject;
@@ -9,46 +10,90 @@ namespace Building.UI
         [Inject] private IBuilderManager _builderManager;
         [Inject] private DiContainer _container;
         [Inject] private IInputMapper _inputMapper;
-            
+        [Inject] private GridSystem _gridSystem;
+
         [SerializeField] private BuildingPrefabEntryUI buildingPrefabEntryUI;
         [SerializeField] private Transform buildingPrefabListParent;
-        
+        [SerializeField] private BuildingPreview buildingPreviewPrefab;
+
         private BuildingPrefab _selectedBuildingDefinition;
-        
+        private BuildingPreview _buildingPreviewInstance;
+
         private void Start()
         {
             foreach (var buildingPrefab in _builderManager.BuildingPrefabs)
             {
                 _container.InstantiatePrefabForComponent<BuildingPrefabEntryUI>(
-                    buildingPrefabEntryUI,
-                    buildingPrefabListParent)
+                        buildingPrefabEntryUI,
+                        buildingPrefabListParent
+                    )
                     .Initialize(buildingPrefab, SelectBuilding);
             }
 
             _inputMapper.OnWorldPressed1 += TryBuild;
+
+            _buildingPreviewInstance = Instantiate(buildingPreviewPrefab, transform);
+            _buildingPreviewInstance.gameObject.SetActive(false);
+        }
+
+        private void Update()
+        {
+            if (_selectedBuildingDefinition is null)
+            {
+                _buildingPreviewInstance.gameObject.SetActive(false);
+                return;
+            }
+            else
+            {
+                _buildingPreviewInstance.gameObject.SetActive(true);
+                var gridPosition = GridPosition.FromWorldPosition(_inputMapper.GetMouseWorldPosition() - Vector2.one);
+                
+                var gridCells = GridUtilities.GetCellsFromWorldPosition(
+                    _gridSystem,
+                    _inputMapper.GetMouseWorldPosition(),
+                    _selectedBuildingDefinition.Footprint
+                );
+                
+                var canBuild = _builderManager.CanPlaceBuilding(
+                    _selectedBuildingDefinition.Footprint,
+                    gridCells
+                );
+
+                _buildingPreviewInstance.Initialize(
+                    canBuild,
+                    _selectedBuildingDefinition.GetComponentInChildren<SpriteRenderer>().sprite,
+                    _selectedBuildingDefinition.Footprint,
+                    _gridSystem.GetCenterFromCells(gridCells)
+                );
+            }
         }
 
         private void TryBuild(Vector2 position)
         {
             if (_selectedBuildingDefinition == null)
             {
-                Debug.Log("No building selectedto build."); 
+                Debug.Log("No building selectedto build.");
                 return;
             }
-            
+
             var gridPosition = GridPosition.FromWorldPosition(position);
-            
-            if(_builderManager.CanPlaceBuilding(
-                gridPosition,
-                _selectedBuildingDefinition.Footprint,
-                out var occupiedCells))
+            var gridCells = GridUtilities.GetCellsFromWorldPosition(
+                _gridSystem,
+                position,
+                _selectedBuildingDefinition.Footprint
+            );
+
+            if (_builderManager.CanPlaceBuilding(
+                    _selectedBuildingDefinition.Footprint,
+                    gridCells
+                ))
             {
                 var buildingView = _container.InstantiatePrefabForComponent<BuildingView>(
-                    _selectedBuildingDefinition);
-                
-                _builderManager.PlaceBuilding(buildingView, gridPosition);
+                    _selectedBuildingDefinition
+                );
+
+                _builderManager.PlaceBuilding(buildingView, gridCells);
                 Debug.Log($"Built {_selectedBuildingDefinition.Name} at {position}");
-                
             }
             else
             {
