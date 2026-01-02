@@ -91,7 +91,7 @@ namespace Items.Weapons
             return new Vector2(newX, newY).normalized;
         }
 
-        private static float CalculateSpreadAngle(float baseAngle, Creature creature)
+        private static float CalculateSpreadAngle(float baseAngle, Entity creature)
         {
             return Mathf.Lerp(MaxSpreadAngle, 0f, (baseAngle + creature.ModifierReceiver.AccuracyFlatModifier) / 100f);
         }

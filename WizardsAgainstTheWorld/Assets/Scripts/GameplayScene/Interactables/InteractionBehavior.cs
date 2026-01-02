@@ -10,7 +10,7 @@ using Zenject;
 
 public class InteractionBehavior : MonoBehaviour, IInteractable, IHoverable
 {
-    public event Action<Creature> InteractCompleted;
+    public event Action<Entity> InteractCompleted;
 
     [Inject] private ISoundPlayer _soundPlayer = null!;
     [Inject] private ICursorManager _cursorManager = null!;
@@ -33,7 +33,7 @@ public class InteractionBehavior : MonoBehaviour, IInteractable, IHoverable
 
     public bool Used { get; protected set; } = false;
 
-    private readonly Dictionary<Creature, Interaction> _activeInteractions = new();
+    private readonly Dictionary<Entity, Interaction> _activeInteractions = new();
 
     protected ICollection<IInteractable> OtherInteractables { get; private set; }
     public ICollection<IInteractable> Container { get; private set; }
@@ -91,13 +91,18 @@ public class InteractionBehavior : MonoBehaviour, IInteractable, IHoverable
         return true;
     }
 
-    public virtual bool CanInteract(Creature creature)
+    public virtual bool CanInteract(Entity entity)
     {
         if (!IsInteractable)
             return false;
 
         if (requiredItems != null)
         {
+            if (entity is not Creature creature)
+            {
+                throw new InvalidOperationException("Only creatures can interact with interactables that require items.");
+            }
+            
             foreach (var requiredItem in requiredItems)
             {
                 if (!creature.Inventory.HasItem(requiredItem.GetIdentifier()))
@@ -105,7 +110,7 @@ public class InteractionBehavior : MonoBehaviour, IInteractable, IHoverable
             }
         }
 
-        if (!multiUse && _activeInteractions.Count > 0 && !_activeInteractions.ContainsKey(creature))
+        if (!multiUse && _activeInteractions.Count > 0 && !_activeInteractions.ContainsKey(entity))
             return false;
 
         return true;
@@ -118,13 +123,13 @@ public class InteractionBehavior : MonoBehaviour, IInteractable, IHoverable
     /// <param name="interaction"></param>
     /// <param name="messageKey"></param>
     /// <returns>Should the interaction proceed?</returns>
-    protected virtual bool ShouldContiniueInteraction(Creature creature, Interaction interaction, [CanBeNull] out string messageKey)
+    protected virtual bool ShouldContiniueInteraction(Entity creature, Interaction interaction, [CanBeNull] out string messageKey)
     {
         messageKey = null;
         return true;
     }
 
-    public virtual Interaction Interact(Creature creature, float deltaTime)
+    public virtual Interaction Interact(Entity creature, float deltaTime)
     {
         if (_activeInteractions.TryGetValue(creature, out var interaction))
         {
@@ -163,7 +168,7 @@ public class InteractionBehavior : MonoBehaviour, IInteractable, IHoverable
         return newInteraction;
     }
 
-    private Interaction CreateInteraction(Creature creature)
+    private Interaction CreateInteraction(Entity creature)
     {
         var interaction = new Interaction(creature, interactionTime, message);
 
@@ -200,6 +205,6 @@ public class InteractionBehavior : MonoBehaviour, IInteractable, IHoverable
         if (useOnce)
             _cursorManager.RemoveCursor(this);
 
-        InteractCompleted?.Invoke(interaction.Creature);
+        InteractCompleted?.Invoke(interaction.Entity);
     }
 }

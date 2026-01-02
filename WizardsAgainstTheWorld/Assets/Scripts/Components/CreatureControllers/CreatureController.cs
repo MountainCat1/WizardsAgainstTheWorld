@@ -1,18 +1,20 @@
 ﻿using System.Collections.Generic;
+using CreatureControllers;
 using Markers;
 using UnityEngine;
 using Utilities;
 using Zenject;
 
 [RequireComponent(typeof(Creature))]
-public class CreatureController : MonoBehaviour
+public abstract class CreatureController : EntityController
 {
     public Creature Creature { get; protected set; }
     
     [Inject] private IPathfinding _pathfinding;
 
-    protected virtual void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         Creature = GetComponent<Creature>();
     }
 
@@ -38,7 +40,7 @@ public class CreatureController : MonoBehaviour
 
     public ICollection<Creature> GetCreatureInLine(Vector2 towards, float range)
     {
-        var layerMask = LayerMask.GetMask("CreatureHit");
+        var layerMask = CollisionUtility.HitMask;
 
         RaycastHit2D[] results = new RaycastHit2D[10];
         var size = Physics2D.RaycastNonAlloc(Creature.transform.position, towards - (Vector2)Creature.transform.position, results, range, layerMask);

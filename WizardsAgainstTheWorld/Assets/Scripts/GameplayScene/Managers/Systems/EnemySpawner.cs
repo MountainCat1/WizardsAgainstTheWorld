@@ -161,7 +161,7 @@ namespace Managers
                 var spawnOffset = new Vector2(_mapData.TileSize / 2, _mapData.TileSize / 2);
                 var spawned = SpawnEnemy(enemy, (Vector2)position + spawnOffset);
 
-                if (spawned?.Controller is AiController ai && memorizeTarget)
+                if (spawned?.Controller is CreatureAiController ai && memorizeTarget)
                 {
                     var hostiles = _creatureManager.GetCreaturesAliveActive()
                         .Where(x => x.Team == Teams.Player)

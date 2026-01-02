@@ -4,8 +4,8 @@ using UnityEngine;
 
 public interface IInteractable
 {
-    bool CanInteract(Creature creature);
-    Interaction Interact(Creature creature, float deltaTime);
+    bool CanInteract(Entity entity);
+    Interaction Interact(Entity entity, float deltaTime);
     public Vector2 Position { get; }
     bool IsInteractable { get; }
     int Priority { get; }
@@ -29,14 +29,14 @@ public class Interaction
     public InteractionStatus Status { get; private set; } = InteractionStatus.Created;
 
     public decimal CurrentProgress { get; private set; }
-    public Creature Creature { get; }
+    public Entity Entity { get; }
     public decimal InteractionTime { get; }
     public string MessageKey { get; }
     public Color Color { get; }
 
-    public Interaction(Creature creature, float interactionTime, string messageKey = "", Color? color = null)
+    public Interaction(Entity entity, float interactionTime, string messageKey = "", Color? color = null)
     {
-        Creature = creature;
+        Entity = entity;
         MessageKey = messageKey;
         InteractionTime = (decimal)interactionTime;
         Color = color ?? new Color(0, 0.8784314f, 0);
@@ -74,7 +74,7 @@ public class Interaction
         Canceled?.Invoke();
         Ended?.Invoke();
         
-        GameLogger.Log($"{Creature.name} canceled the interaction.");
+        GameLogger.Log($"{Entity.name} canceled the interaction.");
     }
 
     private void OnComplete()
@@ -83,6 +83,6 @@ public class Interaction
         Completed?.Invoke();
         Ended?.Invoke();
 
-        GameLogger.Log($"{Creature.name} completed the interaction.");
+        GameLogger.Log($"{Entity.name} completed the interaction.");
     }
 }

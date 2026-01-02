@@ -10,13 +10,13 @@ namespace Managers
     {
         event Action<Entity> EntitySpawned;
         bool IsAliveAndActive(Entity entity);
-        ICollection<Entity> GetEntitys();
-        IEnumerable<Entity> GetEntitysAliveActive();
-        IEnumerable<Entity> GetAliveEntitys();
+        ICollection<Entity> GetEntities();
+        IEnumerable<Entity> GetEntitiesAliveActive();
+        IEnumerable<Entity> GetAliveEntities();
         public Entity SpawnEntity(Entity entityPrefab, Vector3 position, Transform parent = null);
         public Entity SpawnEntity(Entity entityPrefab, Vector2Int position, Transform parent = null)
             => SpawnEntity(entityPrefab, (Vector2)position, parent);
-        public void ScanForEntitys();
+        public void ScanForEntities();
         ICollection<Entity> PlayerEntities { get; }
     }
 
@@ -31,12 +31,12 @@ namespace Managers
         public ICollection<Entity> PlayerEntities { get; private set; } = new List<Entity>();
         
         private List<Entity> _entitys = new List<Entity>();
-        private List<Entity> _visibleEntitys = new List<Entity>();
+        private List<Entity> _visibleEntities = new List<Entity>();
 
         private void Start()
         {
-            var preSpawnedEntitys = FindObjectsOfType<Entity>();
-            foreach (var entity in preSpawnedEntitys)
+            var preSpawnedEntities = FindObjectsOfType<Entity>();
+            foreach (var entity in preSpawnedEntities)
             {
                 _diContainer.Inject(entity.gameObject);
 
@@ -46,10 +46,10 @@ namespace Managers
             
         }
         
-        public void ScanForEntitys()
+        public void ScanForEntities()
         {
-            var preSpawnedEntitys = FindObjectsOfType<Entity>();
-            foreach (var entity in preSpawnedEntitys)
+            var preSpawnedEntities = FindObjectsOfType<Entity>();
+            foreach (var entity in preSpawnedEntities)
             {
                 if (!_entitys.Contains(entity))
                 {
@@ -57,13 +57,13 @@ namespace Managers
                 }
             }
         }
-
-        public IEnumerable<Entity> GetEntitysAliveActive()
+        
+        public IEnumerable<Entity> GetEntitiesAliveActive()
         {
             return _entitys.Where(x => x.Health.Alive && x.gameObject.activeInHierarchy);
         }
 
-        public IEnumerable<Entity> GetAliveEntitys()
+        public IEnumerable<Entity> GetAliveEntities()
         {
             return _entitys.Where(x => x.Health.Alive && x.gameObject.activeInHierarchy);
         }
@@ -105,7 +105,7 @@ namespace Managers
             return entity.Health.Alive && entity.gameObject.activeInHierarchy;
         }
 
-        public ICollection<Entity> GetEntitys()
+        public ICollection<Entity> GetEntities()
         {
             return _entitys;
         }

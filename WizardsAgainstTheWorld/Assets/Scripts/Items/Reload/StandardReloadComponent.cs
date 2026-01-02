@@ -30,7 +30,7 @@ namespace Items.Reload
             return Mathf.FloorToInt(Weapon.WeaponItemData.GetApplied(WeaponPropertyModifiers.AmmoCapacity, BaseMaxAmmo));
         }
 
-        public bool CanInteract(Creature creature)
+        public bool CanInteract(Entity entity)
         {
             if (IsReloading) return false;
             if (CurrentAmmo <= 0) return false;
@@ -38,12 +38,12 @@ namespace Items.Reload
             return true;
         }
 
-        public override void DoReloading(Creature reloader)
+        public override void DoReloading(Entity reloader)
         {
             reloader.Interact(this);
         }
 
-        public Interaction Interact(Creature creature, float deltaTime)
+        public Interaction Interact(Entity entity, float deltaTime)
         {
             if (_interaction != null)
             {
@@ -52,7 +52,7 @@ namespace Items.Reload
             
             var modifiedReloadTime = Weapon.WeaponItemData.GetApplied(WeaponPropertyModifiers.ReloadTime, ReloadTime);
 
-            var interaction = new Interaction(creature, modifiedReloadTime, "Game.Interaction.Reload", Color.yellowNice);
+            var interaction = new Interaction(entity, modifiedReloadTime, "Game.Interaction.Reload", Color.yellowNice);
 
             interaction.Completed += OnReloadInteractionCompleted;
             interaction.Canceled += OnInteractionCanceled;

@@ -23,12 +23,12 @@ namespace VictoryConditions
 
         
         [Inject]
-        public void Construct([Inject] ICreatureEventProducer eventProducer)
+        public void Construct([Inject] IEntityEventProducer eventProducer)
         {
-            eventProducer.CreatureDied += OnCreatureDied;
+            eventProducer.EntityDied += OnEntityDied;
         }
 
-        private void OnCreatureDied(Creature creature, DeathContext deathContext)
+        private void OnEntityDied(Entity creature, DeathContext deathContext)
         {
             if (creature.Team == Teams.Player)
                 return;

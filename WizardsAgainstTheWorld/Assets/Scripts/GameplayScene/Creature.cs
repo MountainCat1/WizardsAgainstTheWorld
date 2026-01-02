@@ -23,8 +23,6 @@ public class Creature : Entity, IDamageable, IModifiable, IColorable, IEffectabl
     public event Action WeaponChanged;
     public event Action ArmorChanged;
     public event Action<CreatureState> StateChanged;
-    public event Action<Interaction> Interacted;
-    public event Action<Interaction> InteractionCanceled;
     public event Action<AttackContext> WeaponAttacked;
     public event Action<HitContext> WeaponHit;
     public event Action WeaponReloaded;
@@ -120,7 +118,6 @@ public class Creature : Entity, IDamageable, IModifiable, IColorable, IEffectabl
     public IEffectReceiver EffectReceiver => new CreatureEffectReceiver(this);
 
     // Private Referenes
-
     private CreatureController _controller;
     private ILevelSystem _levelingComponent;
     private Inventory _inventory;
@@ -155,9 +152,6 @@ public class Creature : Entity, IDamageable, IModifiable, IColorable, IEffectabl
         _diContainer.Inject(Inventory);
 
         Health.Hit += OnHit;
-
-        _levelingComponent = GetComponent<LevelingComponent>();
-        _levelingComponent ??= new DisabledLevelingSystem();
     }
 
     protected override void Update()
@@ -224,19 +218,6 @@ public class Creature : Entity, IDamageable, IModifiable, IColorable, IEffectabl
         LevelingComponent.SetData(data.Level);
     }
 
-    public Interaction Interact(IInteractable interactionTarget)
-    {
-        var interaction = interactionTarget.Interact(this, Time.deltaTime); // TODO: throws exception???
-        if (interaction.Status == InteractionStatus.Created)
-        {
-            _floatingTextManager.SpawnFloatingText(RootTransform.position, interaction.MessageKey,
-                FloatingTextType.Interaction);
-        }
-
-        Interacted?.Invoke(interaction);
-        interaction.Canceled += () => { InteractionCanceled?.Invoke(interaction); };
-        return interaction;
-    }
 
     // Static Methods
 

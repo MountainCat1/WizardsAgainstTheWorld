@@ -13,7 +13,7 @@ namespace Interactables
         [SerializeField] private string cancelMessage = "Game.Interaction.Elevator.Cancel.VictoryConditions";
 
         protected override bool ShouldContiniueInteraction(
-            Creature creature,
+            Entity creature,
             Interaction interaction,
             out string messageKey
         )
@@ -34,7 +34,7 @@ namespace Interactables
         {
             base.OnInteractionComplete(interaction);
 
-            interaction.Creature.gameObject.SetActive(false);
+            interaction.Entity.gameObject.SetActive(false);
 
             _signalManager.Signal(Signal.CreatureExited);
         }

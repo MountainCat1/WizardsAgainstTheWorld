@@ -11,7 +11,7 @@ namespace Items.ActiveItems
 {
     public class InteractionBehaviorItem : ActiveItemBehaviour, IInteractable 
     {
-        public event Action<Creature> InteractCompleted;
+        public event Action<Entity> InteractCompleted;
     
         [Inject] private ISoundPlayer _soundPlayer = null!;
 
@@ -38,7 +38,7 @@ namespace Items.ActiveItems
             Container = GetComponents<IInteractable>().OrderByDescending(x => x.Priority).ToArray();
         }
 
-        public virtual bool CanInteract(Creature creature)
+        public virtual bool CanInteract(Entity entity)
         {
             return true;
         }
@@ -59,18 +59,18 @@ namespace Items.ActiveItems
             controller.SetTarget(this);
         }
 
-        public Interaction Interact(Creature creature, float deltaTime)
+        public Interaction Interact(Entity entity, float deltaTime)
         {
             if (_interaction == null)
             {
-                _interaction = CreateInteraction(creature);
+                _interaction = CreateInteraction(entity);
                 return _interaction;
             }
 
-            if (_interaction.Creature != creature)
+            if (_interaction.Entity != entity)
             {
                 _interaction.Cancel();
-                _interaction = CreateInteraction(creature);
+                _interaction = CreateInteraction(entity);
                 return _interaction;
             }
 
@@ -82,9 +82,9 @@ namespace Items.ActiveItems
             return returnInteraction;
         }
 
-        private Interaction CreateInteraction(Creature creature)
+        private Interaction CreateInteraction(Entity entity)
         {
-            _interaction = new Interaction(creature, interactionTime, MessageKey);
+            _interaction = new Interaction(entity, interactionTime, MessageKey);
 
             _interaction.Completed += () =>
             {
@@ -110,7 +110,7 @@ namespace Items.ActiveItems
 
         private void OnInteractionCompleteCallback(Interaction interaction)
         {
-            InteractCompleted?.Invoke(interaction.Creature);
+            InteractCompleted?.Invoke(interaction.Entity);
             
             OnInteractionCompleted(interaction, _context);
         }

@@ -36,7 +36,7 @@ namespace UI
     public class FloatingTextManager : MonoBehaviour, IFloatingTextManager
     {
         [Inject] private IProjectileManager _projectileManager;
-        [Inject] private ICreatureEventProducer _creatureEventProducer;
+        [Inject] private IEntityEventProducer _creatureEventProducer;
         [Inject] private IDynamicPoolingManager _dynamicPoolingManager;
         [Inject] private IWeaponManager _weaponManager;
         [Inject] private ITeamManager _teamManager;
@@ -91,8 +91,8 @@ namespace UI
 
         private void Start()
         {
-            _creatureEventProducer.CreatureHit += OnCreatureHit;
-            _creatureEventProducer.CreatureHeal += OnCreatureHeal;
+            _creatureEventProducer.EntityHit += OnEntityHit;
+            _creatureEventProducer.EntityHeal += OnEntityHeal;
             _weaponManager.WeaponAttackMissed += OnWeaponAttackMissed;
         }
 
@@ -110,17 +110,17 @@ namespace UI
             );
         }
 
-        private void OnCreatureHeal(Creature healedCreature, HealContext ctx)
+        private void OnEntityHeal(Entity healedEntity, HealContext ctx)
         {
             SpawnFloatingText(
-                position: healedCreature.Health.transform.position,
+                position: healedEntity.Health.transform.position,
                 localizationKey: HealKey,
                 type: FloatingTextType.Heal,
                 ctx.HealAmount.ToLocalizedString2Decimals()
             );
         }
 
-        private void OnCreatureHit(Creature creature, HitContext hitCtx)
+        private void OnEntityHit(Entity entity, HitContext hitCtx)
         {
             if (hitCtx.Attacker?.Team == Teams.Player
                 && hitCtx.Target is Creature { Team: Teams.Player })

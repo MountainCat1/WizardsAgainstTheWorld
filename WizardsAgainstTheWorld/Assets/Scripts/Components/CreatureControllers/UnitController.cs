@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace CreatureControllers
 {
-    public class UnitController : AiController
+    public class UnitController : CreatureAiController
     {
         public IInteractable InteractionTarget => _interactionTarget;
         public Vector2? MoveCommandTarget => _moveCommandTarget;
@@ -142,16 +142,7 @@ namespace CreatureControllers
                 }
             };
         }
-
-        private IEnumerator ThinkCoroutine()
-        {
-            while (true)
-            {
-                Think();
-                yield return new WaitForEndOfFrame();
-            }
-        }
-
+        
         private void Update()
         {
             Think();

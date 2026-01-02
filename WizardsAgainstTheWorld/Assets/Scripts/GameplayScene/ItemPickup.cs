@@ -34,7 +34,12 @@ public class ItemPickup : InteractionBehavior
     {
         base.OnInteractionComplete(interaction);
 
-        interaction.Creature.Inventory.TransferItem(_inventory, itemBehaviour);
+        if (interaction.Entity is not Creature creature)
+        {
+            throw new Exception("ItemPickup can only be picked up by Creature");
+        }
+        
+        creature.Inventory.TransferItem(_inventory, itemBehaviour);
 
         Destroy(gameObject);
     }

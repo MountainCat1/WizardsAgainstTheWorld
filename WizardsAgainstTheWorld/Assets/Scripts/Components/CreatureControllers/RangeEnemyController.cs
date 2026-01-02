@@ -2,7 +2,7 @@
 
 namespace CreatureControllers
 {
-    public class RangeEnemyController : AiController
+    public class RangeEnemyController : CreatureAiController
     {
         private Entity _target;
 

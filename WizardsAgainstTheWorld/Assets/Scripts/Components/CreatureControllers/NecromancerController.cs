@@ -2,7 +2,7 @@
 using Items.Weapons;
 using UnityEngine;
 
-public class NecromancerController : AiController
+public class NecromancerController : CreatureAiController
 {
     private Entity _target;
 

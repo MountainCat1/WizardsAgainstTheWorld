@@ -11,7 +11,7 @@ namespace Managers
     }
     public class LootManager : MonoBehaviour, ILootManager
     {
-        [Inject] private ICreatureEventProducer _creatureEventProducer;
+        [Inject] private ICreatureEventProducer _entityEventProducer;
         [Inject] private ISpawnerManager _spawnerManager;
         
         [SerializeField] private ItemPickup itemPickupPrefab;
@@ -19,10 +19,10 @@ namespace Managers
 
         private void Start()
         {
-            _creatureEventProducer.CreatureDied += OnCreatureDied;
+            _entityEventProducer.CreatureDied += OnEntityDied;
         }
         
-        private void OnCreatureDied(Creature creature, DeathContext deathContext)
+        private void OnEntityDied(Creature creature, DeathContext deathContext)
         {
             var items = creature.Inventory.Items;
 

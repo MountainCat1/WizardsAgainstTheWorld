@@ -114,7 +114,7 @@ namespace Components
             Healed?.Invoke(ctx);
         }
         
-        private void InvokeDeath(Creature lastAttackedBy)
+        private void InvokeDeath(Entity lastAttackedBy)
         {
             var deathContext = new DeathContext()
             {

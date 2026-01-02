@@ -1,4 +1,5 @@
 using Data;
+using GameplayScene.Managers;
 using GameplayScene.Managers.Pathfinding;
 using Managers;
 using Managers.Visual;
@@ -36,7 +37,9 @@ public class GameInstaller : MonoInstaller<GameInstaller>
         // Container.Bind<IPopupManager>().To<PopupManager>().FromComponentsInHierarchy().AsSingle();
         Container.Bind<IEntityManager>().To<EntityManager>().FromComponentsInHierarchy().AsSingle();
         Container.Bind<ICreatureManager>().To<CreatureManager>().FromComponentsInHierarchy().AsSingle();
+        Container.Bind<IEntityEventProducer>().To<EntityEventProducer>().FromNew().AsSingle().NonLazy();
         Container.Bind<ICreatureEventProducer>().To<CreatureEventProducer>().FromNew().AsSingle().NonLazy();
+        Container.Bind<IEntityFinder>().To<EntityFinder>().FromNew().AsSingle().NonLazy();
         Container.Bind<ILootManager>().To<LootManager>().FromComponentsInHierarchy().AsSingle();
         Container.Bind<PathfindingRecalculator>().FromNew().AsSingle().NonLazy();
         Container.Bind<IMapGenerator>().To<StepDungeonGenerator>().FromComponentsInHierarchy().AsSingle();

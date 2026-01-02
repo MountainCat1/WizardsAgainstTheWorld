@@ -32,7 +32,7 @@ namespace Managers
         {
             _entityManager.EntitySpawned += OnEntitySpawned;
 
-            foreach (var spawnedCreature in _entityManager.GetEntitys().OfType<Creature>())
+            foreach (var spawnedCreature in _entityManager.GetEntities().OfType<Creature>())
             {
                 OnEntitySpawned(spawnedCreature);
             }
@@ -45,18 +45,18 @@ namespace Managers
 
         public ICollection<Creature> GetCreatures()
         {
-            return _entityManager.GetEntitys().OfType<Creature>().ToArray();
+            return _entityManager.GetEntities().OfType<Creature>().ToArray();
         }
 
         public IEnumerable<Creature> GetCreaturesAliveActive()
         {
-            return _entityManager.GetEntitys().OfType<Creature>()
+            return _entityManager.GetEntities().OfType<Creature>()
                 .Where(c => _entityManager.IsAliveAndActive(c));
         }
 
         public IEnumerable<Creature> GetAliveCreatures()
         {
-            return _entityManager.GetAliveEntitys().OfType<Creature>();
+            return _entityManager.GetAliveEntities().OfType<Creature>();
         }
 
         public Creature SpawnCreature(Creature creaturePrefab, Vector3 position, Transform parent = null)

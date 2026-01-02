@@ -22,6 +22,7 @@ namespace Installer
             Container.Bind<ICyclingPoolingManager>().To<CyclingPoolingManager>().FromComponentsInHierarchy().AsSingle().NonLazy();
             Container.Bind<IDynamicPoolingManager>().To<DynamicPoolingManager>().FromComponentsInHierarchy().AsSingle().NonLazy();
             Container.Bind<IProjectileManager>().To<ProjectileManager>().FromNew().AsSingle().NonLazy();
+            Container.Bind<IEntityEventProducer>().To<EntityEventProducer>().FromNew().AsSingle().NonLazy();
             Container.Bind<ICreatureEventProducer>().To<CreatureEventProducer>().FromNew().AsSingle().NonLazy();
             Container.Bind<IEntityManager>().To<EntityManager>().FromComponentsInHierarchy().AsSingle().NonLazy();
             Container.Bind<ICreatureManager>().To<CreatureManager>().FromComponentsInHierarchy().AsSingle().NonLazy();

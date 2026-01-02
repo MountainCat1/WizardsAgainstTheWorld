@@ -1,3 +1,4 @@
+using System;
 using Items;
 using UnityEngine;
 
@@ -11,7 +12,10 @@ public class ContainerObject : InteractionBehavior
     {
         base.OnInteractionComplete(interaction);
         
-        var creature = interaction.Creature;
+        if (interaction.Entity is not Creature creature)
+        {
+            throw new Exception("ItemPickup can only be picked up by Creature");
+        }
         
         creature.Inventory.AddItemFromPrefab(itemBehaviour);
     }

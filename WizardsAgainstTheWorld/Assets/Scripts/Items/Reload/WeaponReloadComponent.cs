@@ -52,7 +52,7 @@ namespace Items.Reload
             CurrentAmmo = BaseMaxAmmo;
         }
 
-        public virtual void DoReloading(Creature reloader)
+        public virtual void DoReloading(Entity reloader)
         {
             throw new System.NotImplementedException();
         }

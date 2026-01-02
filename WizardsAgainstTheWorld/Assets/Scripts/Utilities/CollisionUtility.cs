@@ -19,6 +19,8 @@ namespace Utilities
 
         public static int BlockingVisionLayerMask => LayerMask.GetMask("Obstacles", "Walls");
         public static int UnwalkableLayerMask => LayerMask.GetMask("Obstacles", "Walls", "Building");
+        public static int HitMask => LayerMask.GetMask("CreatureHit", "Building");
+        
         
         public static List<IDamageable> GetCreaturesInRadius(Vector2 position, float radius, IDamageable[] ignore = null)
         {

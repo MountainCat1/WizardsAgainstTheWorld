@@ -2,7 +2,7 @@
 using CreatureControllers;
 using UnityEngine;
 
-public class MeleeJumpingEnemyController : AiController
+public class MeleeJumpingEnemyController : CreatureAiController
 {
     private Entity _target;
 

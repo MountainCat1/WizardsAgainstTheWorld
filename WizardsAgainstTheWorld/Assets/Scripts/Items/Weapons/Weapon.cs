@@ -79,7 +79,6 @@ public abstract class Weapon : ItemBehaviour
 
     public bool GetOnCooldown(AttackContext ctx)
     {
-        // TODO: DO NOT USE DateTime.Now in Update or FixedUpdate, it is very slow coz it is a system call
         return Time.time - _lastAttackTime < 1f / CalculateAttackSpeed(ctx);
     }
 
@@ -257,7 +256,7 @@ public struct AttackContext
     public Vector2 Direction { get; set; }
     public Vector2 TargetPosition { get; set; }
     [CanBeNull] public Entity Target { get; set; }
-    [CanBeNull] public Creature Attacker { get; set; }
+    [CanBeNull] public Entity Attacker { get; set; }
     public Teams Team { get; set; }
     public Weapon Weapon { get; set; }
 
@@ -303,7 +302,7 @@ public struct HitContext
         TargetPosition = position;
     }
 
-    public Creature Attacker { get; set; }
+    public Entity Attacker { get; set; }
     public IDamageable Target { get; set; }
     public Vector2 TargetPosition { get; set; }
 

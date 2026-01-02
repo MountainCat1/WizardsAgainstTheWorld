@@ -14,7 +14,7 @@ namespace Interactables
             
             damageable.Health.Damage(new HitContext()
             {
-                Attacker = interaction.Creature,
+                Attacker = interaction.Entity,
                 Damage = damageable.Health.CurrentValue,
                 PushFactor = 0,
                 Target = damageable

@@ -22,7 +22,7 @@ namespace Triggers
             highestPriorityInteraction.InteractCompleted += OnInteractCompleted;
         }
 
-        private void OnInteractCompleted(Creature obj)
+        private void OnInteractCompleted(Entity obj)
         {
             RunActions();
         }

@@ -41,7 +41,12 @@ namespace Items.PassiveItems
                 return;
             }
 
-            var statusEffectContext = new StatusEffectContext(ctx.Attacker, targetEntity);
+            if (ctx.Attacker is not Creature attackerCreature)
+            {
+                return;
+            }
+
+            var statusEffectContext = new StatusEffectContext(attackerCreature, targetEntity);
             
             _statusEffectManager.ApplyStatusEffect(statusEffectPrefab, statusEffectContext);
         }

@@ -26,7 +26,12 @@ public class StatusEffectProjectile : MonoBehaviour
             return;
         }
         
-        var statusEffectContext = new StatusEffectContext(ctx.Attacker, targetCreature);
+        if(ctx.Attacker is not Creature attacker)
+        {
+            return;
+        }
+        
+        var statusEffectContext = new StatusEffectContext(attacker, targetCreature);
 
         _statusEffectManager.ApplyStatusEffect(statusEffectPrefab, statusEffectContext);
     }

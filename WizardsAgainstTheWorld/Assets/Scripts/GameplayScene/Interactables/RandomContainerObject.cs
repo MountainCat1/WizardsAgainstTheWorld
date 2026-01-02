@@ -45,7 +45,10 @@ public class RandomContainerObject : InteractionBehavior
     {
         base.OnInteractionComplete(interaction);
 
-        var creature = interaction.Creature;
+        if (interaction.Entity is not Creature creature)
+        {
+            throw new System.InvalidOperationException("RandomContainerObject can only be used by creatures");
+        }
 
         if (_loot.item is null)
         {
