@@ -12,7 +12,7 @@ namespace CreatureControllers
         protected override void Think()
         {
             // Check if target is gone mid-retreat
-            if (Target == null || !CreatureManager.IsAliveAndActive(Target))
+            if (Target == null || !EntityManager.IsAliveAndActive(Target))
             {
                 Target = null;
                 _retreatDirection = null;
@@ -55,7 +55,7 @@ namespace CreatureControllers
                 return;
             }
 
-            if (Target == null || !CreatureManager.IsAliveAndActive(Target))
+            if (Target == null || !EntityManager.IsAliveAndActive(Target))
             {
                 Target = GetNewTarget();
             }
@@ -92,7 +92,7 @@ namespace CreatureControllers
                 {
                     PerformAttack(attackContext);
 
-                    if (Target == null || !Target.gameObject.activeInHierarchy || !CreatureManager.IsAliveAndActive(Target))
+                    if (Target == null || !Target.gameObject.activeInHierarchy || !EntityManager.IsAliveAndActive(Target))
                     {
                         // Don't retreat if target is now dead
                         _retreatDirection = null;

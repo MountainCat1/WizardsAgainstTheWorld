@@ -27,12 +27,13 @@ namespace CreatureControllers
         // Injected Dependencies (using Zenject)
         [Inject] protected IPathfinding Pathfinding;
         [Inject] protected ICreatureManager CreatureManager;
+        [Inject] protected IEntityManager EntityManager;
 
         // Public Constants
         private const double MemoryTime = 60;
 
         // Private Variables
-        private Dictionary<Creature, long> _memorizedCreatures = new();
+        private Dictionary<Entity, long> _memorizedEntities = new();
         private NavigationCache _navigationCache;
 
         // Unity Callbacks
@@ -67,14 +68,21 @@ namespace CreatureControllers
         }
 
         // Public Methods
-        public IEnumerable<Creature> GetMemorizedCreatures()
+        public IEnumerable<Entity> GetMemorizedEntities()
         {
-            return _memorizedCreatures
+            return _memorizedEntities
                 .Select(x => x.Key)
                 .Where(x => x);
         }
+        public IEnumerable<Creature> GetMemorizedCreatures()
+        {
+            return _memorizedEntities
+                .Select(x => x.Key)
+                .Where(x => x)
+                .OfType<Creature>();
+        }
 
-        protected void PerformMovementTowardsTarget(Creature target)
+        protected void PerformMovementTowardsTarget(Entity target)
         {
             PerformMovementTowardsPosition(target.transform.position);
         }
@@ -193,12 +201,12 @@ namespace CreatureControllers
             return cornerPoints;
         }
 
-        private void UpdateMemory()
+        protected virtual void UpdateMemory()
         {
             long currentTicks = Environment.TickCount;
-            var keysToRemove = new List<Creature>();
+            var keysToRemove = new List<Entity>();
 
-            foreach (var kvp in _memorizedCreatures)
+            foreach (var kvp in _memorizedEntities)
             {
                 if ((currentTicks - kvp.Value) > MemoryTime * 1000 || !kvp.Key)
                 {
@@ -208,7 +216,7 @@ namespace CreatureControllers
 
             foreach (var key in keysToRemove)
             {
-                _memorizedCreatures.Remove(key);
+                _memorizedEntities.Remove(key);
             }
 
             foreach (var creature in CreatureManager.GetCreaturesAliveActive())
@@ -244,7 +252,7 @@ namespace CreatureControllers
         }
 
         // Helper Methods
-        protected bool PathClear(Creature target, float radius)
+        protected bool PathClear(Entity target, float radius)
         {
             return PathClear(target.transform.position, radius);
         }
@@ -264,9 +272,9 @@ namespace CreatureControllers
             return pathClear;
         }
 
-        public void Memorize(Creature creature)
+        public void Memorize(Entity creature)
         {
-            _memorizedCreatures[creature] = Environment.TickCount;
+            _memorizedEntities[creature] = Environment.TickCount;
         }
 
         protected void PerformMovementTowardsPosition(Vector2 position)
@@ -290,18 +298,18 @@ namespace CreatureControllers
 
         
         // TODO: OPTIMIZE THIS SHIT
-        protected Creature GetNewTarget()
+        protected Entity GetNewTarget()
         {
-            var targets = GetMemorizedCreatures()
+            var targets = GetMemorizedEntities()
                 .Where(x => Creature.GetAttitudeTowards(x) == Attitude.Hostile)
-                .Where(x => CreatureManager.IsAliveAndActive(x));
+                .Where(x => EntityManager.IsAliveAndActive(x));
 
             return targets
                 .OrderBy(x => Vector2.Distance(Creature.transform.position, x.transform.position))
                 .FirstOrDefault();
         }
 
-        protected bool IsInRange(Creature creature, float range)
+        protected bool IsInRange(Entity creature, float range)
         {
             return Vector2.Distance(Creature.transform.position, creature.transform.position) < range;
         }
@@ -313,7 +321,7 @@ namespace CreatureControllers
 
         protected void ClearMemory()
         {
-            _memorizedCreatures.Clear();
+            _memorizedEntities.Clear();
         }
     }
 }

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Building.Data;
+using Managers;
 using Zenject;
 
 namespace Building.Managers
@@ -20,13 +21,15 @@ namespace Building.Managers
         void PlaceBuilding(
             BuildingView building,
             BuildingFootprint footprint,
-            GridPosition anchorPosition
+            GridPosition anchorPosition,
+            Teams team = Teams.Player
         );
     }
 
     public sealed class BuilderManager : MonoBehaviour, IBuilderManager
     {
         [Inject] private GridSystem _grid;
+        [Inject] private IEntityManager _entityManager;
 
         [field: SerializeField] public List<BuildingPrefab> BuildingPrefabs { get; set; }
         public event Action<BuildingView> BuildingBuilt;
@@ -47,9 +50,10 @@ namespace Building.Managers
 
 
         public void PlaceBuilding(
-            BuildingView building,
+            BuildingView buildingPrefab,
             BuildingFootprint footprint,
-            GridPosition anchorPosition
+            GridPosition anchorPosition,
+            Teams team = Teams.Player
         )
         {
             var cells = GridUtilities.GetCellsFromAnchorPosition(
@@ -59,7 +63,10 @@ namespace Building.Managers
 
             SetCellsOccupied(cells);
             
-            building.transform.position = _grid.GetCenterFromCells(cells);
+            var position = _grid.GetCenterFromCells(cells);
+            var building = _entityManager.SpawnEntity(buildingPrefab, position) as BuildingView ?? 
+                           throw new InvalidOperationException("Spawned entity is not a BuildingView");
+            
             building.GetComponent<CircleCollider2D>().radius = footprint.RadiusSize;
             BuildingBuilt?.Invoke(building);
         }

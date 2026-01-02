@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MeleeJumpingEnemyController : AiController
 {
-    private Creature _target;
+    private Entity _target;
 
     [SerializeField] private bool moveOnAttackCooldown = false;
 

@@ -23,6 +23,7 @@ namespace Installer
             Container.Bind<IDynamicPoolingManager>().To<DynamicPoolingManager>().FromComponentsInHierarchy().AsSingle().NonLazy();
             Container.Bind<IProjectileManager>().To<ProjectileManager>().FromNew().AsSingle().NonLazy();
             Container.Bind<ICreatureEventProducer>().To<CreatureEventProducer>().FromNew().AsSingle().NonLazy();
+            Container.Bind<IEntityManager>().To<EntityManager>().FromComponentsInHierarchy().AsSingle().NonLazy();
             Container.Bind<ICreatureManager>().To<CreatureManager>().FromComponentsInHierarchy().AsSingle().NonLazy();
             Container.Bind<IFloatingTextManager>().To<FloatingTextManager>().FromComponentsInHierarchy().AsSingle().NonLazy();
             Container.Bind<IPathfinding>().To<CachedPathfinding>().FromInstance(new CachedPathfinding(FindObjectOfType<OldPathfinding>(), FindObjectOfType<GridGenerator>())).AsSingle();

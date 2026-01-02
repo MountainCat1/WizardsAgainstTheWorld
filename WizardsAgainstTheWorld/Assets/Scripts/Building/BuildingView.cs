@@ -1,9 +1,9 @@
 using UnityEngine;
-using Building.Data;
+using Utilities;
 
 namespace Building
 {
-    public sealed class BuildingView : MonoBehaviour
+    public sealed class BuildingView : Entity
     {
     }
 }

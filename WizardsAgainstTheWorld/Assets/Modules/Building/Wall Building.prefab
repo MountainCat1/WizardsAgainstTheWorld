@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6877628562962737651}
   - component: {fileID: 1531923745296687763}
   - component: {fileID: 2335339455896981800}
+  - component: {fileID: 9083681212826590945}
   - component: {fileID: -1459647978463886621}
   m_Layer: 13
   m_Name: Wall Building
@@ -65,6 +66,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90eea78cbf5f4814ad87d90f729aec4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Team>k__BackingField: 1
+--- !u!114 &9083681212826590945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4067242926395646951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9cef0923d2f48aa839a615fe078d63b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
 --- !u!58 &-1459647978463886621
 CircleCollider2D:
   m_ObjectHideFlags: 0

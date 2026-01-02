@@ -19,8 +19,6 @@ public enum CreatureState
 [RequireComponent(typeof(Rigidbody2D))]
 public class Creature : Entity, IDamageable, IModifiable, IColorable, IEffectable
 {
-    public static float ColliderSize => 0.5f;
-
     // Events
     public event Action WeaponChanged;
     public event Action ArmorChanged;
@@ -33,7 +31,6 @@ public class Creature : Entity, IDamageable, IModifiable, IColorable, IEffectabl
     public event Action Disabled;
 
     // Injected Dependencies (using Zenject)
-    [Inject] private ITeamManager _teamManager;
     [Inject] private DiContainer _diContainer;
     [Inject] private ICreatureManager _creatureManager;
     [Inject] private IFloatingTextManager _floatingTextManager;
@@ -110,10 +107,6 @@ public class Creature : Entity, IDamageable, IModifiable, IColorable, IEffectabl
     [field: SerializeField] public int XpAmount { get; private set; }
 
     [field: Header("Other")]
-    [field: SerializeField]
-    public Teams Team { get; private set; }
-
-    [field: SerializeField] public bool Boss { get; private set; }
 
     [field: SerializeField] public float InteractionRange { get; private set; } = 1.5f;
     [field: SerializeField] public Color Color { get; set; }
@@ -199,17 +192,6 @@ public class Creature : Entity, IDamageable, IModifiable, IColorable, IEffectabl
     }
 
     // Public Methods
-    public Attitude GetAttitudeTowards(Creature other)
-    {
-        if (other == null)
-            throw new ArgumentNullException(nameof(other));
-
-        if (other == this)
-            return Attitude.Friendly;
-
-        return _teamManager.GetAttitude(Team, other.Team); // TODO: throws error?
-    }
-
     public void StartUsingWeapon(Weapon newWeapon)
     {
         Weapon = newWeapon;

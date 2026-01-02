@@ -10,7 +10,7 @@ namespace CreatureControllers
         public Vector2? MoveCommandTarget => _moveCommandTarget;
 
         private Vector2? _moveCommandTarget;
-        protected Creature Target;
+        protected Entity Target;
         private IInteractable _interactionTarget;
         private Interaction _interaction;
 
@@ -97,7 +97,7 @@ namespace CreatureControllers
                 Target = null;
             }
 
-            if (Target == null || !CreatureManager.IsAliveAndActive(Target) == false)
+            if (Target == null || !EntityManager.IsAliveAndActive(Target) == false)
             {
                 Target = GetNewTarget();
             }
@@ -282,7 +282,7 @@ namespace CreatureControllers
             }
 
 
-            if (Vector2.Distance(Creature.transform.position, Target.transform.position) < Creature.Weapon.Range)
+            if (Creature.Weapon.IsInRange(attackContext))
             {
                 PerformAttack(attackContext);
                 return;

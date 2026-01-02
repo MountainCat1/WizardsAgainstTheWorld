@@ -237,6 +237,7 @@ MonoBehaviour:
   <HitSound>k__BackingField: {fileID: 0}
   <AttackSound>k__BackingField: {fileID: 8300000, guid: 8c96ac97b9e3c9a4ca94d1c7a7823530, type: 3}
   <VisualType>k__BackingField: 2
+  <ReloadComponent>k__BackingField: {fileID: 0}
   defense: 0
 --- !u!1 &1783616715553449390
 GameObject:
@@ -278,6 +279,7 @@ CircleCollider2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1783616715553449390}
   m_Enabled: 1
+  serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -301,9 +303,9 @@ CircleCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
   m_Radius: 0.15
 --- !u!1 &1981635081794955279
 GameObject:
@@ -347,6 +349,7 @@ CircleCollider2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1981635081794955279}
   m_Enabled: 1
+  serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -370,9 +373,9 @@ CircleCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
   m_Radius: 0.5
 --- !u!114 &60846135339427478
 MonoBehaviour:
@@ -512,7 +515,7 @@ GameObject:
   - component: {fileID: 5125440617428366146}
   - component: {fileID: 8620425100322646659}
   - component: {fileID: 7748546943704470895}
-  - component: {fileID: 7147432190938795954}
+  - component: {fileID: -5634069805298143729}
   - component: {fileID: 1648490807555792431}
   - component: {fileID: 4779776167358946602}
   - component: {fileID: 4149144107216106995}
@@ -548,7 +551,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &5125440617428366146
 Rigidbody2D:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -559,8 +562,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -585,13 +588,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2899d861cc3249a1be172bc47875c55c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Team>k__BackingField: 2
   inventoryRoot: {fileID: 0}
   weapon: {fileID: 838743690902828222}
   armorItem: {fileID: 0}
   <SightRange>k__BackingField: 11
   <XpAmount>k__BackingField: 25
-  <Team>k__BackingField: 2
-  <Boss>k__BackingField: 0
   <InteractionRange>k__BackingField: 1.5
   <Color>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &7748546943704470895
@@ -607,7 +609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 4
---- !u!114 &7147432190938795954
+--- !u!114 &-5634069805298143729
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -616,11 +618,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3809199647940728333}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1de455758c064ee391acb5d80f3cf35e, type: 3}
+  m_Script: {fileID: 11500000, guid: 994acd2043d54f6e945340a600d90fe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   followTarget: 1
   clearMemoryOnMoveCommand: 1
+  useMoveTimeout: 0
+  moveTimeout: 0.5
 --- !u!114 &1648490807555792431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -658,7 +662,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: fa90477caa72814438c17ee52daa5b68, type: 3}
   armoredHit: []
   chanceToPlayHitSound: 0.5
-  randomPitch: 0.3
 --- !u!114 &4149144107216106995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -940,6 +943,9 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -977,7 +983,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 1
 --- !u!95 &1651472023434605416
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -991,6 +997,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1

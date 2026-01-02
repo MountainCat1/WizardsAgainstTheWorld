@@ -4,7 +4,7 @@ namespace CreatureControllers
 {
     public class RangeEnemyController : AiController
     {
-        private Creature _target;
+        private Entity _target;
 
         [SerializeField] private bool moveOnAttackCooldown = false;
 

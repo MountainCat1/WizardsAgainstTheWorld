@@ -237,6 +237,18 @@ public abstract class Weapon : ItemBehaviour
     {
         Missed?.Invoke(ctx, missedEntity);
     }
+
+    public bool IsInRange(AttackContext attackContext)
+    {
+        var attacker = attackContext.Attacker;
+        var target = attackContext.Target;
+        
+        if (attacker is null || target is null)
+            return false;
+        
+        var distance = Vector2.Distance(attacker.transform.position, target.transform.position);
+        return distance <= Range + attacker.ColliderSize + target.ColliderSize;
+    }
 }
 
 
@@ -244,7 +256,7 @@ public struct AttackContext
 {
     public Vector2 Direction { get; set; }
     public Vector2 TargetPosition { get; set; }
-    [CanBeNull] public Creature Target { get; set; }
+    [CanBeNull] public Entity Target { get; set; }
     [CanBeNull] public Creature Attacker { get; set; }
     public Teams Team { get; set; }
     public Weapon Weapon { get; set; }

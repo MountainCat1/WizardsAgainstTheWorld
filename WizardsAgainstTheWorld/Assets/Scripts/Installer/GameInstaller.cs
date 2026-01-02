@@ -34,6 +34,7 @@ public class GameInstaller : MonoInstaller<GameInstaller>
         Container.Bind<ISoundPlayer>().To<SoundPlayer>().FromComponentsInHierarchy().AsSingle().NonLazy();
         Container.Bind<ITeamManager>().To<TeamManager>().FromComponentsInHierarchy().AsSingle();
         // Container.Bind<IPopupManager>().To<PopupManager>().FromComponentsInHierarchy().AsSingle();
+        Container.Bind<IEntityManager>().To<EntityManager>().FromComponentsInHierarchy().AsSingle();
         Container.Bind<ICreatureManager>().To<CreatureManager>().FromComponentsInHierarchy().AsSingle();
         Container.Bind<ICreatureEventProducer>().To<CreatureEventProducer>().FromNew().AsSingle().NonLazy();
         Container.Bind<ILootManager>().To<LootManager>().FromComponentsInHierarchy().AsSingle();

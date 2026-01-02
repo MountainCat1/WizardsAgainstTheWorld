@@ -18,7 +18,7 @@ public class CreatureController : MonoBehaviour
 
     // TODO: this seems to be performance heavy, consider some optimizations
     // is it???
-    public bool CanSee(Creature target)
+    public bool CanSee(Entity target)
     {
         var distance = Vector2.Distance(transform.position, target.transform.position); 
         

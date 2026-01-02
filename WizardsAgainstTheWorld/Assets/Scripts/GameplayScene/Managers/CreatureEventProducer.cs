@@ -24,11 +24,6 @@ namespace Managers
         private void Initialize()
         {
             _creatureManager.CreatureSpawned += OnCreatureSpawned;
-
-            foreach (var creature in _creatureManager.GetCreatures())
-            {
-                OnCreatureSpawned(creature);
-            }
         }
 
         private void OnCreatureSpawned(Creature creature)

@@ -1,8 +1,10 @@
 using System;
 using Components;
+using Managers;
 using UnityEngine;
+using Zenject;
 
-public class Entity : MonoBehaviour
+public class Entity : MonoBehaviour, IDamageable
 {
     public Entity Original { get; set; }
     
@@ -19,6 +21,11 @@ public class Entity : MonoBehaviour
 
     public Transform RootTransform { get; protected set; }
     public Transform DisplayTransform { get; protected set; }
+    
+    
+    [field: SerializeField] public Teams Team { get; private set; }
+    [field: SerializeField] public float ColliderSize { get; set; } = 0.5f;
+    [Inject] private ITeamManager _teamManager;
 
     protected virtual void Awake()
     {
@@ -83,4 +90,16 @@ public class Entity : MonoBehaviour
         // Additional death-related logic for Entity
         Destroy(gameObject);
     }
+    
+    public Attitude GetAttitudeTowards(Entity other)
+    {
+        if (other == null)
+            throw new ArgumentNullException(nameof(other));
+
+        if (other == this)
+            return Attitude.Friendly;
+
+        return _teamManager.GetAttitude(Team, other.Team); // TODO: throws error?
+    }
+
 }

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class MeleeEnemyController : AiController
 {
-    private Creature _target;
+    private Entity _target;
 
     [SerializeField] private bool moveOnAttackCooldown = false;
 

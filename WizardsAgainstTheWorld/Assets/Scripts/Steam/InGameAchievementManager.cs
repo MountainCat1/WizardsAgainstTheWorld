@@ -63,11 +63,11 @@ namespace Steam
                 return;
             }
 
-            _achievementProgress.EnemiesKilled++;
-            if (killedCreature.Boss)
-            {
-                _achievementProgress.BossesKilled++;
-            }
+            // _achievementProgress.EnemiesKilled++;
+            // if (killedCreature.Boss)
+            // {
+            //     _achievementProgress.BossesKilled++;
+            // }
 
             var killedId = killedCreature.GetIdentifier().ToLowerInvariant().Replace(" ", "");
             _achievementProgress.EnemiesKilledByType.TryAdd(killedId, 0);
