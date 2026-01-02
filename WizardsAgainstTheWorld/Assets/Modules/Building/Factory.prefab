@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 6877628562962737651}
   - component: {fileID: 1531923745296687763}
   - component: {fileID: 2335339455896981800}
-  - component: {fileID: 6013823938249753169}
-  m_Layer: 0
+  - component: {fileID: -1459647978463886621}
+  m_Layer: 13
   m_Name: Factory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 491279312485127197}
@@ -52,7 +52,7 @@ MonoBehaviour:
   height: 2
   buildTime: 5
   icon: {fileID: -4287841597771103043, guid: ae837381a8750a94fab17fe07361b9b1, type: 3}
-  nameKey: Factory
+  nameKey: Factory Key
 --- !u!114 &2335339455896981800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90eea78cbf5f4814ad87d90f729aec4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!58 &6013823938249753169
+--- !u!58 &-1459647978463886621
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,7 +111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 491279312485127197}
   - component: {fileID: 158282170176629131}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Renderer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6877628562962737651}

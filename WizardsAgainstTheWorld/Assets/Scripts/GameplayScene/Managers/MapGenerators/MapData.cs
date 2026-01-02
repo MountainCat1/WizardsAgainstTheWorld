@@ -100,6 +100,21 @@ namespace Services.MapGenerators
 
             return positions;
         }
+        
+        public List<Vector2Int> GetAllTilePositionsOfNotType(TileType searchedType)
+        {
+            var positions = new List<Vector2Int>();
+
+            foreach (var (position, type) in _mapData)
+            {
+                if (type != searchedType)
+                {
+                    positions.Add(position);
+                }
+            }
+
+            return positions;
+        }
     }
 
     public class RoomData

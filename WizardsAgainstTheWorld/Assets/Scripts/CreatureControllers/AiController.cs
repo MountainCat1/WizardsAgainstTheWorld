@@ -29,7 +29,7 @@ namespace CreatureControllers
         [Inject] protected ICreatureManager CreatureManager;
 
         // Public Constants
-        private const double MemoryTime = 20;
+        private const double MemoryTime = 60;
 
         // Private Variables
         private Dictionary<Creature, long> _memorizedCreatures = new();

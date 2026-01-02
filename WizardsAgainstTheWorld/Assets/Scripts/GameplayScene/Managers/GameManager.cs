@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Constants;
+using Building;
 using CrewUpgrades;
 using Data;
 using Items;
@@ -61,7 +60,8 @@ namespace Managers
         [Inject] private ISceneLoader _sceneLoader;
         [Inject] private ICrewUpgradeManager _crewUpgradeManager;
         [Inject] private ISoundManager _soundManager;
-
+        [Inject] private GridSystem _gridSystem;
+    
         [SerializeField] private Creature playerPrefab;
         [SerializeField] private Creature enemyPrefab;
 
@@ -118,6 +118,12 @@ namespace Managers
             }
             
             _mapGenerator.SafeGenerateMap();
+            var wallPositions = _mapGenerator.MapData.GetAllTilePositionsOfType(TileType.Wall);
+            
+            foreach (var wallPosition in wallPositions)
+            {
+                _gridSystem.GetCell(new GridPosition(wallPosition)).SetTerrainBlocked(true);
+            }
 
             yield return new WaitForSeconds(0.1f);
             _astarManager.Scan();
@@ -130,6 +136,7 @@ namespace Managers
 
             SpawnUnits(mapData: _map);
             SpawnUpgrades();
+            _enemySpawner.Initialize(_mapGenerator.MapData);
 
             if (GameSettings.Instance.Preferences.UseJuiceMechanic)
             {

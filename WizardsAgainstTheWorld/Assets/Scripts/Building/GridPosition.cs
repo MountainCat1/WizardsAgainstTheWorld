@@ -15,6 +15,12 @@ namespace Building
             Y = y;
         }
 
+        public GridPosition(Vector2Int wallPosition)
+        {
+            X = wallPosition.x;
+            Y = wallPosition.y;
+        }
+
         public static GridPosition FromWorldPosition(Vector2 position)
         {
             return new GridPosition(Mathf.RoundToInt(position.x), Mathf.RoundToInt(position.y));
