@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Building.Data;
@@ -8,6 +9,7 @@ namespace Building.Managers
     public interface IBuilderManager
     {
         List<BuildingPrefab> BuildingPrefabs { get; set; }
+        event Action<BuildingView> BuildingBuilt;
 
         bool CanPlaceBuilding(
             BuildingFootprint footprint,
@@ -27,6 +29,7 @@ namespace Building.Managers
         [Inject] private GridSystem _grid;
 
         [field: SerializeField] public List<BuildingPrefab> BuildingPrefabs { get; set; }
+        public event Action<BuildingView> BuildingBuilt;
 
         public bool CanPlaceBuilding(
             BuildingFootprint footprint,
@@ -58,6 +61,7 @@ namespace Building.Managers
             
             building.transform.position = _grid.GetCenterFromCells(cells);
             building.GetComponent<CircleCollider2D>().radius = footprint.RadiusSize;
+            BuildingBuilt?.Invoke(building);
         }
 
 
