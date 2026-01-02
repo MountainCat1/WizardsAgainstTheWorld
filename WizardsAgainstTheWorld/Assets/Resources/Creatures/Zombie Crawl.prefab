@@ -229,7 +229,7 @@ MonoBehaviour:
   <Description>k__BackingField: 
   <BaseCost>k__BackingField: 0
   <BaseAttackSpeed>k__BackingField: 1
-  <BaseRange>k__BackingField: 1
+  <BaseRange>k__BackingField: 0.2
   <BaseDamage>k__BackingField: 1.5
   <BaseAccuracyPercent>k__BackingField: 100
   <PushFactor>k__BackingField: 1

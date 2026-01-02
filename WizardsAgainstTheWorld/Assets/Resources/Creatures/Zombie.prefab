@@ -229,7 +229,7 @@ MonoBehaviour:
   <Description>k__BackingField: 
   <BaseCost>k__BackingField: 0
   <BaseAttackSpeed>k__BackingField: 1
-  <BaseRange>k__BackingField: 1
+  <BaseRange>k__BackingField: 0.2
   <BaseDamage>k__BackingField: 1.5
   <BaseAccuracyPercent>k__BackingField: 100
   <PushFactor>k__BackingField: 1
@@ -589,6 +589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Team>k__BackingField: 2
+  <ColliderSize>k__BackingField: 0.5
   inventoryRoot: {fileID: 0}
   weapon: {fileID: 838743690902828222}
   armorItem: {fileID: 0}
