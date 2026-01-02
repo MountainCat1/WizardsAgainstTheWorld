@@ -54,6 +54,9 @@ MonoBehaviour:
   buildTime: 5
   icon: {fileID: -4287841597771103043, guid: ae837381a8750a94fab17fe07361b9b1, type: 3}
   nameKey: Wall
+  costs:
+  - amount: 2
+    type: 0
 --- !u!114 &2335339455896981800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,6 +70,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Team>k__BackingField: 1
+  <ColliderSize>k__BackingField: 0.5
+  <Weapon>k__BackingField: {fileID: 0}
 --- !u!114 &9083681212826590945
 MonoBehaviour:
   m_ObjectHideFlags: 0

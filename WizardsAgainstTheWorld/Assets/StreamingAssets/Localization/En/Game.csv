@@ -6,6 +6,7 @@ FloatingText.Heal,{0}
 FloatingText.FriendlyFire,Friendly Fire!
 FloatingText.LevelUp,Level Up!
 FloatingText.XpGain,{0} XP
+FloatingText.Income,{0} {1}
 
 Interaction.RandomContainer.Empty,Empty
 Interaction.RandomContainer.Loot,{1}x {0}
@@ -24,3 +25,9 @@ VictoryCondition.KillFederationSoldiers,"<color=red>Kill {1} federation soldiers
 VictoryCondition.KillMrBonson,"<color=red>Kill Mr Bonson</color>"
 VictoryCondition.HackTerminalsVictoryCondition,"Hack {0}/{1} terminals."
 VictoryCondition.HaveItemsCondition,"Have {0}/{1} of item {2}"
+
+Resources.Wood,Wood
+Resources.Stone,Stone
+Resources.Metal,Metal
+Resources.Plastic,Plastic
+Resources.Gold,gold

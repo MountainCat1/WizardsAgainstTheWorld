@@ -56,6 +56,9 @@ MonoBehaviour:
   buildTime: 5
   icon: {fileID: -2656224205127534936, guid: ae837381a8750a94fab17fe07361b9b1, type: 3}
   nameKey: Wall
+  costs:
+  - amount: 4
+    type: 0
 --- !u!114 &2335339455896981800
 MonoBehaviour:
   m_ObjectHideFlags: 0

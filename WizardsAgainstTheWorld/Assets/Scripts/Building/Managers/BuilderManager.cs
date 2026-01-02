@@ -10,7 +10,7 @@ namespace Building.Managers
     public interface IBuilderManager
     {
         List<BuildingPrefab> BuildingPrefabs { get; set; }
-        event Action<BuildingView> BuildingBuilt;
+        event Action<Entity> EntityPlaced;
 
         bool CanPlaceBuilding(
             BuildingFootprint footprint,
@@ -24,6 +24,13 @@ namespace Building.Managers
             GridPosition anchorPosition,
             Teams team = Teams.Player
         );
+
+        void ConstructBuilding(
+            BuildingView buildingPrefab,
+            BuildingFootprint footprint,
+            GridPosition anchorPosition,
+            Teams team = Teams.Player
+        );
     }
 
     public sealed class BuilderManager : MonoBehaviour, IBuilderManager
@@ -32,7 +39,8 @@ namespace Building.Managers
         [Inject] private IEntityManager _entityManager;
 
         [field: SerializeField] public List<BuildingPrefab> BuildingPrefabs { get; set; }
-        public event Action<BuildingView> BuildingBuilt;
+        [field: SerializeField] public BuildingConstruction ConstructionPrefab { get; set; }
+        public event Action<Entity> EntityPlaced;
 
         public bool CanPlaceBuilding(
             BuildingFootprint footprint,
@@ -68,7 +76,30 @@ namespace Building.Managers
                            throw new InvalidOperationException("Spawned entity is not a BuildingView");
             
             building.GetComponent<CircleCollider2D>().radius = footprint.RadiusSize;
-            BuildingBuilt?.Invoke(building);
+            EntityPlaced?.Invoke(building);
+        }
+        
+        public void ConstructBuilding(
+            BuildingView buildingPrefab,
+            BuildingFootprint footprint,
+            GridPosition anchorPosition,
+            Teams team = Teams.Player
+        )
+        {
+            var cells = GridUtilities.GetCellsFromAnchorPosition(
+                anchorPosition,
+                footprint
+            );
+
+            SetCellsOccupied(cells);
+            
+            var position = _grid.GetCenterFromCells(cells);
+            var construction = _entityManager.SpawnEntity(ConstructionPrefab, position) as BuildingConstruction ?? 
+                           throw new InvalidOperationException("Spawned entity is not a BuildingView");
+            
+            construction.GetComponent<CircleCollider2D>().radius = footprint.RadiusSize;
+            construction.Initialize(buildingPrefab.GetComponent<BuildingPrefab>(), anchorPosition);
+            EntityPlaced?.Invoke(construction);
         }
 
 

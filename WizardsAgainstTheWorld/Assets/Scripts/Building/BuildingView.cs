@@ -6,7 +6,6 @@ using Zenject;
 
 namespace Building
 {
-    [RequireComponent(typeof(BuildingPrefab))]
     public sealed class BuildingView : Entity
     {
         [Inject] private IAstarManager _astar;

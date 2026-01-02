@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2335339455896981800}
   - component: {fileID: -1459647978463886621}
   - component: {fileID: -5622980853946544311}
+  - component: {fileID: -5212459292735432905}
   m_Layer: 13
   m_Name: Factory
   m_TagString: Untagged
@@ -54,6 +55,9 @@ MonoBehaviour:
   buildTime: 5
   icon: {fileID: -4287841597771103043, guid: ae837381a8750a94fab17fe07361b9b1, type: 3}
   nameKey: Factory Key
+  costs:
+  - amount: 4
+    type: 0
 --- !u!114 &2335339455896981800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68,6 +72,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Team>k__BackingField: 1
   <ColliderSize>k__BackingField: 1
+  <Weapon>k__BackingField: {fileID: 0}
 --- !u!58 &-1459647978463886621
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -117,6 +122,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 10
+--- !u!114 &-5212459292735432905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4067242926395646951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99c3d66446404a3f9eae1c7008f08104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interval: 1
+  amount: 1
+  resourceType: 0
 --- !u!1 &7722661073671793971
 GameObject:
   m_ObjectHideFlags: 0

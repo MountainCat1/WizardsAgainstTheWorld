@@ -89,12 +89,9 @@ namespace Building.UI
                     anchorGridPos, out _
                 ))
             {
-                var buildingView = _container.InstantiatePrefabForComponent<BuildingView>(
-                    _selectedBuildingDefinition
-                );
 
-                _builderManager.PlaceBuilding(
-                    buildingView,
+                _builderManager.ConstructBuilding(
+                    _selectedBuildingDefinition.View,
                     _selectedBuildingDefinition.Footprint,
                     anchorGridPos
                 );

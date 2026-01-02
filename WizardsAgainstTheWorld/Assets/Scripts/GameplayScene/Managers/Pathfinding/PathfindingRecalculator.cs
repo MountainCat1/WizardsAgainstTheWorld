@@ -19,7 +19,7 @@ namespace GameplayScene.Managers.Pathfinding
         {
             _astarManager = astarManager;
             
-            builderManager.BuildingBuilt += OnBuildingBuilt;
+            builderManager.EntityPlaced += OnEntityPlaced;
             mapGenerator.MapGenerated += OnMapGenerated;
         }
 
@@ -28,7 +28,7 @@ namespace GameplayScene.Managers.Pathfinding
             _astarManager.ScanDelayed();
         }
 
-        private void OnBuildingBuilt(BuildingView obj)
+        private void OnEntityPlaced(Entity obj)
         {
             _astarManager.ScanDelayed();
         }
