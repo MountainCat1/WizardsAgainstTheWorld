@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Building.Managers;
 using GameplayScene.Managers;
+using Managers;
 using UnityEngine;
 using Zenject;
 
@@ -15,6 +16,7 @@ namespace Building
         
         // Deppendencies
         [Inject] private IBuilderManager _builderManager;
+        [Inject] private ISoundPlayer _soundPlayer;
         
         // Properties
         public float Progress => CalculateProgress();
@@ -24,6 +26,7 @@ namespace Building
 
         // Serialized Fields
         [SerializeField] private SpriteRenderer previewRenderer;
+        [SerializeField] private AudioClip constructionCompleteSound;
         
         // Fields
         private readonly List<GameResource> _paidResources = new();
@@ -70,6 +73,12 @@ namespace Building
                 BuildingPrefab.Footprint,
                 AnchorPosition,
                 Teams.Player
+            );
+            
+            _soundPlayer.PlaySound(
+                constructionCompleteSound,
+                transform.position,
+                SoundType.UI
             );
         }
 

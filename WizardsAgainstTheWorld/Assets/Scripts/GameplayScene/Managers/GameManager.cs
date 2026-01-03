@@ -4,6 +4,7 @@ using System.Linq;
 using Building;
 using CrewUpgrades;
 using Data;
+using GameplayScene.Managers;
 using Items;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
@@ -60,6 +61,7 @@ namespace Managers
         [Inject] private ISceneLoader _sceneLoader;
         [Inject] private ICrewUpgradeManager _crewUpgradeManager;
         [Inject] private ISoundManager _soundManager;
+        [Inject] private IDayNightManager _dayNightManager;
         [Inject] private GridSystem _gridSystem;
     
         [SerializeField] private Creature playerPrefab;
@@ -150,6 +152,8 @@ namespace Managers
             {
                 _tutorialManager.StartTutorial();
             }
+            
+            _dayNightManager.Initialize();
 
             yield return new WaitForSeconds(0.5f);
         }

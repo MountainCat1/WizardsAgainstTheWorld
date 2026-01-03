@@ -33,6 +33,7 @@ namespace Utilities
 
             var dummyInstance = new T();
             var path = Path.Combine(Application.persistentDataPath, dummyInstance.GetFileName());
+            Debug.Log($"Loading from {typeof(T).Name}" + path);
 
             if (File.Exists(path))
             {

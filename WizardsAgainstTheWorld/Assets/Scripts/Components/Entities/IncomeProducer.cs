@@ -11,7 +11,7 @@ namespace Components.Entities
         [Inject] private IResourceManager _resourceManager;
         [Inject] private IFloatingTextManager _floatingTextManager;
 
-        [SerializeField] private int interval = 1;
+        [SerializeField] private float incomeSpeed = 1;
         [SerializeField] private int amount = 1;
         [SerializeField] private GameResourceType resourceType;
 
@@ -26,6 +26,8 @@ namespace Components.Entities
         {
             while (true)
             {
+                var interval = 1f / incomeSpeed;
+                
                 yield return new WaitForSeconds(interval);
 
                 _resourceManager.AddResource(resourceType, amount);

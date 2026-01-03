@@ -306,6 +306,7 @@ MonoBehaviour:
   <Team>k__BackingField: 1
   <ColliderSize>k__BackingField: 0.5
   previewRenderer: {fileID: 158282170176629131}
+  constructionCompleteSound: {fileID: 8300000, guid: f55c4d302f66c1f4ba3a397272742d15, type: 3}
 --- !u!114 &9083681212826590945
 MonoBehaviour:
   m_ObjectHideFlags: 0

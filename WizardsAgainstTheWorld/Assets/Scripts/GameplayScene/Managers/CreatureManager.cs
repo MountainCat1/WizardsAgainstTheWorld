@@ -78,6 +78,8 @@ namespace Managers
             {
                 DifficultyApplier.ApplyDifficulty(creature);
             }
+            
+            CreatureSpawned?.Invoke(creature);
         }
     }
 }

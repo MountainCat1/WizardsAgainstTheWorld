@@ -39,7 +39,8 @@ namespace CreatureControllers
                     : Vector2.zero,
                 TargetPosition = closestEnemy
                     ? closestEnemy.transform.position
-                    : BuildingView.transform.position
+                    : BuildingView.transform.position,
+                Team = BuildingView.Team
             };
 
             if (BuildingView.Weapon.IsInRange(attackCtx))

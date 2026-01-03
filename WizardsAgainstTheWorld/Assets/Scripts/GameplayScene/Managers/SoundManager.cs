@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using GameplayScene.Managers;
 using UnityEngine;
 using UnityEngine.Audio;
 using Utilities;
@@ -21,8 +22,12 @@ namespace Managers
     {
         private static readonly int IsPaused = Animator.StringToHash("IsPaused");
         [Inject] private AudioMixer _audioMixer;
+        [Inject] private IDayNightManager _dayNightManager;
         
-        [SerializeField] private List<AudioClip> soundtracks;
+        [SerializeField] private List<AudioClip> daySoundtracks;
+        [SerializeField] private List<AudioClip> nightSoundtracks;
+        
+        private List<AudioClip> _soundtracks = new();
 
         private AudioClip _lastSoundtrack;
         private AudioSource _soundtrackAudioSource;
@@ -32,13 +37,22 @@ namespace Managers
         {
             _soundtrackAudioSource = GetComponent<AudioSource>();
             _soundtrackAnimator = GetComponent<Animator>();
+            _dayNightManager.DayNightPhaseChanged += OnDayNightPhaseChanged;
+        }
+
+        private void OnDayNightPhaseChanged()
+        {
+            if (_dayNightManager.IsDaytime)
+                SetSoundtrack(daySoundtracks);
+            else
+                SetSoundtrack(nightSoundtracks);
         }
 
         private void Start()
         {
             UpdateVolumes();
             
-            PlaySoundtrack(soundtracks.RandomElement());
+            PlaySoundtrack(daySoundtracks.RandomElement());
         }
 
         private void Update()
@@ -51,15 +65,15 @@ namespace Managers
 
         private void PlayNextSoundtrack()
         {
-            if (soundtracks.Count == 0)
+            if (_soundtracks.Count == 0)
                 return;
-            if (soundtracks.Count == 1)
+            if (_soundtracks.Count == 1)
             {
-                PlaySoundtrack(soundtracks.First());
+                PlaySoundtrack(_soundtracks.First());
                 return;
             }
 
-            var nextSoundtrack = soundtracks.Except(new[] { _lastSoundtrack }).RandomElement();
+            var nextSoundtrack = _soundtracks.Except(new[] { _lastSoundtrack }).RandomElement();
             PlaySoundtrack(nextSoundtrack);
         }
 
@@ -78,9 +92,9 @@ namespace Managers
                 return;
             }
 
-            soundtracks = newSoundtracks;
+            _soundtracks = newSoundtracks;
 
-            PlaySoundtrack(soundtracks.RandomElement());
+            PlaySoundtrack(_soundtracks.RandomElement());
         }
 
         public void UpdateVolumes()

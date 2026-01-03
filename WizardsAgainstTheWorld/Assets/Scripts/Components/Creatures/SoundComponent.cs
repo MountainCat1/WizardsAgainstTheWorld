@@ -50,7 +50,7 @@ namespace Components
                 return;
 
             var clip = clips[Random.Range(0, clips.Count)];
-            _soundPlayer.PlaySound(clip, transform.position, SoundType.Sfx, pitchRandomness: true);
+            _soundPlayer.PlaySound(clip, transform.position, SoundType.Sfx);
         }
     }
 }

@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using CreatureControllers;
 using Data;
+using GameplayScene.Managers;
 using Managers.Helpers;
 using Services.MapGenerators;
 using UnityEngine;
@@ -35,6 +37,7 @@ namespace Managers
         [SerializeField] private bool debugDisplayOccupiedPositions = false;
 
         [Inject] private ICreatureManager _creatureManager;
+        [Inject] private IDayNightManager _dayNightManager;
         [Inject] private IDataResolver _dataResolver;
 
         private MapData _mapData;
@@ -49,8 +52,41 @@ namespace Managers
         
         private SpawnPositionSelector _spawnPositionSelector;
 
-        [SerializeField] private List<Creature> creatures;
+        [SerializeField] private List<Data.LevelData> levelsData;
         
+        private Coroutine _enemySpawningCoroutine;
+        private Data.LevelData _currentLevelData;
+
+
+        private void Start()
+        {
+            _dayNightManager.OnDayStarted += OnDayStarted;
+            _dayNightManager.OnNightStarted += OnNightStarted;
+        }
+
+        private void OnNightStarted()
+        {
+            var levelIndex = Mathf.Clamp(_dayNightManager.CurrentDay - 1, 0, levelsData.Count - 1);
+            _currentLevelData = levelsData[levelIndex];
+            
+            if (_currentLevelData == null)
+            {
+                GameLogger.LogWarning($"No level data found for day {_dayNightManager.CurrentDay}, no enemies will be spawned");
+                return;
+            }
+
+            var enemyTypes = _currentLevelData.EnemyTypes;
+
+            _enemySpawningCoroutine = StartCoroutine(
+                EnemySpawningCoroutine(enemyTypes.Select(CreatureData.FromCreature).ToArray(), _spawnPositionSelector));
+        }
+
+        private void OnDayStarted()
+        {
+            if(_enemySpawningCoroutine != null)
+                StopCoroutine(_enemySpawningCoroutine);
+        }
+
         private void Update()
         {
             if (debugDisplayOccupiedPositions)
@@ -68,17 +104,11 @@ namespace Managers
             _mapData = mapData;
             
             var positionSelector = new SpawnPositionSelector(mapData);
-
-            var creaturesToSpawn = creatures;
-            
-            StartCoroutine(
-                EnemySpawningCoroutine(creaturesToSpawn.Select(CreatureData.FromCreature).ToArray(),
-                    positionSelector: positionSelector
-                )
-            );
             
             _spawnPositionSelector = positionSelector;
         }
+        
+        
 
         private IEnumerator EnemySpawningCoroutine(ICollection<CreatureData> enemies, SpawnPositionSelector positionSelector)
         {
@@ -105,8 +135,8 @@ namespace Managers
                 float timeElapsed = Time.time - startTime;
                 
                 // TODO: implement this with some intent
-                float baseEnemySpawnManaPerSecond = 5f; // Example base value
-                float enemySpawnManaGrowthRate = 0.5f; // Example growth rate
+                float baseEnemySpawnManaPerSecond = _currentLevelData.BaseEnemySpawnManaPerSecond;
+                float enemySpawnManaGrowthRate = _currentLevelData.EnemySpawnManaGrowthRate;
                 float manaPerSecond = baseEnemySpawnManaPerSecond +
                                        enemySpawnManaGrowthRate * timeElapsed;
 

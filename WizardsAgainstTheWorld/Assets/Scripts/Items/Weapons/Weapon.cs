@@ -141,8 +141,7 @@ public abstract class Weapon : ItemBehaviour
             _soundPlayer.PlaySound(
                 HitSound,
                 hitContext.TargetPosition,
-                SoundType.Sfx,
-                true
+                SoundType.Sfx
             ); // TODO: throws exception if null
         }
 

@@ -56,7 +56,7 @@ MonoBehaviour:
   icon: {fileID: -3575942757386923158, guid: fc323b666673c584fa4e75b10148c31f, type: 3}
   nameKey: Factory Key
   costs:
-  - amount: 4
+  - amount: 20
     type: 0
   <MainSpriteRenderer>k__BackingField: {fileID: 158282170176629131}
 --- !u!114 &2335339455896981800
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99c3d66446404a3f9eae1c7008f08104, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interval: 1
+  incomeSpeed: 1
   amount: 1
   resourceType: 0
 --- !u!1 &7722661073671793971

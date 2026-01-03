@@ -31,6 +31,7 @@ public class GameInstaller : MonoInstaller<GameInstaller>
         Container.Bind<IInputMapper>().To<InputMapper>().FromComponentsInHierarchy().AsSingle();
         Container.Bind<ISelectionManager>().To<SelectionManager>().FromComponentsInHierarchy().AsSingle();
         Container.Bind<ISelectionInspectionManager>().To<SelectionInspectionManager>().FromComponentsInHierarchy().AsSingle();
+        Container.Bind<IDayNightManager>().To<DayNightManager>().FromComponentsInHierarchy().AsSingle();
         Container.Bind<IPathfinding>().To<CachedPathfinding>().FromInstance(new CachedPathfinding(FindObjectOfType<OldPathfinding>(), FindObjectOfType<GridGenerator>())).AsSingle();
         // Container.Bind<IFlagManager>().To<FlagManager>().FromComponentsInHierarchy().AsSingle();
         Container.Bind<ISoundPlayer>().To<SoundPlayer>().FromComponentsInHierarchy().AsSingle().NonLazy();

@@ -17,7 +17,7 @@ namespace Managers
 
     public interface ISoundPlayer
     {
-        void PlaySound(AudioClip clip, Vector2 position, SoundType soundType = SoundType.Sfx, bool pitchRandomness = false);
+        void PlaySound(AudioClip clip, Vector2 position, SoundType soundType = SoundType.Sfx);
         void PlaySoundGlobal(AudioClip clip, SoundType soundType = SoundType.Sfx);
         PooledAudioSource CreateSound(AudioClip clip, SoundType soundType);
     }
@@ -60,7 +60,7 @@ namespace Managers
             _camera = Camera.main;
         }
 
-        public void PlaySound(AudioClip clip, Vector2 position, SoundType soundType = SoundType.Sfx, bool pitchRandomness = false)
+        public void PlaySound(AudioClip clip, Vector2 position, SoundType soundType = SoundType.Sfx)
         {
             if (!ValidateClip(clip)) return;
 

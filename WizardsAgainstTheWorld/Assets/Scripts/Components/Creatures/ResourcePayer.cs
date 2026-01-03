@@ -15,11 +15,13 @@ namespace Components.Creatures
         [Inject] private IResourceManager _resourceManager;
         [Inject] private IEntityManager _entityManager;
         [Inject] private IDynamicPoolingManager _dynamicPoolingManager;
+        [Inject] private ISoundPlayer _soundPlayer;
         
         [field: SerializeField] public float Range { get; private set; } = 1;
         [field: SerializeField] public float BuildSpeed { get; private set; } = 5;
         [field: SerializeField] public int BuildAmount { get; private set; } = 5;
         [field: SerializeField] public PaymentVisual PaymentVisualPrefab { get; private set; }
+        [field: SerializeField] public AudioClip PaySound { get; private set; }
 
         public float BuildInterval => 1f / BuildSpeed;
         private IPoolAccess<PaymentVisual> _visualsPool;
@@ -97,6 +99,8 @@ namespace Components.Creatures
             
             var paymentVisual = _visualsPool.SpawnObject(PaymentVisualPrefab, transform.position);
             paymentVisual.Setup(_resourceManager.GetIcon(neededResource.Type), buildingConstruction.transform);
+
+            _soundPlayer.PlaySound(PaySound, transform.position, SoundType.UI);
         }
     }
 }

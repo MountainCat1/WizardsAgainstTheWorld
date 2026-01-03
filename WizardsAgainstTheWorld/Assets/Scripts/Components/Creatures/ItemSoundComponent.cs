@@ -25,7 +25,7 @@ namespace Components
             if (useSound == null)
                 return;
             
-            _soundPlayer.PlaySound(useSound, ctx.User.transform.position, SoundType.Sfx, true);
+            _soundPlayer.PlaySound(useSound, ctx.User.transform.position, SoundType.Sfx);
         }
     }
 }
