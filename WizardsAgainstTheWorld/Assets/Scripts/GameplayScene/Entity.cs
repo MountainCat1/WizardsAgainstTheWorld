@@ -20,6 +20,7 @@ public class Entity : MonoBehaviour, IDamageable
     public event Action<Vector2> Moved;
     public event Action<Interaction> Interacted;
     public event Action<Interaction> InteractionCanceled;
+    public event Action<CreatureState> StateChanged;
 
     // Components
     public MovementComponent Movement { get; private set; }
@@ -28,6 +29,22 @@ public class Entity : MonoBehaviour, IDamageable
     public Transform RootTransform { get; protected set; }
     public Transform DisplayTransform { get; protected set; }
     
+    // Public Variables
+    public CreatureState State
+    {
+        get => _state;
+        protected set
+        {
+            if (_state == value)
+                return;
+
+            _state = value;
+            StateChanged?.Invoke(_state);
+        }
+    }
+
+    private CreatureState _state = CreatureState.Idle;
+
     
     // Settings
     [field: SerializeField] public Teams Team { get; private set; }

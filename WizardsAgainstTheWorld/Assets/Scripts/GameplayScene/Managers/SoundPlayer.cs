@@ -26,7 +26,6 @@ namespace Managers
     {
         // Positional Z offset so 2D sounds don't overlap camera
         private const float ZOffset = 0.1f;
-        private const float DefaultPitchRandomness = 0.1f;
 
         private const float MinDistanceDefault = 1f;
         private const float MaxDistanceDefault = 15f;
@@ -74,10 +73,10 @@ namespace Managers
 
             var gs = GameSettings.Instance;
 
-            if (pitchRandomness || gs.Sound.RandomPitch)
-            {
-                pooledAudio.AudioSource.pitch = 1f + Random.Range(0f, DefaultPitchRandomness);
-            }
+            // if (pitchRandomness || gs.Sound.RandomPitch)
+            // {
+            //     pooledAudio.AudioSource.pitch = 1f + Random.Range(0f, DefaultPitchRandomness);
+            // }
 
             pooledAudio.AudioSource.spatialBlend = gs.Sound.SpatialBlend;
             pooledAudio.AudioSource.minDistance = MinDistanceDefault;

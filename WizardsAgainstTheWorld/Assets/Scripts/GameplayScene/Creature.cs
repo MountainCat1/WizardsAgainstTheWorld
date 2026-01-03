@@ -17,12 +17,11 @@ public enum CreatureState
 }
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class Creature : Entity, IDamageable, IModifiable, IColorable, IEffectable
+public class Creature : Entity, IDamageable, IModifiable, IColorable, IEffectable, IWeaponable
 {
     // Events
     public event Action WeaponChanged;
     public event Action ArmorChanged;
-    public event Action<CreatureState> StateChanged;
     public event Action<AttackContext> WeaponAttacked;
     public event Action<HitContext> WeaponHit;
     public event Action WeaponReloaded;
@@ -32,23 +31,7 @@ public class Creature : Entity, IDamageable, IModifiable, IColorable, IEffectabl
     [Inject] private DiContainer _diContainer;
     [Inject] private ICreatureManager _creatureManager;
     [Inject] private IFloatingTextManager _floatingTextManager;
-
-    // Public Variables
-    public CreatureState State
-    {
-        get => _state;
-        private set
-        {
-            if (_state == value)
-                return;
-
-            _state = value;
-            StateChanged?.Invoke(_state);
-        }
-    }
-
-    private CreatureState _state = CreatureState.Idle;
-
+    
     // Serialized Private Variables
     [field: Header("References")] [field: SerializeField]
     private Transform inventoryRoot;

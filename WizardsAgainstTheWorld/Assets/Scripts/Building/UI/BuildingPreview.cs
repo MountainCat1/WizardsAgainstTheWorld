@@ -30,11 +30,8 @@ namespace Building.UI
             baseColor.a = alpha;
             _spriteRenderer.color = baseColor;
 
-            transform.localScale = new Vector3(
-                footprint.Width,
-                footprint.Height,
-                1f
-            );
+            transform.localScale = Vector3.one;
+            _spriteRenderer.size = new Vector2(footprint.Width, footprint.Height);
             transform.position = position;
         }
     }

@@ -35,6 +35,8 @@ namespace Building
             previewRenderer.sprite = buildingPrefab.MainSpriteRenderer.sprite;
             previewRenderer.size = buildingPrefab.MainSpriteRenderer.size;
             previewRenderer.transform.localScale = buildingPrefab.MainSpriteRenderer.transform.localScale;
+            previewRenderer.transform.localPosition = buildingPrefab.MainSpriteRenderer.transform.position -
+                                                      buildingPrefab.transform.position;
         }
         
         public void PayResource(GameResource resource)

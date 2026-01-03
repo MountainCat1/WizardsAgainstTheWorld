@@ -1,4 +1,5 @@
 using System;
+using Items.PassiveItems;
 using Managers;
 using UnityEngine;
 using Utilities;
@@ -6,11 +7,13 @@ using Zenject;
 
 namespace Building
 {
-    public sealed class BuildingView : Entity
+    public sealed class BuildingView : Entity, IWeaponable
     {
         [Inject] private IAstarManager _astar;
         [Inject] private GridSystem _gridSystem;
         [field: SerializeField] public Weapon Weapon { get; set; }
+
+        public event Action WeaponChanged;
 
         private BuildingPrefab _buildingPrefab;
 
