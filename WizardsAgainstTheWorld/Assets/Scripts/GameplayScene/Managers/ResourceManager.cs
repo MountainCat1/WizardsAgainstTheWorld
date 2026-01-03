@@ -31,7 +31,6 @@ namespace GameplayScene.Managers
     {
         public GameResourceType Type { get; }
         public int Amount { get; set; }
-        public Sprite Icon { get; set; }
 
         public GameResource(GameResourceType type)
         {
@@ -46,6 +45,7 @@ namespace GameplayScene.Managers
         void AddResource(GameResourceType type, int amount);
         IEnumerable<GameResourceType> AvailableResources { get; }
         GameResource GetResource(GameResourceType resourceType);
+        Sprite GetIcon(GameResourceType resourceType);
     }
 
     [Serializable]
@@ -74,7 +74,6 @@ namespace GameplayScene.Managers
                 _resources.Add(type, new GameResource(type)
                 {
                     Amount = 0,
-                    Icon = resourceIcons.FirstOrDefault(x => x.resourceType == type)?.icon  
                 });
             }
             
@@ -84,6 +83,13 @@ namespace GameplayScene.Managers
         public GameResource GetResource(GameResourceType resourceType)
         {
             return _resources[resourceType];
+        }
+
+        public Sprite GetIcon(GameResourceType resourceType)
+        {
+            return resourceIcons
+                .FirstOrDefault(x => x.resourceType == resourceType)?
+                .icon;
         }
 
         public void AddResource(GameResourceType type, int amount)

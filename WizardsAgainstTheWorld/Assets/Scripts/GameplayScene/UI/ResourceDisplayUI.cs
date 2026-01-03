@@ -29,7 +29,7 @@ namespace GameplayScene.UI
                 
                 var resource = _resourceManager.GetResource(resourceType);
                 
-                uiEntry.Initialize(resource);
+                uiEntry.Initialize(resource, _resourceManager.GetIcon(resourceType));
                 
                 _displayEntries.Add(resourceType, uiEntry);
             }
@@ -41,7 +41,7 @@ namespace GameplayScene.UI
             {
                 var resource = _resourceManager.GetResource(type);
 
-                entry.Initialize(resource);
+                entry.Initialize(resource, _resourceManager.GetIcon(type));
             }
         }
     }

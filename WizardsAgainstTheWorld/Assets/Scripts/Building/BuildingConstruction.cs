@@ -1,24 +1,40 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Building.Managers;
 using GameplayScene.Managers;
+using UnityEngine;
 using Zenject;
 
 namespace Building
 {
     public class BuildingConstruction : Entity
     {
+        // Events
+        public event Action ProgressChanged;
+        
+        // Deppendencies
         [Inject] private IBuilderManager _builderManager;
         
+        // Properties
+        public float Progress => CalculateProgress();
+
         public BuildingPrefab BuildingPrefab { get; private set; }
         public GridPosition AnchorPosition { get; private set; }
+
+        // Serialized Fields
+        [SerializeField] private SpriteRenderer previewRenderer;
         
+        // Fields
         private readonly List<GameResource> _paidResources = new();
         
         public void Initialize(BuildingPrefab buildingPrefab, GridPosition anchorPosition)
         {
             AnchorPosition = anchorPosition;
             BuildingPrefab = buildingPrefab;
+            previewRenderer.sprite = buildingPrefab.MainSpriteRenderer.sprite;
+            previewRenderer.size = buildingPrefab.MainSpriteRenderer.size;
+            previewRenderer.transform.localScale = buildingPrefab.MainSpriteRenderer.transform.localScale;
         }
         
         public void PayResource(GameResource resource)
@@ -37,6 +53,8 @@ namespace Building
             }
 
             paidResource.Amount += resource.Amount;
+            
+            ProgressChanged?.Invoke();
             
             if(IsPayed())
                 FinishConstruction();
@@ -78,6 +96,24 @@ namespace Building
         {
             return !GetRequiredResources().Any();
         }
+        
+        private float CalculateProgress()
+        {
+            float totalCost = BuildingPrefab.costs.Sum(x => x.amount);
+            float paidCost = 0f;
 
+            foreach (var paidResource in _paidResources)
+            {
+                var costResource = BuildingPrefab.costs
+                    .FirstOrDefault(x => x.type == paidResource.Type);
+                
+                if (costResource != null)
+                {
+                    paidCost += Math.Min(paidResource.Amount, costResource.amount);
+                }
+            }
+
+            return totalCost > 0 ? paidCost / totalCost : 1f;
+        }
     }
 }

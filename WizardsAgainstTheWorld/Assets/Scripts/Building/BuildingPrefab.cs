@@ -16,6 +16,7 @@ namespace Building
         [SerializeField] private Sprite icon;
         [SerializeField] private string nameKey;
         [SerializeField] public List<GameResourceData> costs;
+        [field: SerializeField] public SpriteRenderer MainSpriteRenderer { get; private set; }
         public BuildingFootprint Footprint => new BuildingFootprint(width, height);
         public string Name => nameKey;
         public BuildingView View => GetComponent<BuildingView>();

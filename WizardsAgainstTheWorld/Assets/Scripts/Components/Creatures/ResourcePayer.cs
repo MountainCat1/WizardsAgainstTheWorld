@@ -5,6 +5,7 @@ using Building;
 using GameplayScene.Managers;
 using Managers;
 using UnityEngine;
+using Visual;
 using Zenject;
 
 namespace Components.Creatures
@@ -13,17 +14,20 @@ namespace Components.Creatures
     {
         [Inject] private IResourceManager _resourceManager;
         [Inject] private IEntityManager _entityManager;
+        [Inject] private IDynamicPoolingManager _dynamicPoolingManager;
         
-
         [field: SerializeField] public float Range { get; private set; } = 1;
         [field: SerializeField] public float BuildSpeed { get; private set; } = 5;
         [field: SerializeField] public int BuildAmount { get; private set; } = 5;
+        [field: SerializeField] public PaymentVisual PaymentVisualPrefab { get; private set; }
 
         public float BuildInterval => 1f / BuildSpeed;
+        private IPoolAccess<PaymentVisual> _visualsPool;
 
         private void Start()
         {
             StartCoroutine(BuildBuildingsCoroutine());
+            _visualsPool = _dynamicPoolingManager.GetPoolAccess<PaymentVisual>("PaymentVisualPool");
         }
 
         private IEnumerator BuildBuildingsCoroutine()
@@ -70,12 +74,7 @@ namespace Components.Creatures
 
                         if (payAmount > 0)
                         {
-                            Debug.Log($"Paying {payAmount} of {neededResource.Type} to {buildingConstruction.name}");
-                            _resourceManager.AddResource(neededResource.Type, -payAmount);
-                            buildingConstruction.PayResource(new GameResource(neededResource.Type)
-                            {
-                                Amount = payAmount
-                            });
+                            Pay(payAmount, neededResource, buildingConstruction);
                             paidSomething = true;
                             break;
                         }
@@ -85,6 +84,19 @@ namespace Components.Creatures
                         break;
                 }
             }
+        }
+
+        private void Pay(int payAmount, GameResource neededResource, BuildingConstruction buildingConstruction)
+        {
+            Debug.Log($"Paying {payAmount} of {neededResource.Type} to {buildingConstruction.name}");
+            _resourceManager.AddResource(neededResource.Type, -payAmount);
+            buildingConstruction.PayResource(new GameResource(neededResource.Type)
+            {
+                Amount = payAmount
+            });
+            
+            var paymentVisual = _visualsPool.SpawnObject(PaymentVisualPrefab, transform.position);
+            paymentVisual.Setup(_resourceManager.GetIcon(neededResource.Type), buildingConstruction.transform);
         }
     }
 }

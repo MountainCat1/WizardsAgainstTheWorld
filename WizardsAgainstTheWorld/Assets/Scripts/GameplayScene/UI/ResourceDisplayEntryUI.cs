@@ -11,11 +11,11 @@ namespace GameplayScene.UI
         [SerializeField] private TMP_Text resourceAmountText;
         [SerializeField] private Image resourceIconImage;
         
-        public void Initialize(GameResource resource)
+        public void Initialize(GameResource resource, Sprite icon)
         {
             resourceNameText.text = L($"Game.Resources.{resource.Type}");
             resourceAmountText.text = resource.Amount.ToString();
-            resourceIconImage.sprite = resource.Icon;
+            resourceIconImage.sprite = icon;
         }
     }
 }
