@@ -17,13 +17,10 @@ public class SelectionDisplayUI : MonoBehaviour, ISelectionDisplayUI
     [SerializeField] private SelectionDisplayEntryUI entryPrefab;
     [SerializeField] private Transform parent;
     
-    [Inject] private IInventoryDisplayUI _iInventoryDisplayUI;
     [Inject] private ISelectionManager _selectionManager;
     [Inject] private ISelectionInspectionManager _selectionInspectionManager;
     [Inject] private DiContainer _container;
 
-    [Inject] private IInventoryDisplayUI _iIInventoryDisplayUI;    
-    
     private void Start()
     {
         _selectionManager.OnSelectionChanged += OnSelectionChanged;
