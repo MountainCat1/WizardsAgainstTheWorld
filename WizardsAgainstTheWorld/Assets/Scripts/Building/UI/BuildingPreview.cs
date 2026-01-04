@@ -1,4 +1,3 @@
-using Building.Data;
 using UnityEngine;
 
 namespace Building.UI
@@ -17,7 +16,11 @@ namespace Building.UI
             _spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
-        public void Initialize(bool canBuild, Sprite buildingSprite, BuildingFootprint footprint, Vector3 position)
+        public void Initialize(bool canBuild,
+            Sprite buildingSprite,
+            BuildingPrefab selectedBuildingDefinition,
+            Vector3 position
+        )
         {
             if (buildingSprite == null)
             {
@@ -31,7 +34,7 @@ namespace Building.UI
             _spriteRenderer.color = baseColor;
 
             transform.localScale = Vector3.one;
-            _spriteRenderer.size = new Vector2(footprint.Width, footprint.Height);
+            _spriteRenderer.size = selectedBuildingDefinition.MainSpriteRenderer.size;
             transform.position = position;
         }
     }

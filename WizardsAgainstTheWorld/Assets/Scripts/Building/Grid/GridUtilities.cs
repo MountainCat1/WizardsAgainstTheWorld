@@ -91,6 +91,27 @@ namespace Building
 
             return result;
         }
+        
+        public static void CleanFootprint(GridSystem gridSystem, BuildingFootprint footprint, Vector3 position)
+        {
+            var gridPositions = GridUtilities.GetCellsFromWorldPosition(
+                gridSystem,
+                position,
+                footprint
+            );
+
+            foreach (var gridPosition in gridPositions)
+            {
+                var cell = gridSystem.GetCell(gridPosition);
+                if (cell == null)
+                {
+                    Debug.LogWarning("Cell is null when trying to free building footprint");
+                    continue;
+                }
+                
+                cell.SetStructureBlocked(false);
+            }
+        }
 
     }
 }

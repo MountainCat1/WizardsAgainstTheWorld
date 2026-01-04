@@ -58,7 +58,8 @@ MonoBehaviour:
   <Costs>k__BackingField:
   - amount: 6
     type: 0
-  <AvailableUpgrades>k__BackingField: []
+  <AvailableUpgrades>k__BackingField:
+  - {fileID: 1531923745296687763, guid: d1ce983967eaa21409397f387e48543d, type: 3}
   <MainSpriteRenderer>k__BackingField: {fileID: 158282170176629131}
 --- !u!114 &2335339455896981800
 MonoBehaviour:

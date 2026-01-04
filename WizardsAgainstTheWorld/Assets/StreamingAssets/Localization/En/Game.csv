@@ -36,6 +36,7 @@ Resources.Gold,gold
 
 Buildings.SimpleWall,Simple Wall
 Buildings.SmallFactory,Small Factory
+Buildings.SmallFastFactory,Small Fast Factory
 Buildings.Factory,Factory
 Buildings.Turret,Turret
 Buildings.TurretV2,Turret v2

@@ -14,7 +14,7 @@ public enum ItemType
 }
 
 [Serializable]
-public class ItemData
+public record ItemData
 {
     public string Identifier;
     public int Count = 1;

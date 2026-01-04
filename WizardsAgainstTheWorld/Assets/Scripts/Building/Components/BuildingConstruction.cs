@@ -17,6 +17,8 @@ namespace Building
         // Dependencies
         [Inject] private IBuilderManager _builderManager;
         [Inject] private ISoundPlayer _soundPlayer;
+        [Inject] private IAstarManager _astar;
+        [Inject] private GridSystem _gridSystem;
         
         // Properties
         public float Progress => CalculateProgress();
@@ -30,6 +32,13 @@ namespace Building
         
         // Fields
         private readonly List<GameResource> _paidResources = new();
+
+        protected override void OnDestroy()
+        {
+            base.OnDestroy();
+            _astar.ScanDelayed();
+            GridUtilities.CleanFootprint(_gridSystem, BuildingPrefab.Footprint, transform.position);
+        }
         
         public void Initialize(BuildingPrefab buildingPrefab, GridPosition anchorPosition)
         {

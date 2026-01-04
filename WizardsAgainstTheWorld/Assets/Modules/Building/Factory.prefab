@@ -56,7 +56,7 @@ MonoBehaviour:
   <Icon>k__BackingField: {fileID: 0}
   <NameKey>k__BackingField: Factory
   <Costs>k__BackingField:
-  - amount: 20
+  - amount: 40
     type: 0
   <AvailableUpgrades>k__BackingField: []
   <MainSpriteRenderer>k__BackingField: {fileID: 158282170176629131}

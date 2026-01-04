@@ -1,10 +1,8 @@
 using System;
-using System.Collections.Generic;
 using Items.PassiveItems;
 using Managers;
 using UnityEngine;
 using Zenject;
-using static Utilities.LocalizationHelper;
 
 namespace Building
 {
@@ -28,27 +26,13 @@ namespace Building
             _buildingPrefab = GetComponent<BuildingPrefab>();
         }
 
-        private void OnDestroy()
+        protected override void OnDestroy()
         {
+            base.OnDestroy();
+
             _astar.ScanDelayed();
 
-            var gridPositions = GridUtilities.GetCellsFromWorldPosition(
-                _gridSystem,
-                transform.position,
-                _buildingPrefab.Footprint
-            );
-
-            foreach (var gridPosition in gridPositions)
-            {
-                var cell = _gridSystem.GetCell(gridPosition);
-                if (cell == null)
-                {
-                    Debug.LogWarning("Cell is null when trying to free building footprint");
-                    continue;
-                }
-                
-                cell.SetStructureBlocked(false);
-            }
+            GridUtilities.CleanFootprint(_gridSystem, Prefab.Footprint, transform.position);
         }
     }
 }

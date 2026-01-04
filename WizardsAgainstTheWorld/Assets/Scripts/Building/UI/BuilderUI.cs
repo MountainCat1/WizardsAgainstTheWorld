@@ -33,7 +33,7 @@ namespace Building.UI
 
             _inputMapper.OnWorldPressed1 += TryBuild;
 
-            _buildingPreviewInstance = Instantiate(buildingPreviewPrefab, transform);
+            _buildingPreviewInstance = Instantiate(buildingPreviewPrefab, null);
             _buildingPreviewInstance.gameObject.SetActive(false);
         }
 
@@ -64,7 +64,7 @@ namespace Building.UI
                 _buildingPreviewInstance.Initialize(
                     canBuild,
                     _selectedBuildingDefinition.GetComponentInChildren<SpriteRenderer>().sprite,
-                    _selectedBuildingDefinition.Footprint,
+                    _selectedBuildingDefinition,
                     _gridSystem.GetCenterFromCells(gridCells)
                 );
             }

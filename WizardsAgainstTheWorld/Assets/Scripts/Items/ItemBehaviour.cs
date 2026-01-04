@@ -117,6 +117,10 @@ namespace Items
         {
             return ItemData;
         }
+        public virtual ItemData GetData(bool overridePrefab)
+        {
+            return ItemData with { Prefab = this};
+        }
 
         [CanBeNull]
         private Creature GetCreature()

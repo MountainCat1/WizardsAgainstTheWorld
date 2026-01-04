@@ -82,7 +82,10 @@ namespace UI
             {
                 var top = _stack.Pop();
                 if (top == entityInspectorUI)
+                {
+                    top.Exit();
                     break;
+                }
                 tempStack.Push(top);
             }
 

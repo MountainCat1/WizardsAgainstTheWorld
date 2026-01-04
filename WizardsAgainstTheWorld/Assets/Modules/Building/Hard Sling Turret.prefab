@@ -282,7 +282,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3575942757386923158, guid: caa381970ec08e84ab7155dd45fcfe90, type: 3}
+  m_Sprite: {fileID: -3575942757386923158, guid: 1b918088bc3c1254b808b5271e6e4fd2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -341,9 +341,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Building>k__BackingField: {fileID: 2335339455896981800}
-  idle: {fileID: -3100369314251171874, guid: caa381970ec08e84ab7155dd45fcfe90, type: 3}
+  idle: {fileID: -3100369314251171874, guid: 1b918088bc3c1254b808b5271e6e4fd2, type: 3}
   walk: {fileID: 0}
-  attack: {fileID: 6720303635017113406, guid: caa381970ec08e84ab7155dd45fcfe90, type: 3}
+  attack: {fileID: 6720303635017113406, guid: 1b918088bc3c1254b808b5271e6e4fd2, type: 3}
 --- !u!1001 &1582270328309968809
 PrefabInstance:
   m_ObjectHideFlags: 0

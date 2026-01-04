@@ -97,7 +97,7 @@ public class Entity : MonoBehaviour, IDamageable
     {
     }
 
-    protected void OnDestroy()
+    protected virtual void OnDestroy()
     {
         Destroyed?.Invoke();
     }

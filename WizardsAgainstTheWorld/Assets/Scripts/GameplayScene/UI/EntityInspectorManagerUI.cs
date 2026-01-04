@@ -48,10 +48,16 @@ namespace GameplayScene.UI
 
             if (entity != null)
             {
-                entity.Destroyed += DeinitializeEntityInspector;
+                entity.Destroyed += OnInspectedEntityDestroyed;
             }
         }
-        
+
+        private void OnInspectedEntityDestroyed()
+        {
+            DeinitializeEntityInspector();
+            _uiInteractionStack.Remove(entityInspectorUI);
+        }
+
         private void DeinitializeEntityInspector()
         {
             if (entityInspectorUI.InspectedEntity != null)

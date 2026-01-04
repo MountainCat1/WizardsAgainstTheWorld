@@ -14,6 +14,7 @@ namespace Managers
     public interface IItemDescriptionManager
     {
         string GetDescription(ItemData item);
+        string GetDescription(ItemBehaviour item, ItemData data);
         string GetInfoName(ItemData item);
     }
 
@@ -26,6 +27,11 @@ namespace Managers
         {
             var item = _itemManager.GetItemPrefab(data.Identifier);
 
+            return GetDescription(item, data);
+        }
+        
+        public string GetDescription(ItemBehaviour item, ItemData data)
+        {
             return item switch
             {
                 Weapon weapon => GetWeaponDescription(data, weapon),
