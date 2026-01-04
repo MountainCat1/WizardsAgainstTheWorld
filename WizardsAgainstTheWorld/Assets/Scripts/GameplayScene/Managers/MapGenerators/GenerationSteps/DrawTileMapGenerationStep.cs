@@ -11,14 +11,13 @@ namespace Services.MapGenerators.GenerationSteps
         [SerializeField] private Tilemap wallTileMap = null!;
         [SerializeField] private Tilemap floorTileMap = null!;
         
-        [SerializeField] private TileBase wallTile = null!;
-        [SerializeField] private TileBase floorTile = null!;
+        [SerializeField] private MapTileSet defaultTileset = null!;
         
         public override void Generate(GenerateMapData data, GenerateMapSettings settings, Random random)
         {
-            var tileSet = GetMapTileSet(settings.mapTileSetOverrideType == MapTileSetOverrideType.None
-                ? MapTileSetOverrideType.Default
-                : settings.mapTileSetOverrideType);
+            var tileSet = settings.mapTileSetOverrideType == MapTileSetOverrideType.None 
+                ? defaultTileset 
+                : GetMapTileSet(settings.mapTileSetOverrideType);
             
             DrawTiles(data, TileType.Floor, floorTileMap, tileSet.FloorTile);
             DrawTiles(data, TileType.Wall, wallTileMap, tileSet.WallTile);

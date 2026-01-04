@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Default
   m_EditorClassIdentifier: 
   <WallTile>k__BackingField: {fileID: 11400000, guid: bd42707613bbc6540b6431494d73b0c8, type: 2}
-  <FloorTile>k__BackingField: {fileID: 11400000, guid: 42e21e8572244594b8f9c9687bc7fe75, type: 2}
+  <FloorTile>k__BackingField: {fileID: 11400000, guid: 82e46a8916e06484c92189b07c06bf4e, type: 2}

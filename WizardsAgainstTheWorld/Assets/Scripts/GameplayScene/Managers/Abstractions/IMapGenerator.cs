@@ -9,7 +9,7 @@ public interface IMapGenerator
     GenerateMapSettings Settings { get; set; }
 
     public void GenerateMap();
-    public void SafeGenerateMap();
+    public void SafeGenerateMap(int? seed = null);
 }
 
 public enum TileType

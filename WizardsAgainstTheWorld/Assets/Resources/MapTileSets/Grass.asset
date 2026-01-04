@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e37ebba4162748b7a25dc6c0e6bf834d, type: 3}
+  m_Name: Grass
+  m_EditorClassIdentifier: 
+  <WallTile>k__BackingField: {fileID: 11400000, guid: bd42707613bbc6540b6431494d73b0c8, type: 2}
+  <FloorTile>k__BackingField: {fileID: 11400000, guid: 82e46a8916e06484c92189b07c06bf4e, type: 2}

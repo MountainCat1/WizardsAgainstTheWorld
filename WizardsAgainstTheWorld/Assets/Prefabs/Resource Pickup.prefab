@@ -124,6 +124,7 @@ MonoBehaviour:
     type: 0
   spriteRenderer: {fileID: 7579353956199260654}
   teamAbleToPickup: 1
+  pickupSound: {fileID: 8300000, guid: f55c4d302f66c1f4ba3a397272742d15, type: 3}
 --- !u!114 &6554977448480989161
 MonoBehaviour:
   m_ObjectHideFlags: 0

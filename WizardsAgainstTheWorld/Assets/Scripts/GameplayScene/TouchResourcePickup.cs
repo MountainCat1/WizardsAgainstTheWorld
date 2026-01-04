@@ -1,4 +1,5 @@
 using GameplayScene.Managers;
+using Managers;
 using Markers;
 using UI;
 using UnityEngine;
@@ -11,10 +12,12 @@ public class TouchResourcePickup : MonoBehaviour
     [SerializeField] private GameResourceData itemResources;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Teams teamAbleToPickup;
+    [SerializeField] private AudioClip pickupSound;
     
     [Inject] private IFloatingTextManager _floatingTextManager;
     [Inject] private DiContainer _diContainer;
     [Inject] private IResourceManager _resourceManager;
+    [Inject] private ISoundPlayer _soundPlayer;
 
     private Inventory _inventory;
 
@@ -49,5 +52,7 @@ public class TouchResourcePickup : MonoBehaviour
             itemResources.type,
             itemResources.amount
         );
+        
+        _soundPlayer.PlaySound(pickupSound, transform.position, SoundType.UI);
     }
 }

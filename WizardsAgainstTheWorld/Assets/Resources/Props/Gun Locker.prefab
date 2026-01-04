@@ -266,6 +266,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ada8cc22011242e4b54c1ddfb24c2939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Team>k__BackingField: 0
+  <ColliderSize>k__BackingField: 0.5
 --- !u!1001 &556012255856125039
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -55,13 +55,16 @@ namespace Services.MapGenerators.GenerationSteps
             StartCoroutine(DelayedInvoke());
         }
 
-        public void SafeGenerateMap()
+        public void SafeGenerateMap(int? seedOverride)
         {
+            int baseSeed = seedOverride ?? settings.seed;
+            if(baseSeed == 0)
+                baseSeed = Environment.TickCount;
             for (int i = 0; i < 100; i++)
             {
                 try
                 {
-                    GenerateMap(settings.seed + i);
+                    GenerateMap(baseSeed + i);
                     return;
                 }
                 catch (Exception e)

@@ -16,7 +16,7 @@ namespace GameplayScene.Managers.Components
         private Coroutine _returnRoutine;
 
         // Small safety tail in case of scheduling/latency
-        private const float TailSeconds = 0.05f;
+        private const float TailSeconds = 2f;
         
         public AudioSource AudioSource => _source;
 

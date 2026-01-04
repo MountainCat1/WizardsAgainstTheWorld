@@ -14,6 +14,7 @@ public interface IInputMapper
     event Action<Vector2> OnWorldPressed2;
     event Action<Vector2, Vector2> OnWorldDragEnd2;
     event Action<Vector2, Vector2> OnWorldDrag2;
+    event Action<Entity> OnEntityClicked;
     event Action<float> Zoom;
     ICollection<Entity> GetEntitiesUnderMouse();
     Entity GetEntityUnderMouse();
@@ -30,6 +31,7 @@ public interface IInputMapper
 
 public class InputMapper : MonoBehaviour, IInputMapper
 {
+    public event Action<Entity> OnEntityClicked;
     public event Action<Vector2> OnWorldPressed1;
     public event Action<Vector2> OnWorldPressed2;
     public event Action<Vector2, Vector2> OnWorldDragEnd2;
@@ -135,6 +137,12 @@ public class InputMapper : MonoBehaviour, IInputMapper
 
         var worldPosition = _camera.ScreenToWorldPoint(position);
         OnWorldPressed1?.Invoke(worldPosition);
+
+        var entity = GetEntityUnderMouse();
+        if (entity != null)
+        {
+            OnEntityClicked?.Invoke(entity);
+        }
     }
 
     private void OnPointer2Pressed(Vector2 position)

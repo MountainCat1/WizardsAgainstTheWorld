@@ -15,7 +15,7 @@ namespace Services.MapGenerators
         [SerializeField] public float tileSize = 1f;
         [SerializeField] public int seed;
         [SerializeField] public CorridorWidth corridorWidth;
-        [SerializeField] public MapTileSetOverrideType mapTileSetOverrideType = MapTileSetOverrideType.Default;
+        [SerializeField] public MapTileSetOverrideType mapTileSetOverrideType = MapTileSetOverrideType.None;
         
         public enum CorridorWidth
         {
@@ -62,6 +62,7 @@ namespace Services.MapGenerators
         None,
         Default,
         Alien,
+        Grass
     }
 
     public enum MapLayer
@@ -122,17 +123,17 @@ namespace Services.MapGenerators
             return x >= 0 && x < GridSize.x && y >= 0 && y < GridSize.y;
         }
 
-        public ICollection<Vector2Int> GetTilesOfType(TileType floor)
+        public ICollection<(Vector2Int, int)> GetTilesOfType(TileType tileType)
         {
-            var tiles = new List<Vector2Int>();
+            var tiles = new List<(Vector2Int, int)>();
 
             for (int x = 0; x < GridSize.x; x++)
             {
                 for (int y = 0; y < GridSize.y; y++)
                 {
-                    if (GetTile(x, y) == (int)floor)
+                    if (GetTile(x, y) == (int)tileType)
                     {
-                        tiles.Add(new Vector2Int(x, y));
+                        tiles.Add((new Vector2Int(x, y), GetTile(x, y)));
                     }
                 }
             }
