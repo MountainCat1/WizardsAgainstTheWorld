@@ -31,6 +31,8 @@ namespace Building.Managers
             GridPosition anchorPosition,
             Teams team = Teams.Player
         );
+
+        void StartBuildingUpgrade(BuildingView targetBuilding, BuildingPrefab upgradePrefab);
     }
 
     public sealed class BuilderManager : MonoBehaviour, IBuilderManager
@@ -76,6 +78,7 @@ namespace Building.Managers
                            throw new InvalidOperationException("Spawned entity is not a BuildingView");
             
             building.GetComponent<CircleCollider2D>().radius = footprint.RadiusSize;
+            building.AnchorPosition = anchorPosition;
             EntityPlaced?.Invoke(building);
         }
         
@@ -100,6 +103,17 @@ namespace Building.Managers
             construction.GetComponent<CircleCollider2D>().radius = footprint.RadiusSize;
             construction.Initialize(buildingPrefab.GetComponent<BuildingPrefab>(), anchorPosition);
             EntityPlaced?.Invoke(construction);
+        }
+
+        public void StartBuildingUpgrade(BuildingView targetBuilding, BuildingPrefab upgradePrefab)
+        {
+            var construction = _entityManager.SpawnEntity(ConstructionPrefab, targetBuilding.transform.position) as BuildingConstruction ?? 
+                           throw new InvalidOperationException("Spawned entity is not a BuildingView");
+            
+            construction.GetComponent<CircleCollider2D>().radius = upgradePrefab.Footprint.RadiusSize;
+            construction.Initialize(upgradePrefab, targetBuilding.GetComponent<BuildingView>().AnchorPosition);
+            EntityPlaced?.Invoke(construction);
+            targetBuilding.Health.Kill();
         }
 
 

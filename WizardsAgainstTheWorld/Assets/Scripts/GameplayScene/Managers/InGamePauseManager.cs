@@ -1,4 +1,5 @@
 using System;
+using UI;
 using UnityEngine;
 using Zenject;
 
@@ -17,6 +18,7 @@ namespace Managers
         
         [Inject] private IInputManager _inputManager;
         [Inject] private ITimeManager _timeManager;
+        [Inject] private IUIInteractionStack _uiInteractionStack;
 
         private bool _isPaused;
         
@@ -37,6 +39,9 @@ namespace Managers
 
         private void TogglePause()
         {
+            if(_uiInteractionStack.IsBlocked())
+                return;
+            
             if (_isPaused)
             {
                 ResumeGame();

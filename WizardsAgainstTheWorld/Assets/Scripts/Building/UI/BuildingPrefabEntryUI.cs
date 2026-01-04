@@ -30,22 +30,9 @@ namespace Building.UI
             
             _onSelectedCallback = callback;
             
-            costText.text = GetCostText(definition);
+            costText.text = definition.GetCostText();
         }
-
-        private string GetCostText(BuildingPrefab definition)
-        {
-            if (definition.costs == null || definition.costs.Count == 0)
-                return "No Cost";
-
-            System.Text.StringBuilder sb = new System.Text.StringBuilder();
-            foreach (var cost in definition.costs)
-            {
-                sb.Append($"{cost.amount} {cost.type}\n");
-            }
-            return sb.ToString().TrimEnd('\n');
-        }
-
+        
         private void OnButtonClicked()
         {
             Debug.Log($"Building '{_definition.name}' button clicked.");

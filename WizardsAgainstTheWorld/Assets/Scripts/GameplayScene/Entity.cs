@@ -14,8 +14,11 @@ public class Entity : MonoBehaviour, IDamageable
         return Original ? Original.GetIdentifier() : gameObject.name;
     }
     
+    public virtual string Name => gameObject.name;
+    
     // Events
     public event Action<Vector2> Moved;
+    public event Action Destroyed;
     public event Action<Interaction> Interacted;
     public event Action<Interaction> InteractionCanceled;
     public event Action<CreatureState> StateChanged;
@@ -92,6 +95,11 @@ public class Entity : MonoBehaviour, IDamageable
     
     protected virtual void Update()
     {
+    }
+
+    protected void OnDestroy()
+    {
+        Destroyed?.Invoke();
     }
 
     public void SetMovement(Vector2 direction)

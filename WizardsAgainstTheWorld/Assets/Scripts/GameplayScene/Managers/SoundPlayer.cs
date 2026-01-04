@@ -82,6 +82,7 @@ namespace Managers
             pooledAudio.AudioSource.maxDistance = MaxDistanceDefault;
 
             // Arm pooled return now that we've configured and started playback.
+            pooledAudio.AudioSource.Play();
             pooledAudio.ArmReturn();
         }
 
@@ -106,12 +107,10 @@ namespace Managers
             audioSource.clip = clip;
             audioSource.outputAudioMixerGroup = _mixerGroups[soundType];
             audioSource.pitch = 1f;
-            audioSource.spatialBlend = 0f; // caller may override after this call
+            audioSource.spatialBlend = 0f;
             audioSource.rolloffMode = AudioRolloffMode.Linear;
-
             audioSource.Stop();
             audioSource.time = 0f;
-            audioSource.Play();
 
             return pooledAudio;
         }

@@ -50,15 +50,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b49e0df3383458c829c70cec80220b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildingId: 1
-  width: 1
-  height: 1
-  buildTime: 5
-  icon: {fileID: -2656224205127534936, guid: ae837381a8750a94fab17fe07361b9b1, type: 3}
-  nameKey: Wall
-  costs:
-  - amount: 8
+  <BuildingId>k__BackingField: 
+  <Width>k__BackingField: 1
+  <Height>k__BackingField: 1
+  <BuildTime>k__BackingField: 0
+  <Icon>k__BackingField: {fileID: 0}
+  <NameKey>k__BackingField: Turret
+  <Costs>k__BackingField:
+  - amount: 5
     type: 0
+  <AvailableUpgrades>k__BackingField:
+  - {fileID: 1531923745296687763, guid: dd4c634cebb0c884baba27d7d42bfa36, type: 3}
+  - {fileID: 1531923745296687763, guid: d000f74c177fee9448c960d9610ba24b, type: 3}
   <MainSpriteRenderer>k__BackingField: {fileID: 158282170176629131}
 --- !u!114 &2335339455896981800
 MonoBehaviour:
@@ -186,9 +189,9 @@ MonoBehaviour:
   <Weight>k__BackingField: 1
   <Description>k__BackingField: 
   <BaseCost>k__BackingField: 15
-  <BaseAttackSpeed>k__BackingField: 0.2
+  <BaseAttackSpeed>k__BackingField: 0.35
   <BaseRange>k__BackingField: 5
-  <BaseDamage>k__BackingField: 3
+  <BaseDamage>k__BackingField: 1
   <BaseAccuracyPercent>k__BackingField: 80
   <PushFactor>k__BackingField: 2
   <ShakeFactor>k__BackingField: 0.7

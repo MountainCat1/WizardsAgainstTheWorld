@@ -1,14 +1,16 @@
 using Building.Managers;
+using UI;
 using UnityEngine;
 using Zenject;
 
 namespace Building.UI
 {
-    public class BuilderUI : MonoBehaviour
+    public class BuilderUI : MonoBehaviour, IUIInteraction
     {
         [Inject] private IBuilderManager _builderManager;
-        [Inject] private DiContainer _container;
         [Inject] private IInputMapper _inputMapper;
+        [Inject] private IUIInteractionStack _uiInteractionStack;
+        [Inject] private DiContainer _container;
         [Inject] private GridSystem _gridSystem;
 
         [SerializeField] private BuildingPrefabEntryUI buildingPrefabEntryUI;
@@ -109,7 +111,20 @@ namespace Building.UI
         private void SelectBuilding(BuildingPrefab definition)
         {
             _selectedBuildingDefinition = definition;
-            Debug.Log($"Selected building: {_selectedBuildingDefinition.Name}");
+            Debug.Log($"Selected building: {_selectedBuildingDefinition?.Name}");
+                            
+            _uiInteractionStack.Push(this);
         }
+
+        public void Enter()
+        {
+        }
+
+        public void Exit()
+        {
+            SelectBuilding(null);
+        }
+
+        public bool BlocksInput => true;
     }
 }

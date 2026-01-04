@@ -32,3 +32,13 @@ Resources.Stone,Stone
 Resources.Metal,Metal
 Resources.Plastic,Plastic
 Resources.Gold,gold
+
+
+Buildings.SimpleWall,Simple Wall
+Buildings.SmallFactory,Small Factory
+Buildings.Factory,Factory
+Buildings.Turret,Turret
+Buildings.TurretV2,Turret v2
+Buildings.ManyRockTurret,Many Rock Turret
+Buildings.HardSlingTurret,Hard Sling Turret
+

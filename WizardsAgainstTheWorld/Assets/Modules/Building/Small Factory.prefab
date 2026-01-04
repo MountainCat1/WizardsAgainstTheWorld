@@ -49,15 +49,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b49e0df3383458c829c70cec80220b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildingId: 1
-  width: 1
-  height: 1
-  buildTime: 5
-  icon: {fileID: -3575942757386923158, guid: 5d656475073ae864a95667d976f7ac73, type: 3}
-  nameKey: Factory Key
-  costs:
+  <BuildingId>k__BackingField: 
+  <Width>k__BackingField: 1
+  <Height>k__BackingField: 1
+  <BuildTime>k__BackingField: 0
+  <Icon>k__BackingField: {fileID: 0}
+  <NameKey>k__BackingField: SmallFactory
+  <Costs>k__BackingField:
   - amount: 6
     type: 0
+  <AvailableUpgrades>k__BackingField: []
   <MainSpriteRenderer>k__BackingField: {fileID: 158282170176629131}
 --- !u!114 &2335339455896981800
 MonoBehaviour:

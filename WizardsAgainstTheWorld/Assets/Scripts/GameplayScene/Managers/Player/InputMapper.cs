@@ -135,14 +135,14 @@ public class InputMapper : MonoBehaviour, IInputMapper
             return;
         }
 
-        var worldPosition = _camera.ScreenToWorldPoint(position);
-        OnWorldPressed1?.Invoke(worldPosition);
-
         var entity = GetEntityUnderMouse();
         if (entity != null)
         {
             OnEntityClicked?.Invoke(entity);
         }
+        
+        var worldPosition = _camera.ScreenToWorldPoint(position);
+        OnWorldPressed1?.Invoke(worldPosition);
     }
 
     private void OnPointer2Pressed(Vector2 position)

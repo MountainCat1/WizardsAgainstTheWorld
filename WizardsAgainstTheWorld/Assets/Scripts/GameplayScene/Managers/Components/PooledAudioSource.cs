@@ -15,8 +15,6 @@ namespace GameplayScene.Managers.Components
         private Action _free;
         private Coroutine _returnRoutine;
 
-        // Small safety tail in case of scheduling/latency
-        private const float TailSeconds = 2f;
         
         public AudioSource AudioSource => _source;
 
@@ -52,23 +50,16 @@ namespace GameplayScene.Managers.Components
             }
 
             if (_source.clip == null) return;
-            var duration = Mathf.Max(0f, _source.clip.length / Mathf.Max(0.0001f, _source.pitch));
-            _returnRoutine = StartCoroutine(ReturnAfter(duration + TailSeconds));
+            _returnRoutine = StartCoroutine(ReturnCoroutine());
         }
 
-        private IEnumerator ReturnAfter(float seconds)
+        private IEnumerator ReturnCoroutine()
         {
-            var t = 0f;
-            // Handle pauses / stopping early: if stopped, return immediately.
-            while (t < seconds)
-            {
-                if (!_source.isPlaying) break;
-                t += Time.unscaledDeltaTime; // unaffected by timescale
+            while (_source != null && _source.isPlaying)
                 yield return null;
-            }
 
-            _returnRoutine = null;
             _free?.Invoke();
+
         }
     }
 }

@@ -48,5 +48,13 @@ namespace Utilities
 
             return result;
         }
+        
+        public static void CleanChildren(this Transform parent)
+        {
+            for (int i = parent.childCount - 1; i >= 0; i--)
+            {
+                Object.Destroy(parent.GetChild(i).gameObject);
+            }
+        }
     }
 }
