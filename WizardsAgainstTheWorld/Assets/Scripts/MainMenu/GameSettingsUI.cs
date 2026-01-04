@@ -58,10 +58,7 @@ public class GameSettingsUI : MonoBehaviour
 
         // General
         SetupSlider(difficulty, value => _gameSettings.Difficulty = value, _gameSettings.Difficulty, 3f, 0.1f);
-        SetupToggle(useJuiceMechanicToggle,
-            value => _gameSettings.Preferences.UseJuiceMechanic = value,
-            _gameSettings.Preferences.UseJuiceMechanic);
-        
+
         SetupDropdown(languageDropdown,
             value =>
             {

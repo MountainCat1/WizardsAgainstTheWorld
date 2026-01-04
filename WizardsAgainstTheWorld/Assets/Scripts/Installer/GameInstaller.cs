@@ -50,8 +50,6 @@ public class GameInstaller : MonoInstaller<GameInstaller>
         Container.Bind<ICameraShakeService>().To<CameraShakeService>().FromComponentsInHierarchy().AsSingle();
         Container.Bind<IVictoryConditionManager>().To<VictoryConditionManager>().FromComponentsInHierarchy().AsSingle();
         Container.Bind<IEnemySpawner>().To<EnemySpawner>().FromComponentsInHierarchy().AsSingle();
-        Container.Bind<IJuiceManager>().To<JuiceManager>().FromComponentsInHierarchy().AsSingle();
-        Container.Bind<IVisionManager>().To<VisionManager>().FromComponentsInHierarchy().AsSingle();
         Container.Bind<ISoundManager>().To<SoundManager>().FromComponentsInHierarchy().AsSingle();
         Container.Bind<ITutorialManager>().To<TutorialManager>().FromComponentsInHierarchy().AsSingle();
         Container.Bind<IStatusEffectManager>().To<StatusEffectManager>().FromComponentsInHierarchy().AsSingle();

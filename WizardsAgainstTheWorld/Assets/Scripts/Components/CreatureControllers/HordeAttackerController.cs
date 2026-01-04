@@ -1,6 +1,3 @@
-using Managers;
-using Zenject;
-
 namespace CreatureControllers
 {
     public class HordeAttackerController : UnitController

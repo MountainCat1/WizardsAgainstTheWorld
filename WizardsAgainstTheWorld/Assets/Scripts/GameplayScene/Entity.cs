@@ -1,7 +1,5 @@
 using System;
 using Components;
-using Components.Creatures;
-using Items.PassiveItems;
 using Managers;
 using UI;
 using UnityEngine;

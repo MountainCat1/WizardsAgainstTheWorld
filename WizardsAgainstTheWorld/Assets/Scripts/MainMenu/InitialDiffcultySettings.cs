@@ -36,7 +36,6 @@ namespace MainMenu
 
         private void HardSelected()
         {
-            _gameSettings.Preferences.UseJuiceMechanic = true;
             _gameSettings.Preferences.FriendlyFire = true;
             _gameSettings.Difficulty = 1.2f;
             GameSettings.Update(_gameSettings);
@@ -46,7 +45,6 @@ namespace MainMenu
 
         private void NormalSelected()
         {
-            _gameSettings.Preferences.UseJuiceMechanic = true;
             _gameSettings.Preferences.FriendlyFire = false;
             _gameSettings.Difficulty = 0.7f;
             GameSettings.Update(_gameSettings);
@@ -56,7 +54,6 @@ namespace MainMenu
 
         private void EasySelected()
         {
-            _gameSettings.Preferences.UseJuiceMechanic = false;
             _gameSettings.Preferences.FriendlyFire = false;
             _gameSettings.Difficulty = 0.4f;
             GameSettings.Update(_gameSettings);

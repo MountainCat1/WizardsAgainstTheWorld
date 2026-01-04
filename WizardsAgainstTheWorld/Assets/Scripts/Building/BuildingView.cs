@@ -2,7 +2,6 @@ using System;
 using Items.PassiveItems;
 using Managers;
 using UnityEngine;
-using Utilities;
 using Zenject;
 
 namespace Building

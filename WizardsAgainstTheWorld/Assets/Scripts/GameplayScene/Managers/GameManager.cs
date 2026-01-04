@@ -55,7 +55,6 @@ namespace Managers
         [Inject] private IVictoryConditionManager _victoryConditionManager;
         [Inject] private IInputManager _inputManager;
         [Inject] private IEnemySpawner _enemySpawner;
-        [Inject] private IJuiceManager _juiceManager;
         [Inject] private IAstarManager _astarManager;
         [Inject] private ITutorialManager _tutorialManager;
         [Inject] private ISceneLoader _sceneLoader;
@@ -139,14 +138,6 @@ namespace Managers
             SpawnUnits(mapData: _map);
             SpawnUpgrades();
             _enemySpawner.Initialize(_mapGenerator.MapData);
-
-            if (GameSettings.Instance.Preferences.UseJuiceMechanic)
-            {
-                _juiceManager.Initialize(
-                    FindObjectsOfType<Creature>().Where(x => x.Team == Teams.Player).ToArray(),
-                    _data.Resources.Juice
-                );
-            }
 
             if (GameSetup?.IsTutorial == true)
             {
@@ -302,8 +293,6 @@ namespace Managers
                 .Where(x => x.Team == Teams.Player)
                 .Select(CreatureData.FromCreature)
                 .ToList();
-
-            currentGameData.Resources.Juice = _juiceManager.Juice;
 
             _dataManager.SaveData();
         }

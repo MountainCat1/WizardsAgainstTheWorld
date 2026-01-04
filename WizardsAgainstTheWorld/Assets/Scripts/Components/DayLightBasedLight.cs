@@ -1,4 +1,3 @@
-using System;
 using GameplayScene.Managers;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;

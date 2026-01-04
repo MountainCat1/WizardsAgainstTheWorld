@@ -66,7 +66,6 @@ public class GameSettingsPreferences
 {
     public bool ShowHitChances { get; set; } = false;
     public bool FriendlyFire { get; set; } = false;
-    public bool UseJuiceMechanic { get; set; } = false;
 }
 
 public class SoundSettings

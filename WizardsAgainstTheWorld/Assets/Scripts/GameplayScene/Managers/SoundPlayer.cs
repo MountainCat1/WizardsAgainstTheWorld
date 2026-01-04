@@ -4,7 +4,6 @@ using Installer;
 using UnityEngine;
 using UnityEngine.Audio;
 using Zenject;
-using Random = UnityEngine.Random;
 
 namespace Managers
 {
