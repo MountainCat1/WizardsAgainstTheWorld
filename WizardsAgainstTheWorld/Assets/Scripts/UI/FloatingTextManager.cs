@@ -24,7 +24,8 @@ namespace UI
         LevelUp,
         XpGain,
         FriendlyFire,
-        Income
+        Income,
+        Pickup
     }
 
     public struct FloatingTextSettings
@@ -90,6 +91,10 @@ namespace UI
             },
             {
                 FloatingTextType.Income,
+                new FloatingTextSettings { Color = Color.greenYellow, Size = 0.7f, FontStyle = FontStyles.Italic }
+            },
+            {
+                FloatingTextType.Pickup,
                 new FloatingTextSettings { Color = Color.greenYellow, Size = 0.7f, FontStyle = FontStyles.Italic }
             }
         };

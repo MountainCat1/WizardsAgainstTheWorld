@@ -88,6 +88,11 @@ namespace Services.MapGenerators
         {
             Grid[x, y] = (int)value;
         }
+        
+        public void SetTile(Vector2Int position, TileType value)
+        {
+            Grid[position.x, position.y] = (int)value;
+        }
 
         public int GetTile(int x, int y)
         {
@@ -116,6 +121,35 @@ namespace Services.MapGenerators
         {
             return x >= 0 && x < GridSize.x && y >= 0 && y < GridSize.y;
         }
+
+        public ICollection<Vector2Int> GetTilesOfType(TileType floor)
+        {
+            var tiles = new List<Vector2Int>();
+
+            for (int x = 0; x < GridSize.x; x++)
+            {
+                for (int y = 0; y < GridSize.y; y++)
+                {
+                    if (GetTile(x, y) == (int)floor)
+                    {
+                        tiles.Add(new Vector2Int(x, y));
+                    }
+                }
+            }
+
+            return tiles;
+        }
+        
+        public IEnumerable<Vector2Int> GetAllTilesEnumerable()
+        {
+            for (int x = 0; x < GridSize.x; x++)
+            {
+                for (int y = 0; y < GridSize.y; y++)
+                {
+                    yield return new Vector2Int(x, y);
+                }
+            }
+        }
     }
 
     public abstract class GenerationStep : MonoBehaviour
@@ -124,6 +158,24 @@ namespace Services.MapGenerators
 
         public virtual void Clear()
         {
+        }
+        
+        protected ICollection<Vector2> GetTilesOfType(GenerateMapData data, TileType tileType, float tileSize)
+        {
+            var tiles = new List<Vector2>();
+
+            for (int x = 0; x < data.GridSize.x; x++)
+            {
+                for (int y = 0; y < data.GridSize.y; y++)
+                {
+                    if (data.GetTile(x, y) == (int)tileType)
+                    {
+                        tiles.Add(new Vector2(x * tileSize, y * tileSize));
+                    }
+                }
+            }
+
+            return tiles;
         }
     }
 }

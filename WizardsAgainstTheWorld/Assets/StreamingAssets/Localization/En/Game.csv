@@ -7,6 +7,7 @@ FloatingText.FriendlyFire,Friendly Fire!
 FloatingText.LevelUp,Level Up!
 FloatingText.XpGain,{0} XP
 FloatingText.Income,{0} {1}
+FloatingText.PickupItem,{0} {1}
 
 Interaction.RandomContainer.Empty,Empty
 Interaction.RandomContainer.Loot,{1}x {0}
